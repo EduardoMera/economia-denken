@@ -11,14 +11,14 @@
         <title>Document</title>
     </head>
     <body>
-        <div id="barra-arriba" class="text-end barra-arriba">
+        <div id="barra-arriba" class="text-end barra-arriba pe-3 pt-3">
             Ministerio de Economía y Crédito Público
         </div>
 
         <nav class="fondo-nav navbar navbar-expand-md navbar-light">
             <div
                 id="contenedor-navbar"
-                class="container-fluid grid-container reverse"
+                class="container-fluid grid-container "
             >
                 <button
                     class="navbar-toggler item1"
@@ -67,28 +67,33 @@
                                     >POLÍTICA Y GESTIÓN</a
                                 >
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item dropdown">
                                 <a
-                                    class="ps-0 pe-5 mb-2 border-2 btn-contacto nav-link active"
+                                    class="ps-0 pe-5 mb-2 border-2 btn-contacto nav-link active dropbtn"
                                     aria-current="page"
                                     href="#"
                                     >CONTACTO</a
                                 >
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
                             </li>
                         </ul>
-                        <form class="d-flex">
+                        <form id="buscador" class="d-flex buscador">
                             <input
                                 class="buscador-nav form-control py-0 mb-2"
                                 type="search"
                                 placeholder="Buscador"
                                 aria-label="Search"
                             />
-                            <button class="boton-lupa btn mb-2" type="submit">
-                                <svg
+                            <button class="boton-lupa btn mb-2 position-relative" type="submit">
+                                <svg id="lupa" 
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="#ccc"
+                                    width="12"
+                                    height="15"
+                                    fill="#dadad9"
                                     class="bi bi-search"
                                     viewBox="0 0 16 16"
                                 >
@@ -103,5 +108,6 @@
                   </div>
             </div>
         </nav>
+        <div id="buscador-mobile" ></div>
     </body>
 </html>

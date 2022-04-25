@@ -12,17 +12,77 @@
 
 
 .buscador-nav {
-	border-radius: 13px 0px 0px 13px;
+	border-radius: 10px 0px 0px 10px;
+    width: 239px;
+    height: 27.5px;
+    border-color: var(--gris1);
+    color: var(--gris2);
+    font-family: "HelveticaNeue-light";
+    font-weight: lighter;
+    font-size: 8.5px;
+    
+    
 }
 
 .boton-lupa {
-	border-radius: 0px 13px 13px 0px;
+	border-radius: 0px 10px 10px 0px;
 	border: solid #ccc;
 	border-width: 1px 1px 1px 0px;
+    width: 35.4px;
+    height: 27.5px;
+    
 }
 
+
+
 .buscador-nav::placeholder {
-	color: #aaa;
+	color: var(--gris2);
+    font-family: "HelveticaNeue-light" , sans-serif;
+    font-weight: lighter;
+    font-size: 8.5px;
+
+}
+
+.buscador-nav:focus + .boton-lupa{
+    background-color: var(--celeste1);
+    color: var(--blanco);
+    
+    
+}
+
+.buscador-nav:focus{
+    background-color: var(--celeste1);
+    color: var(--blanco);
+    
+    
+}
+
+.form-control:focus{
+    
+    box-shadow:none;
+    
+    
+}
+
+.buscador-nav:focus::placeholder{
+    
+    color: var(--blanco);
+}
+    /* placeholder white*/
+    
+
+
+
+
+#lupa{
+    position: relative;
+    top: -7px;
+    
+}
+
+.buscador{
+    position: relative;
+    top: 5px;
 }
 
 .logo-nav {
@@ -34,7 +94,7 @@
 
 
 .barra-arriba {
-	background-color: var(--celeste1);
+	background-color:var(--celeste1);
 	color: var(--blanco);
     font-family: "Montserrat", sans-serif;
     height: 45px;
@@ -42,25 +102,34 @@
 	font-weight: 500;
 	font-size: 14px;
     
+    
 }
 
 .btn-institucional {
     font-size: 9.75px;
-	border-bottom: 3px solid var(--violeta)
+	border-bottom: 1.4px solid var(--violeta);
+    width:170px;
 }
 
 .btn-politica {
     font-size: 9.75px;
-	border-bottom: 3px solid var(--celeste1)
+	border-bottom: 1.4px solid var(--celeste1);
+    width:170px;
 }
 
 .btn-contacto {
     font-size: 9.75px;
-	border-bottom: 3px solid var(--celeste2)
+	border-bottom: 1.4px solid var(--celeste2);
+    width:170px;
 }
 
 .fondo-nav {
 	background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    height:91.8px;
+    background-color: var(--blanco);
 }
 
 
@@ -71,24 +140,61 @@
         background-color: var(--celeste1);
     }
 
+    
+
     .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
+        display:flex;
+        flex-direction: row;
+        padding: 2%;
+        align-items: center;
+        width: 100%;
+        
 
+    }
     .item1{
-    grid-column: 1;            
+        display:flex;
+        justify-content: start;
+        
+        width: 33%;
+        
+        
 
     }
-
     .item2{
-        grid-column: 2;
+        display:flex;
+        justify-content: center;
+        
+        width: 33%;
+        
+
     }
 
     .item3{
-        grid-column: 3;
+        display:flex;
+        justify-content: end;
+        
+        width: 33%;
+        
+        
+
+    }
+    .navbar-toggler{
+        border:none;
+        filter:invert(100%);
+        
+        
     }
 
+    .navbar-toggler:focus{
+        border:none;
+        box-shadow: none;
+        
+        
+    }
+
+
+
+   
     
 
     .logo-nav {
@@ -99,18 +205,18 @@
 
     .barra-arriba {
         font-family: "Montserrat", sans-serif;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 900;
         line-height: 12.19px;
-        align-items: right;
+        align-items: end;
+        word-wrap: break-word;
+        text-align: right;
         
         
 
-        background-color: #2e97b4;
+        background-color: var(--celeste1);
         color: #fff;
-    
-        font-weight: 500;
-        font-size: 2.7vh;
+            
     }
 
     .btn-institucional {
@@ -137,6 +243,30 @@
         border-bottom: 3px solid var(--violeta)
     }
     
+
+    .buscador-nav{
+        height:36px;
+        width:90%;
+        
+        
+
+
+       
+    }
+    .boton-lupa{
+        height:36px;
+        width: 10%;
+    }
+
+    .buscador{
+        padding: 2%;
+    }
+
+    #lupa{
+        position: relative;
+        top: -4px;
+        
+    }
    
 
 	
