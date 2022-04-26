@@ -1,21 +1,31 @@
+:root {
+  --celeste1: #4196b4;
+  --celeste2: #00b2e2;
+  --violeta: #222d5b;
+  --gris1: #dadad9;
+  --gris2: #878786;
+  --amarillo: #ffd03e;
+  --blanco: #ffffff;
+}
+
 .img-noticias-twitter {
-	width: 20vw;
-	height: auto;
+  width: 20vw;
+  height: auto;
+}
+
+.titulo-noticias,
+.titulo-twitter {
+  font-family: 'HelveticaNeuet', sans-serif;
+  color: var(--amarillo);
+  font-weight: lighter;
 }
 
 .titulo-noticias {
-	color: rgb(255, 207, 67);
-	font-weight: bold;
-	margin-bottom: -0.3em;
+  margin-bottom: -0.3em;
 }
 
-.titulo-twitter {
-	color: rgb(255, 207, 7);
-	font-weight: lighter;
-}
-
-.twit{
-	position:relative;
+.twit {
+  position: relative;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -23,30 +33,79 @@
 }
 
 .img-twitter {
-	width: 537px;
-	height: 169px;
-	object-fit: cover;
+  width: 100%;
+  height: 169px;
+  object-fit: cover;
 }
 
 .twit:nth-child(even)::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-	mix-blend-mode: multiply;
-	background-color: rgb(46, 150, 178, 1);
+  mix-blend-mode: multiply;
+  background-color: rgb(46, 150, 178, 1);
 }
 
-.info-text{
-	line-height: 99%; 
-	background-color: rgba(255, 255, 255, 0.8);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 80%;
-	height: auto;
-	transform: translate(-50%, -50%);
+.info-text {
+  line-height: 99%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 700px) {
+  .img-noticias-twitter {
+    width: 190px;
+    height: 13px;
+    margin-top: 20px;
+  }
+  .mobile-titulo-noticias-twitter {
+    position: relative;
+    top: 5px;
+    display: inline;
+    color: var(--amarillo);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17.7px;
+    line-height: 22px;
+    text-align: right;
+  }
+  .twit-mobile {
+    background-color: var(--celeste2);
+    /* margin y */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: var(--blanco);
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .logo-twitter {
+    display: grid;
+    place-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .twitter-content {
+    padding-left: 0px;
+    width: 293px;
+  }
+  .perfil-twit{
+    font-weight: 700;
+  }
+  .cuerpo-twit{
+    opacity: 0.6;
+  }
 }
