@@ -1,0 +1,51 @@
+:root {
+  --celeste1: #4196b4;
+  --celeste2: #00b2e2;
+  --violeta: #222d5b;
+  --gris1: #dadad9;
+  --gris2: #878786;
+  --amarillo: #ffd03e;
+  --blanco: #ffffff;
+}
+body{
+  overflow-x: hidden;
+}
+.autoridades {
+  margin-top: 67px;
+}
+.item-texto {
+  font-family: 'HelveticaNeue', sans-serif;
+  display: inline;
+  font-size: 17.3px;
+  color: var(--violeta);
+  line-height: 47px;
+}
+.titulo-autoridades {
+  position: relative;
+  top: 190px;
+  margin-top: 139px;
+  font-family: 'HelveticaNeue-bold', sans-serif;
+  font-weight: bold;
+  font-size: 62.4px;
+  transform: rotate(-90deg);
+  color: var(--celeste2);
+}
+.linea {
+  position: relative;
+  border-top: 3px solid var(--celeste2);
+  right: 150px;
+  width: 600px;
+  top: -17px;
+}
+
+.background {
+  background-image: url(../img/logochubut.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: scale(2);
+  top: 513px;
+  left: 600px;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+}
