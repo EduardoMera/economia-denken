@@ -1,0 +1,52 @@
+.img-noticias-twitter {
+	width: 20vw;
+	height: auto;
+}
+
+.titulo-noticias {
+	color: rgb(255, 207, 67);
+	font-weight: bold;
+	margin-bottom: -0.3em;
+}
+
+.titulo-twitter {
+	color: rgb(255, 207, 7);
+	font-weight: lighter;
+}
+
+.twit{
+	position:relative;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.img-twitter {
+	width: 537px;
+	height: 169px;
+	object-fit: cover;
+}
+
+.twit:nth-child(even)::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	mix-blend-mode: multiply;
+	background-color: rgb(46, 150, 178, 1);
+}
+
+.info-text{
+	line-height: 99%; 
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: auto;
+	transform: translate(-50%, -50%);
+}
