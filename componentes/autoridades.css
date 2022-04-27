@@ -7,7 +7,7 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
-body{
+body {
   overflow-x: hidden;
 }
 .autoridades {
@@ -20,32 +20,58 @@ body{
   color: var(--violeta);
   line-height: 47px;
 }
-.titulo-autoridades {
-  position: relative;
-  top: 190px;
-  margin-top: 139px;
-  font-family: 'HelveticaNeue-bold', sans-serif;
-  font-weight: bold;
-  font-size: 62.4px;
-  transform: rotate(-90deg);
-  color: var(--celeste2);
+.columna-autoridades {
+  transform: rotate(270deg);
 }
-.linea {
+.texto-autoridades {
+  display: flex;
+  justify-content: end;
   position: relative;
-  border-top: 3px solid var(--celeste2);
-  right: 150px;
-  width: 600px;
-  top: -17px;
+  left: -145%;
+  width: 200%;
+  top: 10%;
+  color: var(--celeste2);
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
 }
 
-.background {
-  background-image: url(../img/logochubut.png);
-  position: absolute;
-  background-repeat: no-repeat;
-  transform: scale(2);
-  top: 513px;
-  left: 600px;
-  bottom: 0;
-  right: 0;
-  opacity: 0.1;
+@media screen and (max-width: 700px) {
+  .autoridades {
+    margin-top: 10px;
+  }
+  .columna-autoridades {
+    transform: rotate(0deg);
+    margin: 20px;
+  }
+  .texto-autoridades {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 90%;
+    top: 0;
+    position: static;
+    color: var(--celeste2);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+  .linea-autoridades-mobile{
+    position: relative;
+    top: 19px;
+    width: 60%;
+    height: 13px;
+    background-color: var(--celeste2);
+  }
+  .cuerpo-autoridades{
+    margin: 0px 40px;
+  }
+  .item-texto{
+    margin-top: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
 }
