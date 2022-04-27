@@ -1,0 +1,133 @@
+:root {
+  --celeste1: #4196b4;
+  --celeste2: #00b2e2;
+  --violeta: #222d5b;
+  --gris1: #dadad9;
+  --gris2: #878786;
+  --amarillo: #ffd03e;
+  --blanco: #ffffff;
+}
+.contacto{
+  margin-top: 44px;
+}
+.columna-contacto {
+  transform: rotate(270deg);
+}
+.texto-contacto {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: -250px;/* aca es el top del logo */
+  width: 200%;
+  top: 50%;
+  color: #212d5b;;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid #212d5b;;
+}
+.input-form{
+  width: 100%;
+  height: 31.1px;
+  border: none;
+  background-color: #ededec;
+  display: block;
+  margin-bottom: 18px;
+  outline: none;
+  padding: 15px 20px;
+}
+.textarea-form{
+  width: 100%;
+  height: 300px;
+  border: none;
+  background-color: #ededec;
+  display: block;
+  margin-bottom: 18px;
+  outline: none;
+  padding: 10px 20px;
+}
+.boton-form{
+  border: none;
+  background-color: var(--amarillo);
+  color: var(--blanco);
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 0px 15px;
+  position: relative;
+  top: -60px;
+  left: 20px;
+}
+.accordion-item{
+  border-bottom: none;
+}
+.accordion-button{
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 18.6px;
+  color: #212d5b;
+  font-weight: bolder;
+}
+.accordion-button::after{
+  background-image: url(../img/iconos/plus-lg.svg);
+  margin-left: 10px;
+}
+.accordion-button:not(.collapsed)::after{
+  background-image: url(../img/iconos/dash-lg.svg);
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+.linea-contacto{
+  margin-top: 40px;
+  width: 100%;
+  height: 5px;
+  background-color: #212d5b;;
+}
+.contacto-direccion{
+  font-family: "HelveticaNeue", sans-serif;
+  font-style: italic;
+  color: #212d5b;
+  font-size: 18.6px;
+}
+@media screen and (max-width: 700px) {
+  .input-form::placeholder{
+    font-family: "Montserrat", sans-serif;
+
+    color: var(--celeste1);
+  }
+  .input-form{
+    width: 95%;
+    height: 36px;
+    border: 1px solid var(--celeste1);
+    border-radius: 8px;
+    margin: 0px 10px 23px 10px;
+    background-color: var(--blanco);
+    display: block;
+    outline: none;
+    padding: 15px 20px;
+  }
+  .columna-contacto {
+    transform: rotate(0deg);
+    margin: 20px;
+  }
+  .linea-contacto-mobile{
+    position: relative;
+    top: 19px;
+    left: -10px;
+    width: 71%;
+    height: 13px;
+    background-color: var(--celeste2);
+  }
+  .texto-contacto {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 92%;
+    position: static;
+    color: var(--celeste2);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+}
