@@ -1,0 +1,101 @@
+:root {
+  --celeste1: #4196b4;
+  --celeste2: #00b2e2;
+  --violeta: #222d5b;
+  --gris1: #dadad9;
+  --gris2: #878786;
+  --amarillo: #ffd03e;
+  --blanco: #ffffff;
+}
+.politica-gestion {
+  margin-top: 67px;
+}
+.columna-politica-gestion {
+  transform: rotate(270deg);
+}
+.texto-gestion-presupuestaria {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: -70%;
+  width: 200%;
+  top: 40%;
+  color: #96a0b04a;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid #96a0b04a;
+}
+.borde{
+  width: 59%;
+}
+.cuerpo-gestion-presupuestaria{
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--violeta);
+  width: 70%;
+}
+.ver-mas{
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 11.9px;
+  width: 214.2px;
+  height: 25.8px;
+  border-radius: 6px;
+  background-color: #006097;
+  color: var(--blanco);
+}
+.hidden{
+  visibility: hidden; 
+}
+@media screen and (max-width: 700px) {
+  .cuerpo-gestion-presupuestaria{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .item-funciones{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .autoridades {
+    margin-top: 10px;
+  }
+  .columna-politica-gestion {
+    transform: rotate(0deg);
+    margin: 20px;
+  }
+  .texto-gestion-presupuestaria {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 90%;
+    top: 0;
+    position: static;
+    color: var(--celeste2);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+  .linea-politica-gestion-mobile {
+    position: relative;
+    top: 18px;
+    width:30%;
+    height: 13px;
+    margin-left: 18px;
+    background-color: var(--celeste2);
+  }
+  .cuerpo-politica-gestion {
+    margin: 0px 40px;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+}
