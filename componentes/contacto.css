@@ -7,7 +7,7 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
-.contacto{
+.contacto {
   margin-top: 44px;
 }
 .columna-contacto {
@@ -17,16 +17,16 @@
   display: flex;
   justify-content: end;
   position: relative;
-  left: -250px;/* aca es el top del logo */
+  left: -250px; /* aca es el top del logo */
   width: 200%;
   top: 50%;
-  color: #212d5b;;
+  color: #212d5b;
   font-family: 'HelveticaNeue', sans-serif;
   font-weight: bolder;
   font-size: 62px;
-  border-bottom: 3px solid #212d5b;;
+  border-bottom: 3px solid #212d5b;
 }
-.input-form{
+.input-form {
   width: 100%;
   height: 31.1px;
   border: none;
@@ -36,7 +36,7 @@
   outline: none;
   padding: 15px 20px;
 }
-.textarea-form{
+.textarea-form {
   width: 100%;
   height: 300px;
   border: none;
@@ -46,7 +46,7 @@
   outline: none;
   padding: 10px 20px;
 }
-.boton-form{
+.boton-form {
   border: none;
   background-color: var(--amarillo);
   color: var(--blanco);
@@ -58,44 +58,46 @@
   top: -60px;
   left: 20px;
 }
-.accordion-item{
-  border-bottom: none;
+.accordion-item {
+  border: none;
 }
-.accordion-button{
-  font-family: "HelveticaNeue", sans-serif;
+.accordion-button:focus{
+  box-shadow: none;
+}
+.accordion-button {
+  font-family: 'HelveticaNeue', sans-serif;
   font-size: 18.6px;
   color: #212d5b;
   font-weight: bolder;
 }
-.accordion-button::after{
+.accordion-button::after {
   background-image: url(../img/iconos/plus-lg.svg);
   margin-left: 10px;
 }
-.accordion-button:not(.collapsed)::after{
+.accordion-button:not(.collapsed)::after {
   background-image: url(../img/iconos/dash-lg.svg);
   margin-left: 10px;
   position: relative;
   top: 1px;
 }
-.linea-contacto{
+.linea-contacto {
   margin-top: 40px;
   width: 100%;
   height: 5px;
-  background-color: #212d5b;;
+  background-color: #212d5b;
 }
-.contacto-direccion{
-  font-family: "HelveticaNeue", sans-serif;
+.contacto-direccion {
+  font-family: 'HelveticaNeue', sans-serif;
   font-style: italic;
   color: #212d5b;
   font-size: 18.6px;
 }
 @media screen and (max-width: 700px) {
-  .input-form::placeholder{
-    font-family: "Montserrat", sans-serif;
-
+  .input-form::placeholder {
+    font-family: 'Montserrat', sans-serif;
     color: var(--celeste1);
   }
-  .input-form{
+  .input-form {
     width: 95%;
     height: 36px;
     border: 1px solid var(--celeste1);
@@ -106,11 +108,70 @@
     outline: none;
     padding: 15px 20px;
   }
+  .textarea-form {
+    width: 95%;
+    height: 128px;
+    border: 1px solid var(--celeste1);
+    border-radius: 8px;
+    background-color: var(--blanco);
+    display: block;
+    margin: 0px 10px 23px 10px;
+    outline: none;
+    padding: 10px 20px;
+  }
+  .boton-form {
+    border-radius: 8px;
+    background-color: var(--amarillo);
+    color: var(--celeste1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    position: static;
+    margin: 0px 10px 23px 10px;
+    outline: none;
+    padding: 10px 20px;
+    width: 95%;
+  }
+  .textarea-form::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--celeste1);
+  }
   .columna-contacto {
     transform: rotate(0deg);
     margin: 20px;
   }
-  .linea-contacto-mobile{
+  .container-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contenedor-ubicacion {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contacto-direccion {
+    margin-inline: 60px;
+    margin-bottom: 30px;
+  }
+  .contenedor-ubicacion div {
+    color: var(--celeste1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    display: inline;
+  }
+  .mail {
+    display: block;
+    margin-inline: 60px;
+  }
+  .iframe {
+    width: 95%;
+    border: 1px solid var(--celeste1);
+    border-radius: 8px;
+    margin: 0px 10px 23px 10px;
+  }
+  .linea-contacto{
+    display: none;
+  }
+  .linea-contacto-mobile {
     position: relative;
     top: 19px;
     left: -10px;
@@ -129,5 +190,62 @@
     font-weight: bolder;
     font-size: 17px;
     border-bottom: none;
+  }
+  .accordion-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18.6px;
+    color: #212d5b;
+    font-weight: bolder;
+  }
+  svg{
+    /* change color of svg to yellow */
+    fill: var(--amarillo);
+  }
+  .accordion{
+    margin: 0px 10px 23px 10px;
+    padding: 10px 20px;
+    width: 95%;
+  }
+  .accordion-button::after {
+    background-image: url(../img/iconos/plus-lg-yellow.svg);
+    margin-left: auto;
+    margin-right: 50px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../img/iconos/dash-lg-yellow.svg);
+    margin-left: auto;
+    margin-right: 50px;
+  }
+  .accordion-item {
+    border-bottom: 2px solid var(--amarillo);
+  }
+  .accordion-button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding-bottom: 20px;
+  }
+  
+  .accordion-button:not(.collapsed){
+    color: var(--violeta);
+    background-color: var(--blanco);
+    box-shadow: none;
+    padding-bottom: 0px;
+  }
+  .accordion-body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    line-height: 12.19px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .nombre{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    font-style: italic;
   }
 }
