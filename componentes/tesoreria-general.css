@@ -1,0 +1,108 @@
+:root {
+  --celeste1: #4196b4;
+  --celeste2: #00b2e2;
+  --violeta: #222d5b;
+  --gris1: #dadad9;
+  --gris2: #878786;
+  --amarillo: #ffd03e;
+  --blanco: #ffffff;
+}
+.seccion-general {
+  margin-top: 67px;
+  padding: 10px;
+}
+.columna-izquierda {
+  transform: rotate(270deg);
+}
+.texto-izquierda {
+  width: 97%;
+  text-align: right;
+  color: var(--celeste1);
+}
+.row {
+  width: 100%;
+  margin-left: 0px;
+}
+.row-botones{
+  margin-top: 20px;
+}
+.subrayado {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  left: -110%;
+  width: 150%;
+  top: 30%;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
+}
+.columna-derecha{
+  padding-right: 0px;
+}
+.boton{
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 11.9px;
+  width: 214.2px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background-color: #006097;
+  border: none;
+  color: var(--blanco);
+  margin-top: 20px;
+}
+.subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--violeta);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 700px) {
+  .boton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--blanco);
+    line-height: 17px;
+    font-size: 12px;
+    width: 105%;
+    height: 36px;
+    margin-right: 0px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--celeste1);
+  }
+  .seccion-general {
+    margin: 10px;
+  }
+  .columna-izquierda {
+    transform: rotate(0deg);
+  }
+  .subrayado {
+    width: 100%;
+    top: 10%;
+    position: static;
+    color: var(--celeste1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+  .linea-izquierda-mobile {
+    position: relative;
+    top: 18px;
+    width: 36%;
+    height: 13px;
+    background-color: var(--celeste1);
+  }
+  .texto-seccion {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--violeta);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
