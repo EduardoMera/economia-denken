@@ -32,7 +32,6 @@
   display: flex;
   justify-content: end;
   position: relative;
-
   width: 150%;
   top: 30%;
   font-family: 'HelveticaNeue', sans-serif;
@@ -60,13 +59,13 @@
 }
 .boton {
   font-family: 'HelveticaNeue', sans-serif;
-  color: var(--blanco);
   font-size: 9pt;
+  color: var(--blanco);
   font-weight: bolder;
   width: 214.2px;
   height: 40px;
-  border: none;
   border-radius: 8px;
+  border: none;
   background-color: var(--celeste-boton);
 }
 @media screen and (max-width: 700px) {
@@ -75,9 +74,9 @@
   }
   .boton {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: var(--blanco);
     font-size: 14px;
+    color: var(--blanco);
+    font-weight: 900;
     width: 102%;
     height: 36px;
     border-radius: 8px;

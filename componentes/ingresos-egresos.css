@@ -6,6 +6,7 @@
   --gris2: #878786;
   --amarillo: #ffd03e;
   --blanco: #ffffff;
+  --celeste-boton: #006097;
 }
 .seccion-general {
   margin-top: 67px;
@@ -14,20 +15,27 @@
 .columna-izquierda {
   transform: rotate(270deg);
 }
-.texto-izquierda {
+.texto-izquierda-ingresos-egresos {
   width: 97%;
+}
+.texto-izquierda {
   text-align: right;
   color: var(--celeste2);
 }
 .row {
   width: 100%;
+}
+.row-botones{ /* class custom tesoreria general */
   margin-left: 0px;
+  margin-top: 20px;
+}
+.posicion-ingresos-egresos {
+  left: -110%;
 }
 .subrayado {
   display: flex;
   justify-content: end;
   position: absolute;
-  left: -110%;
   width: 150%;
   top: 30%;
   font-family: 'HelveticaNeue', sans-serif;
@@ -38,31 +46,39 @@
 .columna-derecha{
   padding-right: 0px;
 }
-.boton{
-  font-family: "HelveticaNeue", sans-serif;
-  font-size: 11.9px;
+.boton {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 9pt;
+  color: var(--blanco);
+  font-weight: bolder;
   width: 214.2px;
   height: 40px;
   border-radius: 8px;
-  margin-right: 10px;
-  background-color: #006097;
   border: none;
-  color: var(--blanco);
-  margin-top: 20px;
+  background-color: var(--celeste-boton);
+}
+.subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--violeta);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 700px) {
+  .texto-izquierda {
+    color: var(--celeste1);
+  }
   .boton {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-size: 14px;
     color: var(--blanco);
-    line-height: 17px;
-    font-size: 12px;
-    width: 105%;
+    font-weight: 900;
+    width: 102%;
     height: 36px;
-    margin-right: 0px;
     border-radius: 8px;
     border: none;
-    background-color: var(--celeste2);
+    background-color: var(--celeste1);
   }
   .seccion-general {
     margin: 10px;
@@ -71,22 +87,23 @@
     transform: rotate(0deg);
   }
   .subrayado {
-    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--celeste1);
+    font-weight: bolder;
+    font-size: 17px;
     width: 100%;
     top: 10%;
     position: static;
-    color: var(--celeste);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-size: 17px;
     border-bottom: none;
+  }
+  .linea-izquierda-mobile-ingresos-egresos {
+    width: 24%;
   }
   .linea-izquierda-mobile {
     position: relative;
     top: 18px;
-    width: 3%;
     height: 13px;
-    background-color: var(--celeste2);
+    background-color: var(--celeste1);
   }
   .texto-seccion {
     font-family: 'Montserrat', sans-serif;

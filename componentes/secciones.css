@@ -1,3 +1,6 @@
+/* Merge de estilos generales */
+
+
 :root {
   --celeste1: #4196b4;
   --celeste2: #00b2e2;
@@ -8,6 +11,10 @@
   --blanco: #ffffff;
   --celeste-boton: #006097;
 }
+.row-botones{ /* class custom tesoreria general */
+  margin-left: 0px;
+  margin-top: 20px;
+}
 .seccion-general {
   margin-top: 67px;
   padding: 10px;
@@ -15,8 +22,8 @@
 .columna-izquierda {
   transform: rotate(270deg);
 }
-.texto-izquierdo-conformacion-consejo {
-  width: 91%;
+.texto-izquierdo-coordinacion-financiera {
+  width: 67%;
 }
 .texto-izquierda {
   text-align: right;
@@ -25,7 +32,7 @@
 .row {
   width: 100%;
 }
-.posicion-conformacion-consejo {
+.posicion-coordinacion-financiera {
   left: -70%;
 }
 .subrayado {
@@ -49,6 +56,13 @@
 }
 .columna-derecha {
   padding-right: 0px;
+}
+.item-texto {
+  font-family: 'HelveticaNeue', sans-serif;
+  display: inline;
+  font-size: 17.3px;
+  color: var(--violeta);
+  line-height: 47px;
 }
 .boton {
   font-family: 'HelveticaNeue', sans-serif;
@@ -76,6 +90,14 @@
     border: none;
     background-color: var(--celeste1);
   }
+  .item-texto {
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--violeta);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+  }
   .seccion-general {
     margin: 10px;
   }
@@ -84,16 +106,16 @@
   }
   .subrayado {
     font-family: 'Montserrat', sans-serif;
-    color: var(--celeste);
+    color: var(--celeste1);
     font-weight: bolder;
     font-size: 17px;
-    position: static;
     width: 100%;
     top: 10%;
+    position: static;
     border-bottom: none;
   }
-  .linea-izquierda-mobile-conformacion-consejo {
-    width: 27%;
+  .linea-izquierda-mobile-coordinacion-financiera {
+    width: 33%;
   }
   .linea-izquierda-mobile {
     position: relative;
