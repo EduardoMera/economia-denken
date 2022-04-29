@@ -56,22 +56,7 @@
 .columna-derecha {
   padding-right: 0px;
 }
-.item-texto {
-  font-family: 'HelveticaNeue', sans-serif;
-  display: inline;
-  font-size: 17.3px;
-  color: var(--violeta);
-  line-height: 47px;
-}
 @media screen and (max-width: 700px) {
-  .item-texto {
-    margin-top: 0px;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--violeta);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 25px;
-  }
   .seccion-general {
     margin: 10px;
   }
@@ -79,13 +64,13 @@
     transform: rotate(0deg);
   }
   .subrayado {
-    width: 100%;
-    top: 10%;
-    position: static;
-    color: var(--celeste);
     font-family: 'Montserrat', sans-serif;
+    color: var(--celeste);
     font-weight: bolder;
     font-size: 17px;
+    position: static;
+    width: 100%;
+    top: 10%;
     border-bottom: none;
   }
   .linea-izquierda-mobile {

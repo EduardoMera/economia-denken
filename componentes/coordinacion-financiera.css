@@ -6,6 +6,7 @@
   --gris2: #878786;
   --amarillo: #ffd03e;
   --blanco: #ffffff;
+  --celeste-boton: #006097;
 }
 .seccion-general {
   margin-top: 67px;
@@ -14,19 +15,24 @@
 .columna-izquierda {
   transform: rotate(270deg);
 }
-.texto-izquierda {
+.texto-izquierdo-coordinacion-financiera {
   width: 67%;
+}
+.texto-izquierda {
   text-align: right;
   color: var(--celeste2);
 }
 .row {
   width: 100%;
 }
+.posicion-coordinacion-financiera {
+  left: -70%;
+}
 .subrayado {
   display: flex;
   justify-content: end;
   position: relative;
-  left: -70%;
+
   width: 150%;
   top: 30%;
   font-family: 'HelveticaNeue', sans-serif;
@@ -42,17 +48,7 @@
   line-height: 22px;
   margin-top: 10px;
 }
-.boton{
-  font-family: "HelveticaNeue", sans-serif;
-  font-size: 11.9px;
-  width: 214.2px;
-  height: auto;
-  border-radius: 8px;
-  background-color: #006097;
-  color: var(--blanco);
-  margin-top: 20px;
-}
-.columna-derecha{
+.columna-derecha {
   padding-right: 0px;
 }
 .item-texto {
@@ -62,10 +58,35 @@
   color: var(--violeta);
   line-height: 47px;
 }
+.boton {
+  font-family: 'HelveticaNeue', sans-serif;
+  color: var(--blanco);
+  font-size: 9pt;
+  font-weight: bolder;
+  width: 214.2px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--celeste-boton);
+}
 @media screen and (max-width: 700px) {
-  .item-texto{
+  .texto-izquierda {
+    color: var(--celeste1);
+  }
+  .boton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--blanco);
+    font-size: 14px;
+    width: 102%;
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--celeste1);
+  }
+  .item-texto {
     margin-top: 0px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--violeta);
     font-weight: 400;
     font-size: 12px;
@@ -78,22 +99,23 @@
     transform: rotate(0deg);
   }
   .subrayado {
-    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--celeste1);
+    font-weight: bolder;
+    font-size: 17px;
     width: 100%;
     top: 10%;
     position: static;
-    color: var(--celeste);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-size: 17px;
     border-bottom: none;
+  }
+  .linea-izquierda-mobile-coordinacion-financiera {
+    width: 33%;
   }
   .linea-izquierda-mobile {
     position: relative;
     top: 18px;
-    width: 33%;
     height: 13px;
-    background-color: var(--celeste2);
+    background-color: var(--celeste1);
   }
   .texto-seccion {
     font-family: 'Montserrat', sans-serif;
@@ -101,16 +123,5 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
-  }
-  .boton {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: var(--blanco);
-    font-size: 14px;
-    width: 102%;
-    height: 36px;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--celeste2);
   }
 }
