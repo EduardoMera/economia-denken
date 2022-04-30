@@ -7,6 +7,7 @@
     --gris2: #878786;
     --amarillo: #ffd03e;
     --blanco: #ffffff;
+    
 }
 
 
@@ -37,7 +38,7 @@
 
 .buscador-nav::placeholder {
 	color: var(--gris2);
-    font-family: "HelveticaNeue-light" , sans-serif;
+    font-family: "HelveticaNeue" , sans-serif;
     font-weight: lighter;
     font-size: 8.5px;
 
@@ -131,6 +132,96 @@
     height:91.8px;
     background-color: var(--blanco);
 }
+
+
+
+.dropdown {
+    
+    
+    /* position: relative;
+    display: block; */
+    margin:0;
+    position:relative;
+    
+    
+  }
+  
+  .dropdown-content {
+
+    display:none;
+    left:0;
+    top:32.63px;
+    
+    position: absolute;
+    
+    
+    
+    
+  }
+
+  .dropdown-item{
+    
+    display: inline-block;
+    
+    background-color: #e6e5e5;
+    width: 170.5px;
+    height: 43.7px;
+    opacity: 0.9;
+    font-family: "HelveticaNeue" , sans-serif; 
+    font-weight: lighter;
+    font-size: 16pt;
+    
+    margin-inline: -1px;
+    margin-bottom: 3px;
+    
+    
+    
+    
+
+  }
+  .dropdown-item:hover{
+    
+    background-color: var(--celeste1);
+    color:var(--blanco)
+    
+  }
+
+  .flecha-dropdown{
+      display:inline;
+      float:right;
+      width:10px;
+      height:10px;
+      position:relative;
+      top:10px;  
+      transform:rotate(-45deg);
+      content: url(../img/iconos/flechaazul.png)
+  }
+  .texto-dropdown{
+      display:inline;
+      
+      font-family: "HelveticaNeue" , sans-serif;
+    font-weight: lighter;
+    font-size: 8.5px;
+      position:relative;
+       
+      
+      
+  }
+
+  
+  body{
+      overflow-x: hidden;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+    position: absolute;
+    width: 700px;
+    
+    
+    
+  }
+
 
 
 
@@ -267,7 +358,7 @@
         top: -4px;
         
     }
-   
+
 
 	
 }

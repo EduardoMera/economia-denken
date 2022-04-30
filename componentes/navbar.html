@@ -32,7 +32,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a class="navbar-brand item2" href="#"
+                <a class="navbar-brand item2 ms-5" href="#"
                     ><div class="logo-nav"></div>
                 </a>
 
@@ -51,34 +51,43 @@
                         id="navbarSupportedContent"
                     >
                         <ul class="navbar-nav mb-2 me-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a
-                                    class="ps-0 pe-5 mb-2 btn-institucional border-2 nav-link active"
+                            
+                            <li class="nav-item dropdown">
+                                <div
+                                    class="ps-0 pe-5 mb-2 border-2 btn-contacto nav-link active dropbtn"
                                     aria-current="page"
                                     href="#"
-                                    >INSTITUCIONAL</a
+                                    >INSTITUCIONAL</div
                                 >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="ps-0 pe-5 mb-2 btn-politica border-2 nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                    >POLÍTICA Y GESTIÓN</a
-                                >
+                                <div class="dropdown-content">
+
+                                    <div class="dropdown-item dropdown" href="#"><div class="texto-dropdown">TEXTO</div> <div class="flecha-dropdown"></div></div>
+                                    <div class="dropdown-item" href="#"><div class="texto-dropdown">TEXTO</div> <div class="flecha-dropdown"></div></div>
+                                    <div class="dropdown-item" href="#"><div class="texto-dropdown">TEXTO</div> <div class="flecha-dropdown"></div></div>
+                                    <div class="dropdown-item" href="#"><div class="texto-dropdown">TEXTO</div> <div class="flecha-dropdown"></div></div>
+                                    
+                                  </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a
                                     class="ps-0 pe-5 mb-2 border-2 btn-contacto nav-link active dropbtn"
                                     aria-current="page"
                                     href="#"
-                                    >CONTACTO</a
+                                    >POLITICA Y GESTION</a
                                 >
                                 <div class="dropdown-content">
                                     <a href="#">Link 1</a>
                                     <a href="#">Link 2</a>
                                     <a href="#">Link 3</a>
                                   </div>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="ps-0 pe-5 mb-2 btn-politica border-2 nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >CONTACTO</a
+                                >
                             </li>
                         </ul>
                         <form id="buscador" class="d-flex buscador">
