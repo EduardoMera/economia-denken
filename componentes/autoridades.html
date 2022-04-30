@@ -1,117 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./autoridades.css" />
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="./navbar.js"></script>
+    <title>Autoridades</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./navbar.css" />
-  <link rel="stylesheet" href="./autoridades.css" />
-  <script src="../lib/js/bootstrap.min.js"></script>
-  <script src="./navbar.js"></script>
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="background"></div>
-  <div id="barra-arriba" class="text-end barra-arriba pe-3 pt-3">
-    Ministerio de Economía y Crédito Público
-  </div>
-
-  <nav class="fondo-nav navbar navbar-expand-md navbar-light">
-    <div id="contenedor-navbar" class="container-fluid grid-container ">
-      <button class="navbar-toggler item1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <a class="navbar-brand item2" href="#">
-        <div class="logo-nav"></div>
-      </a>
-
-      <div id="barra-arriba-mobile" class="barra-arriba item3"></div>
-
-
-
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <body>
+    <div id="buscador-mobile"></div>
+    <section class="seccion-general">
+      <div class="row">
+        <div class="col-md-4 columna-izquierda">
+          <div class="linea-izquierda-mobile-autoridades linea-izquierda-mobile"></div>
+          <div class="posicion-autoridades subrayado">
+            <div class="texto-izquierdo-autridades texto-izquierda">AUTORIDADES</div>
+          </div>
         </div>
-        <div class="">
-          <div class="offcanvas-body ms-auto justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 me-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="ps-0 pe-5 mb-2 btn-institucional border-2 nav-link active" aria-current="page"
-                  href="#">INSTITUCIONAL</a>
-              </li>
-              <li class="nav-item">
-                <a class="ps-0 pe-5 mb-2 btn-politica border-2 nav-link active" aria-current="page" href="#">POLÍTICA Y
-                  GESTIÓN</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="ps-0 pe-5 mb-2 border-2 btn-contacto nav-link active dropbtn" aria-current="page"
-                  href="#">CONTACTO</a>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </li>
-            </ul>
-            <form id="buscador" class="d-flex buscador">
-              <input class="buscador-nav form-control py-0 mb-2" type="search" placeholder="Buscador"
-                aria-label="Search" />
-              <button class="boton-lupa btn mb-2 position-relative" type="submit">
-                <svg id="lupa" xmlns="http://www.w3.org/2000/svg" width="12" height="15" fill="#dadad9"
-                  class="bi bi-search" viewBox="0 0 16 16">
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
-              </button>
-            </form>
+        <div class="col-md-8 columna-derecha">
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Subsecretaria de Gestion Presupuestaria</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Cra. Rita Cárdenas</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Directora General de Presupuesto y Finanzas</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Directora General de Cómputos</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Jefa de Área Obligaciones del Tesoro</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Jefe de Área Control y Gestion Administrativa</div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <div id="buscador-mobile"></div>
-  <section class="autoridades">
-    <div class="row">
-      <div class="col-md-4 columna-autoridades">
-        <div class="linea-autoridades-mobile"></div>
-        <div class="texto-autoridades">AUTORIDADES</div>
-      </div>
-      <div class="col-md-8 cuerpo-autoridades">
-        <div class="item">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10">
-          <div class="item-texto">Subsecretaria de Gestion Presupuestaria</div>
-        </div>
-        <div class="item">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10">
-          <div class="item-texto">Cra. Rita Cárdenas</div>
-        </div>
-        <div class="item">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10">
-          <div class="item-texto">Directora General de Presupuesto y Finanzas</div>
-        </div>
-        <div class="item">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10">
-          <div class="item-texto">Directora General de Cómputos</div>
-        </div>
-        <div class="item">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10">
-          <div class="item-texto">Jefa de Área Obligaciones del Tesoro</div>
-        </div>
-        <div class="item">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10">
-          <div class="item-texto">Jefe de Área Control y Gestion Administrativa</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>

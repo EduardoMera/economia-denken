@@ -7,11 +7,9 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
-body {
-  overflow-x: hidden;
-}
-.autoridades {
+.seccion-general {
   margin-top: 67px;
+  padding: 10px;
 }
 .item-texto {
   font-family: 'HelveticaNeue', sans-serif;
@@ -20,58 +18,74 @@ body {
   color: var(--violeta);
   line-height: 47px;
 }
-.columna-autoridades {
+.columna-izquierda {
   transform: rotate(270deg);
 }
-.texto-autoridades {
+.texto-izquierdo-autridades {
+  width: 67%;
+}
+.texto-izquierda {
+  text-align: right;
+  color: var(--celeste2);
+}
+.posicion-autoridades {
+  left: -100%;
+}
+.subrayado {
   display: flex;
   justify-content: end;
   position: relative;
-  left: -145%;
-  width: 200%;
-  top: 10%;
-  color: var(--celeste2);
+  width: 150%;
+  top: 30%;
   font-family: 'HelveticaNeue', sans-serif;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
 }
-
+.columna-derecha {
+  padding-right: 0px;
+}
 @media screen and (max-width: 700px) {
-  .autoridades {
-    margin-top: 10px;
+  .texto-izquierda {
+    color: var(--celeste1);
   }
-  .columna-autoridades {
+  .seccion-general {
+    margin: 10px;
+  }
+  .columna-izquierda {
     transform: rotate(0deg);
-    margin: 20px;
   }
-  .texto-autoridades {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    width: 90%;
-    top: 0;
-    position: static;
-    color: var(--celeste2);
+  .subrayado {
     font-family: 'Montserrat', sans-serif;
+    color: var(--celeste1);
     font-weight: bolder;
     font-size: 17px;
+    width: 100%;
+    top: 10%;
+    position: static;
     border-bottom: none;
   }
-  .linea-autoridades-mobile{
+  .linea-izquierda-mobile-autoridades {
+    width: 67%;
+  }
+  .linea-izquierda-mobile {
     position: relative;
-    top: 19px;
-    width: 60%;
+    top: 18px;
     height: 13px;
-    background-color: var(--celeste2);
+    background-color: var(--celeste1);
   }
   .cuerpo-autoridades{
     margin: 0px 40px;
   }
-  .item-texto{
+  .columna-derecha {
+    padding-right: 0px;
+  }
+  .item-texto {
     margin-top: 0px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--violeta);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 25px;
   }
 }

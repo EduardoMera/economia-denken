@@ -6,9 +6,41 @@
   --gris2: #878786;
   --amarillo: #ffd03e;
   --blanco: #ffffff;
+  --celeste-boton: #006097;
 }
-.politica-gestion {
+.seccion-general {
   margin-top: 67px;
+  padding: 10px;
+}
+.columna-izquierda {
+  transform: rotate(270deg);
+}
+.texto-izquierdo-politica-gestion {
+  width: 90%;
+}
+.texto-izquierda {
+  text-align: right;
+  color: var(--celeste2);
+}
+.row {
+  width: 100%;
+}
+.posicion-politica-gestion {
+  left: -110%;
+}
+.subrayado {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 150%;
+  top: 30%;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
+}
+.columna-derecha {
+  padding-right: 0px;
 }
 .item-texto {
   font-family: 'HelveticaNeue', sans-serif;
@@ -17,61 +49,48 @@
   color: var(--violeta);
   line-height: 47px;
 }
-.columna-politica-gestion {
-  transform: rotate(270deg);
-}
-.texto-politica-gestion {
-  display: flex;
-  justify-content: end;
-  position: relative;
-  left: -100%;
-  width: 150%;
-  top: 10%;
-  color: #96a0b04a;
-  font-family: 'HelveticaNeue', sans-serif;
-  font-weight: bolder;
-  font-size: 62px;
-  border-bottom: 3px solid #96a0b04a;
-}
-.borde{
-  width: 46%;
-}
-
 @media screen and (max-width: 700px) {
-  .autoridades {
-    margin-top: 10px;
-  }
-  .columna-politica-gestion {
-    transform: rotate(0deg);
-    margin: 20px;
-  }
-  .texto-politica-gestion {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    width: 90%;
-    top: 0;
-    position: static;
-    color: var(--celeste2);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-size: 17px;
-    border-bottom: none;
-  }
-  .linea-politica-gestion-mobile {
-    position: relative;
-    top: 19px;
-    width: 47%;
-    height: 13px;
-    background-color: var(--celeste2);
-  }
-  .cuerpo-politica-gestion {
-    margin: 0px 40px;
+  .texto-izquierda {
+    color: var(--celeste1);
   }
   .item-texto {
     margin-top: 0px;
     font-family: 'Montserrat', sans-serif;
+    color: var(--violeta);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .seccion-general {
+    margin: 10px;
+  }
+  .columna-izquierda {
+    transform: rotate(0deg);
+  }
+  .subrayado {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--celeste1);
+    font-weight: bolder;
+    font-size: 17px;
+    width: 100%;
+    top: 10%;
+    position: static;
+    border-bottom: none;
+  }
+  .linea-izquierda-mobile-coordinacion-financiera {
+    width: 33%;
+  }
+  .linea-izquierda-mobile {
+    position: relative;
+    top: 18px;
+    height: 13px;
+    background-color: var(--celeste1);
+  }
+  .texto-seccion {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--violeta);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
   }
 }
