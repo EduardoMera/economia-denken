@@ -1,3 +1,14 @@
+.background-img{
+  position: absolute;
+  background-image: url(../img/logochubut.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: scale(1.5);
+  top: 500px;
+  left: 500px;
+  opacity: 0.09;
+  overflow: hidden;
+}
 :root {
   --celeste1: #4196b4;
   --celeste2: #00b2e2;
