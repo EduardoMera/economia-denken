@@ -24,14 +24,19 @@
           <input class="input-form" type="number" placeholder="DNI">
           <input class="input-form" type="email" placeholder="E-mail">
           <input class="input-form" type="number" placeholder="Tel. de contacto">
-          <select class="select-form">
-            <option value="Asunto" selected hidden>Asunto</option>
-            <option value="Informacion solicitada">Informacion solicitada</option>
-            <option value="Seguimiento de expediente">Seguimiento de expediente</option>
-            <option value="Envio de nota">Envío de nota</option>
-            <option value="Consulta sobre estado de tramite">Consulta sobre estado de trámite</option>
-            <option value="Otras">Otras</option>
-          </select>
+          <div class="row select-asunto">
+            <div class="asunto-field col-2 posicion-asunto">
+              Asunto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+            </div>
+            <select class="asunto-field col-10">
+              <option value=">" selected hidden></option>
+              <option value="Informacion solicitada">Informacion solicitada</option>
+              <option value="Seguimiento de expediente">Seguimiento de expediente</option>
+              <option value="Envio de nota">Envío de nota</option>
+              <option value="Consulta sobre estado de tramite">Consulta sobre estado de trámite</option>
+              <option value="Otras">Otras</option>
+            </select>
+          </div>
           <textarea class="textarea-form" placeholder="Explique brevemente su consulta" cols="30" rows="10"></textarea>
           <input class="boton-form" type="submit" value="Enviar" placeholder="nombre y apellido">
         </form>
@@ -102,9 +107,9 @@
                 </div>
               </div>
             </div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">...</div>
+            <div class="row">...</div>
+            <div class="row">...</div>
           </div>
           <!-- iFrame -->
           <div class="linea-contacto"></div>
