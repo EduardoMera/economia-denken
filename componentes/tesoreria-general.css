@@ -8,6 +8,32 @@
   --blanco: #ffffff;
   --celeste-boton: #006097;
 }
+.nombre-tesoreria{
+  display: inline;
+  font-family: 'HelveticaNeue', sans-serif;
+  color: var(--violeta);
+  font-weight: lighter;
+  font-size: 12px;
+}
+.subtitulo-img{
+    font-family: 'HelveticaNeue', sans-serif;
+    color: var(--violeta);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+.img-tesoreria{
+  object-fit: cover;
+}
+.item-texto {
+  font-family: 'HelveticaNeue', sans-serif;
+  display: inline;
+  font-size: 17.3px;
+  color: var(--violeta);
+  line-height: 47px;
+}
 .seccion-general {
   margin-top: 67px;
   padding: 10px;
