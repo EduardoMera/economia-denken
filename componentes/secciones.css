@@ -1,6 +1,14 @@
-/* Merge de estilos generales */
-
-
+.background-img{
+  position: absolute;
+  background-image: url(../img/logochubut.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: scale(1.5);
+  top: 500px;
+  left: 500px;
+  opacity: 0.09;
+  overflow-x: hidden;
+}
 :root {
   --celeste1: #4196b4;
   --celeste2: #00b2e2;
@@ -11,29 +19,73 @@
   --blanco: #ffffff;
   --celeste-boton: #006097;
 }
-.row-botones{ /* class custom tesoreria general */
-  margin-left: 0px;
-  margin-top: 20px;
-}
 .seccion-general {
   margin-top: 67px;
   padding: 10px;
 }
+.item-texto {
+  font-family: 'HelveticaNeue', sans-serif;
+  display: inline;
+  font-size: 17.3px;
+  color: var(--violeta);
+  line-height: 47px;
+}
 .columna-izquierda {
   transform: rotate(270deg);
 }
+/* Autoridades */
+.texto-izquierdo-autridades {
+  width: 95%;
+}
+.posicion-autoridades {
+  left: -100%;
+}
+/* Politica y Gestion */
+.posicion-politica-gestion {
+  left: -110%;
+}
+.texto-izquierdo-politica-gestion {
+  width: 90%;
+}
+/* Comision ejecutiva */
+.texto-izquierdo-comision-ejecutiva {
+  width: 97%;
+}
+.posicion-comision-ejecutiva {
+  left: -110%;
+}
+/* Conformacion consejo */
+.texto-izquierdo-conformacion-consejo {
+  width: 91%;
+}
+.posicion-conformacion-consejo {
+  left: -70%;
+}
+/* Coordinacion financiera */
 .texto-izquierdo-coordinacion-financiera {
   width: 67%;
 }
+.posicion-coordinacion-financiera {
+  left: -70%;
+}
+/* gestion presupuestaria */
+.texto-izquierdo-gestion-presupuestaria {
+  width: 90%;
+}
+.posicion-gestion-presupuestaria {
+  left: -10%;
+}
+/* Ingresos Egresos */
+.texto-izquierda-ingresos-egresos {
+  width: 97%;
+}
+.posicion-ingresos-egresos {
+  left: -110%;
+}
+/*  */
 .texto-izquierda {
   text-align: right;
   color: var(--celeste2);
-}
-.row {
-  width: 100%;
-}
-.posicion-coordinacion-financiera {
-  left: -70%;
 }
 .subrayado {
   display: flex;
@@ -46,6 +98,16 @@
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
 }
+.row-botones{ /* class custom tesoreria general */
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.columna-derecha {
+  padding-right: 0px;
+}
+.row {
+  width: 100%;
+}
 .subtitulo {
   font-family: 'Montserrat', sans-serif;
   color: var(--violeta);
@@ -53,16 +115,6 @@
   font-size: 12px;
   line-height: 22px;
   margin-top: 10px;
-}
-.columna-derecha {
-  padding-right: 0px;
-}
-.item-texto {
-  font-family: 'HelveticaNeue', sans-serif;
-  display: inline;
-  font-size: 17.3px;
-  color: var(--violeta);
-  line-height: 47px;
 }
 .boton {
   font-family: 'HelveticaNeue', sans-serif;
@@ -75,32 +127,48 @@
   border: none;
   background-color: var(--celeste-boton);
 }
+.hidden {
+  visibility: hidden;
+}
 @media screen and (max-width: 700px) {
   .texto-izquierda {
     color: var(--celeste1);
   }
-  .boton {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: var(--blanco);
-    font-weight: 900;
-    width: 102%;
-    height: 36px;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--celeste1);
-  }
-  .item-texto {
-    margin-top: 0px;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--violeta);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 25px;
-  }
   .seccion-general {
     margin: 10px;
   }
+  /* Autoridades */
+  .linea-izquierda-mobile-autoridades {
+    width: 67%;
+  }
+  /* Politica y Gestion */
+  .linea-izquierda-mobile-politica-gestion {
+    width: 51%;
+  }
+  .cuerpo-autoridades{
+    margin: 0px 40px;
+  }
+  /* Comision ejecutiva */
+  .linea-izquierda-mobile-comision-ejecutiva {
+    width: 48%;
+  }
+  /* Conformacion del consejo */
+  .linea-izquierda-mobile-conformacion-consejo {
+    width: 27%;
+  }
+  /* Coordinacion financiera */
+  .linea-izquierda-mobile-coordinacion-financiera {
+    width: 33%;
+  }
+  /* Gestion presupuestaria */
+  .linea-izquierda-mobile-gestion-presupuestaria {
+    width: 36%;
+  }
+  /* ingresos egresos */
+  .linea-izquierda-mobile-ingresos-egresos {
+    width: 24%;
+  }
+  /*  */
   .columna-izquierda {
     transform: rotate(0deg);
   }
@@ -113,6 +181,25 @@
     top: 10%;
     position: static;
     border-bottom: none;
+  }
+  .item-texto {
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--violeta);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .boton {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--blanco);
+    font-weight: 900;
+    width: 102%;
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--celeste1);
   }
   .linea-izquierda-mobile-coordinacion-financiera {
     width: 33%;

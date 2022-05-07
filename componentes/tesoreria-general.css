@@ -56,14 +56,14 @@
   margin-top: 20px;
 }
 .posicion-tesoreria-general {
-  left: -110%;
+  left: -150%;
 }
 .subrayado {
   display: flex;
   justify-content: end;
   position: absolute;
-  width: 150%;
-  top: 30%;
+  width: 300%;
+  top: 550px;
   font-family: 'HelveticaNeue', sans-serif;
   font-weight: bolder;
   font-size: 62px;
