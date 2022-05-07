@@ -1,13 +1,7 @@
-.background-img{
+.background-img {
   position: absolute;
-  background-image: url(../img/logochubut.png);
-  background-repeat: no-repeat;
   z-index: -1;
-  transform: scale(1.5);
-  top: 500px;
-  left: 500px;
   opacity: 0.09;
-  overflow-x: hidden;
 }
 :root {
   --celeste1: #4196b4;
@@ -98,7 +92,8 @@
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
 }
-.row-botones{ /* class custom tesoreria general */
+.row-botones {
+  /* class custom tesoreria general */
   margin-left: 0px;
   margin-top: 20px;
 }
@@ -145,7 +140,7 @@
   .linea-izquierda-mobile-politica-gestion {
     width: 51%;
   }
-  .cuerpo-autoridades{
+  .cuerpo-autoridades {
     margin: 0px 40px;
   }
   /* Comision ejecutiva */
