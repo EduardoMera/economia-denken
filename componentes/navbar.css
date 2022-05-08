@@ -1,364 +1,257 @@
-
-:root{
-    --celeste1: #4196B4;
-    --celeste2: #00b2e2;
-    --violeta: #222d5b;
-    --gris1: #dadad9;
-    --gris2: #878786;
-    --amarillo: #ffd03e;
-    --blanco: #ffffff;
-    
+:root {
+  --celeste1: #4196b4;
+  --celeste2: #00b2e2;
+  --violeta: #222d5b;
+  --gris1: #dadad9;
+  --gris2: #878786;
+  --amarillo: #ffd03e;
+  --blanco: #ffffff;
 }
 
-
-
 .buscador-nav {
-	border-radius: 10px 0px 0px 10px;
-    width: 239px;
-    height: 27.5px;
-    border-color: var(--gris1);
-    color: var(--gris2);
-    font-family: "HelveticaNeue-light";
-    font-weight: lighter;
-    font-size: 8.5px;
-    
-    
+  border-radius: 10px 0px 0px 10px;
+  width: 239px;
+  height: 27.5px;
+  border-color: var(--gris1);
+  color: var(--gris2);
+  font-family: 'HelveticaNeue-light';
+  font-weight: lighter;
+  font-size: 8.5px;
 }
 
 .boton-lupa {
-	border-radius: 0px 10px 10px 0px;
-	border: solid #ccc;
-	border-width: 1px 1px 1px 0px;
-    width: 35.4px;
-    height: 27.5px;
-    
+  border-radius: 0px 10px 10px 0px;
+  border: solid #ccc;
+  border-width: 1px 1px 1px 0px;
+  width: 35.4px;
+  height: 27.5px;
 }
-
-
 
 .buscador-nav::placeholder {
-	color: var(--gris2);
-    font-family: "HelveticaNeue" , sans-serif;
-    font-weight: lighter;
-    font-size: 8.5px;
-
+  color: var(--gris2);
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: lighter;
+  font-size: 8.5px;
 }
 
-.buscador-nav:focus + .boton-lupa{
-    background-color: var(--celeste1);
-    color: var(--blanco);
-    
-    
+.buscador-nav:focus + .boton-lupa {
+  background-color: var(--celeste1);
+  color: var(--blanco);
 }
 
-.buscador-nav:focus{
-    background-color: var(--celeste1);
-    color: var(--blanco);
-    
-    
+.buscador-nav:focus {
+  background-color: var(--celeste1);
+  color: var(--blanco);
 }
 
-.form-control:focus{
-    
-    box-shadow:none;
-    
-    
+.form-control:focus {
+  box-shadow: none;
 }
 
-.buscador-nav:focus::placeholder{
-    
-    color: var(--blanco);
+.buscador-nav:focus::placeholder {
+  color: var(--blanco);
 }
-    /* placeholder white*/
-    
+/* placeholder white*/
 
-
-
-
-#lupa{
-    position: relative;
-    top: -7px;
-    
+#lupa {
+  position: relative;
+  top: -7px;
 }
 
-.buscador{
-    position: relative;
-    top: 5px;
+.buscador {
+  position: relative;
+  top: 5px;
 }
 
 .logo-nav {
-	
-    width: 170px;
-    height: 63px;
-    content: url(../img/logochubut.png);
+  width: 170px;
+  height: 63px;
+  content: url(../img/logochubut.png);
 }
-
 
 .barra-arriba {
-	background-color:var(--celeste1);
-	color: var(--blanco);
-    font-family: "Montserrat", sans-serif;
-    height: 45px;
-    
-	font-weight: 500;
-	font-size: 14px;
-    
-    
+  background-color: var(--celeste1);
+  color: var(--blanco);
+  font-family: 'Montserrat', sans-serif;
+  height: 45px;
+
+  font-weight: 500;
+  font-size: 14px;
 }
 
+/* inicio nav custom */
 .btn-institucional {
-    font-size: 9.75px;
-	border-bottom: 1.4px solid var(--violeta);
-    width:170px;
+  color: var(--violeta);
+  font-size: 9.75px;
+  border-bottom: 1.4px solid var(--violeta);
+  width: 170px;
 }
 
 .btn-politica {
-    font-size: 9.75px;
-	border-bottom: 1.4px solid var(--celeste1);
-    width:170px;
+  color: var(--violeta);
+  font-size: 9.75px;
+  border-bottom: 1.4px solid var(--celeste1);
+  width: 170px;
 }
 
 .btn-contacto {
-    font-size: 9.75px;
-	border-bottom: 1.4px solid var(--celeste2);
-    width:170px;
+  color: var(--violeta);
+  font-size: 9.75px;
+  border-bottom: 1.4px solid var(--celeste2);
+  width: 170px;
 }
 
-.fondo-nav {
-	background-color: rgb(255, 255, 255);
+.fondo{
+  background-color: var(--gris1);
+}
+.ul .li {
+  width: 170.5px;
+  height: 43.7px;
+}
+.li:hover {
+  background-color: var(--celeste1);
+}
+.nab .ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.nab .ul .li{
+  display: inline-block;
+}
+.nab a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--violeta);
+  display: block;
+  padding: 0 10px;
+}
+.nab .ul .ul {
+  width: 170.5px;
+  height: 43.7px;
+  top: 40px;
+  position: absolute;
+  display: none;
+}
+.nab .ul .li:hover > .ul {
+  display: inherit;
+}
+.nab .ul .ul .li {
+  display: list-item;
+  float: none;
+  position: relative;
+}
+.nab .ul .ul .ul .li {
+  left: 170.5px;
+  position: relative;
+  top: -40px;
 }
 
-.navbar{
-    height:91.8px;
-    background-color: var(--blanco);
+/* fin nav custom */
+body {
+  overflow-x: hidden;
 }
-
-
-
-.dropdown {
-    
-    
-    /* position: relative;
-    display: block; */
-    margin:0;
-    position:relative;
-    
-    
-  }
-  
-  .dropdown-content {
-
-    display:none;
-    left:0;
-    top:32.63px;
-    
-    position: absolute;
-    
-    
-    
-    
-  }
-
-  .dropdown-item{
-    
-    display: inline-block;
-    
-    background-color: #e6e5e5;
-    width: 170.5px;
-    height: 43.7px;
-    opacity: 0.9;
-    font-family: "HelveticaNeue" , sans-serif; 
-    font-weight: lighter;
-    font-size: 16pt;
-    
-    margin-inline: -1px;
-    margin-bottom: 3px;
-    
-    
-    
-    
-
-  }
-  .dropdown-item:hover{
-    
-    background-color: var(--celeste1);
-    color:var(--blanco)
-    
-  }
-
-  .flecha-dropdown{
-      display:inline;
-      float:right;
-      width:10px;
-      height:10px;
-      position:relative;
-      top:10px;  
-      transform:rotate(-45deg);
-      content: url(../img/iconos/flechaazul.png)
-  }
-  .texto-dropdown{
-      display:inline;
-      
-      font-family: "HelveticaNeue" , sans-serif;
-    font-weight: lighter;
-    font-size: 8.5px;
-      position:relative;
-       
-      
-      
-  }
-
-  
-  body{
-      overflow-x: hidden;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: inline-block;
-    position: absolute;
-    width: 700px;
-    
-    
-    
-  }
-
-
-
-
 
 @media screen and (max-width: 700px) {
-    .fondo-nav {
-        background-color: var(--celeste1);
-    }
+  .fondo-nav {
+    background-color: var(--celeste1);
+  }
 
-    
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    align-items: center;
+    width: 100%;
+  }
+  .item1 {
+    display: flex;
+    justify-content: start;
 
-    .grid-container {
-        display:flex;
-        flex-direction: row;
-        padding: 2%;
-        align-items: center;
-        width: 100%;
-        
+    width: 33%;
+  }
+  .item2 {
+    display: flex;
+    justify-content: center;
 
-    }
-    .item1{
-        display:flex;
-        justify-content: start;
-        
-        width: 33%;
-        
-        
+    width: 33%;
+  }
 
-    }
-    .item2{
-        display:flex;
-        justify-content: center;
-        
-        width: 33%;
-        
+  .item3 {
+    display: flex;
+    justify-content: end;
 
-    }
+    width: 33%;
+  }
+  .navbar-toggler {
+    border: none;
+    filter: invert(100%);
+  }
 
-    .item3{
-        display:flex;
-        justify-content: end;
-        
-        width: 33%;
-        
-        
+  .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+  }
 
-    }
-    .navbar-toggler{
-        border:none;
-        filter:invert(100%);
-        
-        
-    }
+  .logo-nav {
+    width: 116px;
+    height: 43px;
+    content: url(../img/logochubutblanco.png);
+  }
 
-    .navbar-toggler:focus{
-        border:none;
-        box-shadow: none;
-        
-        
-    }
+  .barra-arriba {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 12.19px;
+    align-items: end;
+    word-wrap: break-word;
+    text-align: right;
 
+    background-color: var(--celeste1);
+    color: #fff;
+  }
 
+  .btn-institucional {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 38.88px;
+    border-bottom: 3px solid var(--violeta);
+  }
 
-   
-    
+  .btn-politica {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 38.88px;
+    border-bottom: 3px solid var(--violeta);
+  }
 
-    .logo-nav {
-        width: 116px;
-        height: 43px;
-        content: url(../img/logochubutblanco.png);
-    }
+  .btn-contacto {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 38.88px;
+    border-bottom: 3px solid var(--violeta);
+  }
 
-    .barra-arriba {
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        font-weight: 900;
-        line-height: 12.19px;
-        align-items: end;
-        word-wrap: break-word;
-        text-align: right;
-        
-        
+  .buscador-nav {
+    height: 36px;
+    width: 90%;
+  }
+  .boton-lupa {
+    height: 36px;
+    width: 10%;
+  }
 
-        background-color: var(--celeste1);
-        color: #fff;
-            
-    }
+  .buscador {
+    padding: 2%;
+  }
 
-    .btn-institucional {
-        font-size: 14px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 900;
-        line-height: 38.88px;
-        border-bottom: 3px solid var(--violeta)
-    }
-    
-    .btn-politica {
-        font-size: 14px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 900;
-        line-height: 38.88px;
-        border-bottom: 3px solid var(--violeta)
-    }
-    
-    .btn-contacto {
-        font-size: 14px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 900;
-        line-height: 38.88px;
-        border-bottom: 3px solid var(--violeta)
-    }
-    
-
-    .buscador-nav{
-        height:36px;
-        width:90%;
-        
-        
-
-
-       
-    }
-    .boton-lupa{
-        height:36px;
-        width: 10%;
-    }
-
-    .buscador{
-        padding: 2%;
-    }
-
-    #lupa{
-        position: relative;
-        top: -4px;
-        
-    }
-
-
-	
+  #lupa {
+    position: relative;
+    top: -4px;
+  }
 }
