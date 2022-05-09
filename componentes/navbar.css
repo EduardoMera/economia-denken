@@ -9,6 +9,8 @@
 }
 
 .buscador-nav {
+  position: relative;
+  top: -8px;
   border-radius: 10px 0px 0px 10px;
   width: 239px;
   height: 27.5px;
@@ -17,9 +19,12 @@
   font-family: 'HelveticaNeue-light';
   font-weight: lighter;
   font-size: 8.5px;
+  margin-left: 30px;
 }
 
 .boton-lupa {
+  position: relative;
+  top: -8px;
   border-radius: 0px 10px 10px 0px;
   border: solid #ccc;
   border-width: 1px 1px 1px 0px;
@@ -83,32 +88,34 @@
   color: var(--violeta);
   font-size: 9.75px;
   border-bottom: 1.4px solid var(--violeta);
-  width: 170px;
+  width: 220px;
 }
+
 
 .btn-politica {
   color: var(--violeta);
   font-size: 9.75px;
   border-bottom: 1.4px solid var(--celeste1);
-  width: 170px;
+  width: 220px;
 }
 
 .btn-contacto {
   color: var(--violeta);
   font-size: 9.75px;
   border-bottom: 1.4px solid var(--celeste2);
-  width: 170px;
+  width: 220px;
 }
 
 .fondo {
   background-color: var(--gris1);
 }
 .ul .li {
-  width: 170.5px;
-  height: 43.7px;
+  width: 200px;
+  height: 50px;
 }
-.li:hover {
+.li:hover{
   background-color: var(--celeste1);
+  border: none;
 }
 .nab .ul {
   list-style: none;
@@ -127,14 +134,17 @@
   padding: 0 10px;
 }
 .nab .ul .ul {
-  width: 170.5px;
-  height: 43.7px;
-  top: 40px;
+  width: 200px;
+  height: 50px;
+  top: 50px;
   position: absolute;
   display: none;
 }
 .nab .ul .li:hover > .ul {
-  display: inherit;
+  display: inline-block;
+}
+.nab .ul .li:hover > a {
+  color: #fff;
 }
 .nab .ul .ul .li {
   display: list-item;
@@ -142,16 +152,23 @@
   position: relative;
 }
 .nab .ul .ul .ul .li {
-  left: 170.5px;
+  left: 200px;
   position: relative;
-  top: -40px;
+  top: -50px;
 }
-
+.subitem-flecha{
+  position: relative;
+  top: 8px;
+  transform: rotate(315deg);
+}
+.subitem-texto{
+  position: relative;
+  top: 10px;
+}
 /* fin nav custom */
 body {
   overflow-x: hidden;
 }
-
 @media screen and (max-width: 700px) {
   /* inicio ofcanvas */
   #titulo-offcanvas {
