@@ -40,6 +40,15 @@ function armarItem(anterior, texto, siguiente) {
     const colCentro = document.createElement('div');
     colCentro.classList.add('col-10');
     colCentro.textContent = texto;
+    colCentro.addEventListener('click', () => {
+      if (path.find(e=>e == "componentes")) {
+        path[path.length - 1] = `${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      } else {
+        path[path.length - 1] = `componentes/${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      }
+    })
 
     const colDerecha = document.createElement('img');
     colDerecha.classList.add('col-1');
@@ -80,6 +89,15 @@ function armarItem(anterior, texto, siguiente) {
     const colCentro = document.createElement('div');
     colCentro.classList.add('col-10');
     colCentro.textContent = texto;
+    colCentro.addEventListener('click', () => {
+      if (path.find(e=>e == "componentes")) {
+        path[path.length - 1] = `${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      } else {
+        path[path.length - 1] = `componentes/${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      }
+    })
 
     const colDerecha = document.createElement('div');
     colDerecha.classList.add('col-1');
@@ -104,6 +122,15 @@ function armarItem(anterior, texto, siguiente) {
     const colCentro = document.createElement('div');
     colCentro.classList.add('col-10');
     colCentro.textContent = texto;
+    colCentro.addEventListener('click', () => {
+      if (path.find(e=>e == "componentes")) {
+        path[path.length - 1] = `${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      } else {
+        path[path.length - 1] = `componentes/${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      }
+    })
 
     const colDerecha = document.createElement('img');
     colDerecha.classList.add('col-1');
@@ -133,6 +160,16 @@ function armarItem(anterior, texto, siguiente) {
     const colCentro = document.createElement('div');
     colCentro.classList.add('col-10');
     colCentro.textContent = texto;
+    colCentro.addEventListener('click', () => {
+      const path = window.location.pathname.split('/');
+      if (path.find(e=>e == "componentes")) {
+        path[path.length - 1] = `${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      } else {
+        path[path.length - 1] = `componentes/${texto.toLowerCase().replaceAll(" ", "-")}.html`;
+        window.location.pathname = path.join('/');
+      }
+    })
 
     const colDerecha = document.createElement('div');
     colDerecha.classList.add('col-1');
@@ -175,7 +212,6 @@ function adaptarNavbar() {
     armarItem(false, 'CONSEJO PROVINCIAL DE RESPONSABILIDAD FISCAL', false);
     armarItem(false, 'TESORERÍA', false);
     armarItem(false, 'SEGURO', false);
-    armarItem(false, 'SEGURO', false);
   }
   function menuPoloticaYGestionCoordinacionFinanciera() {
     console.log('menuPoloticaYGestionCoordinacionFinanciera');
@@ -187,7 +223,6 @@ function adaptarNavbar() {
     armarItem(false, 'CLASIFICACIÓN DE RIESGO', false);
     armarItem(false, 'REQUICITOS SOLICITUD AUT, ENDEUDAMIENTO MUNICIPIOS', false);
     armarItem(false, 'LIBRE DE DEUDA FONDO FIDUCIARIO DESARROLLO', false);
-    armarItem(false, 'SOSTENIBILIDAD DE LA DEUDA', false);
     armarItem(false, 'SOSTENIBILIDAD DE LA DEUDA', false);
   }
   function menuPoliticaYGestionUEP() {
@@ -217,7 +252,6 @@ function adaptarNavbar() {
     armarItem(false, 'PROYECTO PLURIANUAL', false);
     armarItem(false, 'RECURSOS', menuRecursos);
     armarItem(false, 'CONSEJO DE RESPONSABILIDAD FISCAL', menuConsejoResponsabilidadFiscal);
-    armarItem(false, 'CONSEJO DE RESPONSABILIDAD FISCAL', () => {});
   }
   function menuConsejoResponsabilidadFiscal() {
     console.log('menuConsejoResponsabilidadFiscal');
