@@ -3,8 +3,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   if (ancho <= 576) {
     let barraarriba = document.getElementById('barra-arriba');
-    document.getElementById('barra-arriba-mobile').innerHTML = barraarriba.innerHTML;
-    barraarriba.remove();
+    const barra = document.getElementById('barra-arriba-mobile')
+    if (barraarriba) {
+      barra.innerHTML = barraarriba.innerHTML;
+      barraarriba.remove();
+    }
 
     document.getElementById('contenedor-navbar').classList.remove('container-fluid');
 
@@ -27,7 +30,12 @@ function armarItem(anterior, texto, siguiente) {
     const colIzquierda = document.createElement('img');
     colIzquierda.classList.add('col-1');
     colIzquierda.id = `back-${id}`;
-    colIzquierda.src = '../img/iconos/offcanvas-back.svg';
+    const path = window.location.pathname.split('/');
+    if (path.find(e=>e == "componentes")) {
+      colIzquierda.src = '../img/iconos/offcanvas-back.svg';
+    } else {
+      colIzquierda.src = './img/iconos/offcanvas-back.svg';
+    }
 
     const colCentro = document.createElement('div');
     colCentro.classList.add('col-10');
@@ -36,7 +44,11 @@ function armarItem(anterior, texto, siguiente) {
     const colDerecha = document.createElement('img');
     colDerecha.classList.add('col-1');
     colDerecha.id = `next-${id}`;
-    colDerecha.src = '../img/iconos/offcanvas-next.svg';
+    if (path.find(e=>e == "componentes")) {
+      colDerecha.src = '../img/iconos/offcanvas-next.svg';
+    } else {
+      colDerecha.src = './img/iconos/offcanvas-next.svg';
+    }
 
     item.appendChild(colIzquierda);
     item.appendChild(colCentro);
@@ -58,7 +70,12 @@ function armarItem(anterior, texto, siguiente) {
     const colIzquierda = document.createElement('img');
     colIzquierda.classList.add('col-1');
     colIzquierda.id = `back-${id}`;
-    colIzquierda.src = '../img/iconos/offcanvas-back.svg';
+    const path = window.location.pathname.split('/');
+    if (path.find(e=>e == "componentes")) {
+      colIzquierda.src = '../img/iconos/offcanvas-back.svg';
+    } else {
+      colIzquierda.src = './img/iconos/offcanvas-back.svg';
+    }
 
     const colCentro = document.createElement('div');
     colCentro.classList.add('col-10');
@@ -91,7 +108,12 @@ function armarItem(anterior, texto, siguiente) {
     const colDerecha = document.createElement('img');
     colDerecha.classList.add('col-1');
     colDerecha.id = `next-${id}`;
-    colDerecha.src = '../img/iconos/offcanvas-next.svg';
+    const path = window.location.pathname.split('/');
+    if (path.find(e=>e == "componentes")) {
+      colDerecha.src = '../img/iconos/offcanvas-next.svg';
+    } else {
+      colDerecha.src = './img/iconos/offcanvas-next.svg';
+    }
 
     item.appendChild(colIzquierda);
     item.appendChild(colCentro);
