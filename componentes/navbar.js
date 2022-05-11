@@ -183,25 +183,21 @@ function armarItem(anterior, texto, siguiente) {
 function adaptarNavbar() {
   const offcanvasBody = document.getElementById('offcanvas-body');
   function menu() {
-    console.log('menu');
     offcanvasBody.innerHTML = '';
     armarItem(false, 'INSTITUCIONAL', menuInstitucional);
     armarItem(false, 'POLITICA Y GESTION', menuPoliticaYGestion);
     armarItem(false, 'CONTACTO', false);
   }
   function menuInstitucional() {
-    console.log('menuInstitucional');
     offcanvasBody.innerHTML = '';
     armarItem(menu, 'AUTORIDADES', false);
     armarItem(false, 'ORGANISMO', menuOrganismo);
   }
   function menuOrganismo() {
-    console.log('menuInstitucional2');
     offcanvasBody.innerHTML = '';
     armarItem(menuInstitucional, 'MISIONES Y FUNCIONES', false);
   }
   function menuPoliticaYGestion() {
-    console.log('menuPoliticaYGestion');
     offcanvasBody.innerHTML = '';
     armarItem(menu, 'GESTION PRESUPUESTARIA', menuPoliticaYGestionGestionPresupuestaria);
     armarItem(false, 'COORDINACION FINANCIERA', menuPoloticaYGestionCoordinacionFinanciera);
@@ -214,7 +210,6 @@ function adaptarNavbar() {
     armarItem(false, 'SEGURO', false);
   }
   function menuPoloticaYGestionCoordinacionFinanciera() {
-    console.log('menuPoloticaYGestionCoordinacionFinanciera');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestion, 'FINANCIAMIENTO', false);
     armarItem(false, 'ESTADISTICA Y CENSO', false);
@@ -226,14 +221,12 @@ function adaptarNavbar() {
     armarItem(false, 'SOSTENIBILIDAD DE LA DEUDA', false);
   }
   function menuPoliticaYGestionUEP() {
-    console.log('menuPoliticaYGestionUEP');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestion, 'PROGRAMAS', () => {});
     armarItem(false, 'ORGANISMOS', false);
     armarItem(false, 'ENLACES', false);
   }
   function menuPoliticaYGestionGestionCatastro() {
-    console.log('menuPoliticaYGestionGestionCatastro');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestion, 'NORMAS CATASTRALES', false);
     armarItem(false, 'GUIAS DE NOTAS', false);
@@ -241,7 +234,6 @@ function adaptarNavbar() {
     armarItem(false, 'ESTACION PERMANENTE DE GPS', false);
   }
   function menuPoliticaYGestionGestionPresupuestaria() {
-    console.log('menuPoliticaYGestionGestionPresupuestaria');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestion, 'PRESUPUESTO Y FINANZAS', false);
     armarItem(false, 'COMPUTOS', false);
@@ -254,34 +246,29 @@ function adaptarNavbar() {
     armarItem(false, 'CONSEJO DE RESPONSABILIDAD FISCAL', menuConsejoResponsabilidadFiscal);
   }
   function menuConsejoResponsabilidadFiscal() {
-    console.log('menuConsejoResponsabilidadFiscal');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestionGestionPresupuestaria, 'COMISIÓN EJECUTIVA', false);
     armarItem(false, 'CONFORMACIÓN DEL CONSEJO', false);
   }
   function menuRecursos() {
-    console.log('menuRecursos');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestionGestionPresupuestaria, 'RECAUDACION PROVINCIAL', false);
     armarItem(false, 'DEUDA PUBLICA', false);
     armarItem(false, 'TRANSFERENCIA A MUNICIPIOS', false);
   }
   function menuEjecucionPresupuestaria() {
-    console.log('menuEjecucionPresupuestaria');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestionGestionPresupuestaria, 'INFORME DE GASTO Y EJECUCION', false);
     armarItem(false, 'PROGRAMACION PLURIANUAL', false);
     armarItem(false, 'CUENTA DE INVERSIÓN', false);
   }
   function menusistemaPresupuestario() {
-    console.log('menusistemaPresupuestario');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestionGestionPresupuestaria, 'INSTRUCTIVO', false);
     armarItem(false, 'FORMULARIOS', false);
     armarItem(false, 'CLASIFICADORES', false);
   }
   function menuPresupuesto() {
-    console.log('menuPresupuesto');
     offcanvasBody.innerHTML = '';
     armarItem(menuPoliticaYGestionGestionPresupuestaria, 'LEYES Y PROYECTO DE PRESUPUESTO', false);
     armarItem(false, 'PROGRAMA PLURIANUAL', false);

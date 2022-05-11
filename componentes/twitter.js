@@ -1,12 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
   
   let ancho = window.screen.width;
-  console.log("pase", ancho);
 
   if (ancho <= 576) {
     const twits = document.querySelectorAll('.info-text');
     let seccion = document.getElementById('twitter');
-    console.log(seccion);
     seccion.innerHTML = `
       <section class="container-fluid mt-5">
         <img class="img-noticias-twitter mb-3" src="./img/noticias-twitter-linea-amarilla.png" alt="" />
