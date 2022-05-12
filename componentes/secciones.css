@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 body {
@@ -130,18 +131,15 @@ body {
   visibility: hidden;
 }
 @media screen and (max-width: 700px) {
-  body{
+  body {
     font-family: 'Montserrat', sans-serif;
-  }
-  .texto-izquierda {
-    color: var(--celeste1);
   }
   .seccion-general {
     margin: 10px;
   }
   /* Autoridades */
   .linea-izquierda-mobile-autoridades {
-    width: 67%;
+    width: 100%;
   }
   /* Politica y Gestion */
   .linea-izquierda-mobile-politica-gestion {
@@ -174,15 +172,6 @@ body {
   .columna-izquierda {
     transform: rotate(0deg);
   }
-  .subrayado {
-    color: var(--celeste1);
-    font-weight: bolder;
-    font-size: 17px;
-    width: 100%;
-    top: 10%;
-    position: static;
-    border-bottom: none;
-  }
   .item-texto {
     margin-top: 0px;
     color: var(--violeta);
@@ -200,10 +189,31 @@ body {
     border: none;
     background-color: var(--celeste1);
   }
-  .linea-izquierda-mobile-coordinacion-financiera {
-    width: 33%;
+  .subrayado {
+    position: static;
+    width: auto;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+  .texto-izquierda {
+    color: var(--celeste1);
+    z-index: 2;
+    background-color: #fff;
+    padding-right: 10px;
+  }
+  .texto-izquierdo-autridades,
+  .texto-izquierdo-politica-gestion,
+  .texto-izquierdo-comision-ejecutiva,
+  .texto-izquierdo-conformacion-consejo,
+  .texto-izquierdo-coordinacion-financiera,
+  .texto-izquierdo-gestion-presupuestaria,
+  .texto-izquierda-ingresos-egresos{
+    width: auto;
+    padding-left: 10px;
   }
   .linea-izquierda-mobile {
+    z-index: -1;
     position: relative;
     top: 18px;
     height: 13px;
