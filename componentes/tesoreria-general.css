@@ -102,9 +102,6 @@ body {
   body{
     font-family: 'Montserrat', sans-serif;
   }
-  .texto-izquierda {
-    color: var(--celeste1);
-  }
   .boton {
     font-size: 14px;
     color: var(--blanco);
@@ -121,28 +118,37 @@ body {
   .columna-izquierda {
     transform: rotate(0deg);
   }
-  .subrayado {
-    color: var(--celeste1);
-    font-weight: bolder;
-    font-size: 17px;
-    width: 100%;
-    top: 10%;
-    position: static;
-    border-bottom: none;
-  }
   .linea-izquierda-mobile-tesoreria-general {
     width: 50%;
-  }
-  .linea-izquierda-mobile {
-    position: relative;
-    top: 18px;
-    height: 13px;
-    background-color: var(--celeste1);
   }
   .texto-seccion {
     color: var(--violeta);
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
+  }
+  .subrayado {
+    position: static;
+    width: auto;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+  .texto-izquierda {
+    color: var(--celeste1);
+    z-index: 2;
+    background-color: #fff;
+    padding-right: 10px;
+  }
+  .texto-izquierda-tesoreria-general{
+    width: auto;
+    padding-left: 10px;
+  }
+  .linea-izquierda-mobile {
+    z-index: -1;
+    position: relative;
+    top: 18px;
+    height: 13px;
+    background-color: var(--celeste1);
   }
 }
