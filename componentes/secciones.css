@@ -4,6 +4,7 @@ html, body {
 body {
   position: relative;
   height: 100vh;
+  font-family: 'HelveticaNeue', sans-serif;
 }
 .background-img {
   position: absolute;
@@ -25,7 +26,6 @@ body {
   padding: 10px;
 }
 .item-texto {
-  font-family: 'HelveticaNeue', sans-serif;
   display: inline;
   font-size: 17.3px;
   color: var(--violeta);
@@ -94,7 +94,6 @@ body {
   position: relative;
   width: 150%;
   top: 30%;
-  font-family: 'HelveticaNeue', sans-serif;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
@@ -111,7 +110,6 @@ body {
   width: 100%;
 }
 .subtitulo {
-  font-family: 'Montserrat', sans-serif;
   color: var(--violeta);
   font-weight: 600;
   font-size: 12px;
@@ -119,7 +117,6 @@ body {
   margin-top: 10px;
 }
 .boton {
-  font-family: 'HelveticaNeue', sans-serif;
   font-size: 9pt;
   color: var(--blanco);
   font-weight: bolder;
@@ -133,6 +130,9 @@ body {
   visibility: hidden;
 }
 @media screen and (max-width: 700px) {
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
   .texto-izquierda {
     color: var(--celeste1);
   }
@@ -175,7 +175,6 @@ body {
     transform: rotate(0deg);
   }
   .subrayado {
-    font-family: 'Montserrat', sans-serif;
     color: var(--celeste1);
     font-weight: bolder;
     font-size: 17px;
@@ -186,14 +185,12 @@ body {
   }
   .item-texto {
     margin-top: 0px;
-    font-family: 'Montserrat', sans-serif;
     color: var(--violeta);
     font-weight: 400;
     font-size: 12px;
     line-height: 25px;
   }
   .boton {
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: var(--blanco);
     font-weight: 900;
@@ -213,7 +210,6 @@ body {
     background-color: var(--celeste1);
   }
   .texto-seccion {
-    font-family: 'Montserrat', sans-serif;
     color: var(--violeta);
     font-weight: 400;
     font-size: 12px;

@@ -7,6 +7,9 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
+body{
+  font-family: 'HelveticaNeue', sans-serif;
+}
 
 .buscador-nav {
   position: relative;
@@ -16,7 +19,6 @@
   height: 27.5px;
   border-color: var(--gris1);
   color: var(--gris2);
-  font-family: 'HelveticaNeue-light';
   font-weight: lighter;
   font-size: 8.5px;
   margin-left: 30px;
@@ -34,7 +36,6 @@
 
 .buscador-nav::placeholder {
   color: var(--gris2);
-  font-family: 'HelveticaNeue', sans-serif;
   font-weight: lighter;
   font-size: 8.5px;
 }
@@ -77,7 +78,6 @@
 .barra-arriba {
   background-color: var(--celeste1);
   color: var(--blanco);
-  font-family: 'Montserrat', sans-serif;
   height: 45px;
   font-weight: 500;
   font-size: 14px;
@@ -170,9 +170,11 @@ body {
   overflow-x: hidden;
 }
 @media screen and (max-width: 700px) {
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
   /* inicio ofcanvas */
   #titulo-offcanvas {
-    font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     font-size: 14px;
     width: 160px;
@@ -185,7 +187,6 @@ body {
     background-color: #4196b4;
   }
   .item-offcanvas{
-    font-family: "Montserrat", sans-serif;
     color: var(--blanco);
     border-top: 1px solid var(--gris1);
     border-bottom: 1px solid var(--gris1);
@@ -238,7 +239,6 @@ body {
   }
 
   .barra-arriba {
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 900;
     line-height: 12.19px;
@@ -252,7 +252,6 @@ body {
 
   .btn-institucional {
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     line-height: 38.88px;
     border-bottom: 3px solid var(--violeta);
@@ -260,7 +259,6 @@ body {
 
   .btn-politica {
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     line-height: 38.88px;
     border-bottom: 3px solid var(--violeta);
@@ -268,7 +266,6 @@ body {
 
   .btn-contacto {
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     line-height: 38.88px;
     border-bottom: 3px solid var(--violeta);

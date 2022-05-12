@@ -7,7 +7,9 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
-
+body{
+  font-family: 'HelveticaNeuet', sans-serif;
+}
 .img-noticias-twitter {
   width: 20vw;
   height: auto;
@@ -15,7 +17,6 @@
 
 .titulo-noticias,
 .titulo-twitter {
-  font-family: 'HelveticaNeuet', sans-serif;
   color: var(--amarillo);
   font-weight: lighter;
 }
@@ -62,6 +63,9 @@
 }
 
 @media screen and (max-width: 700px) {
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
   .img-noticias-twitter {
     width: 190px;
     height: 13px;
@@ -72,7 +76,6 @@
     top: 5px;
     display: inline;
     color: var(--amarillo);
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 17.7px;
@@ -87,7 +90,6 @@
     border-radius: 8px;
     color: var(--blanco);
     padding: 15px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
