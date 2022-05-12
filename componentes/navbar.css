@@ -275,16 +275,18 @@ body {
   }
 
   .buscador-nav {
+    left: -10px;
     height: 36px;
-    width: 90%;
+    width: 100%;
   }
   .boton-lupa {
+    left: -20px;
     height: 36px;
     width: 10%;
   }
 
   .buscador {
-    padding: 2%;
+    margin-top: 20px;
   }
 
   #lupa {

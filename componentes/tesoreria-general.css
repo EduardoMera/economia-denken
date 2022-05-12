@@ -8,6 +8,18 @@
   --blanco: #ffffff;
   --celeste-boton: #006097;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  height: 100vh;
+}
+.background-img {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.09;
+}
 .nombre-tesoreria{
   display: inline;
   font-family: 'HelveticaNeue', sans-serif;

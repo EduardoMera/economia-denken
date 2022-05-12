@@ -16,6 +16,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
     document.getElementById('buscador-mobile').appendChild(buscador);
 
     adaptarNavbar();
+    try {
+      document.querySelector(".background-img").style.display = "none";
+    } catch (e) {}
   }
 });
 
