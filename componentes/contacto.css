@@ -116,6 +116,38 @@ select:focus{
   font-size: 18.6px;
 }
 @media screen and (max-width: 700px) {
+  .select-asunto {
+    width: 95%;
+    left: 23px;
+  }
+  .borde-izquierdo{
+    border-top: 1px solid var(--celeste1);
+    border-left: 1px solid var(--celeste1);
+    border-bottom: 1px solid var(--celeste1);
+    border-radius: 8px 0px 0px 8px;
+  }
+  .borde-derecho{
+    border-top: 1px solid var(--celeste1);
+    border-right: 1px solid var(--celeste1);
+    border-bottom: 1px solid var(--celeste1);
+    border-radius: 0px 8px 8px 0px;
+  }
+  .asunto-field{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--blanco);
+    color: var(--celeste1);
+  }
+  .input-form {
+    width: 95%;
+    height: 36px;
+    border: 1px solid var(--celeste1);
+    border-radius: 8px;
+    margin: 0px 10px 23px 10px;
+    background-color: var(--blanco);
+    display: block;
+    outline: none;
+    padding: 15px 20px;
+  }
   .location-icon::before {
     content: url(../img/iconos/location-icon.svg);
     margin-right: 2px;
@@ -135,17 +167,6 @@ select:focus{
   }
   .mail {
     margin-left: 90px;
-  }
-  .input-form {
-    width: 95%;
-    height: 36px;
-    border: 1px solid var(--celeste1);
-    border-radius: 8px;
-    margin: 0px 10px 23px 10px;
-    background-color: var(--blanco);
-    display: block;
-    outline: none;
-    padding: 15px 20px;
   }
   .select-form {
     color: var(--celeste1);
