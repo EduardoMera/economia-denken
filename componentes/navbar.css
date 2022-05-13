@@ -164,6 +164,7 @@ body{
 .subitem-texto{
   position: relative;
   top: 10px;
+  line-height: 17px;
 }
 /* fin nav custom */
 body {

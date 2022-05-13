@@ -197,9 +197,9 @@ function adaptarNavbar() {
     armarItem(menu, "GESTION PRESUPUESTARIA", menuPoliticaYGestionGestionPresupuestaria, "GESTION PRESUPUESTARIA");
     armarItem(false, "COORDINACION FINANCIERA", menuPoloticaYGestionCoordinacionFinanciera, "COORDINACION FINANCIERA");
     armarItem(false, "UNIDAD EJECUTORA PROVINCIAL (UEP)", menuPoliticaYGestionUEP, false);
-    armarItem(false, "TRIBUTOS PROVINCIALES", () => {}, false);
+    armarItem(false, "TRIBUTOS PROVINCIALES", false, false);
     armarItem(false, "GESTIÓN CATASTRO", menuPoliticaYGestionGestionCatastro, false);
-    armarItem(false, "DIRECCION GENERAL DE RENTAS", () => {}, false);
+    armarItem(false, "DIRECCION GENERAL DE RENTAS", false, false);
     armarItem(false, "CONSEJO PROVINCIAL DE RESPONSABILIDAD FISCAL", false, false);
     armarItem(false, "TESORERIA GENERAL", false, "TESORERIA GENERAL");
     armarItem(false, "SEGURO", false, false);
@@ -217,7 +217,7 @@ function adaptarNavbar() {
   }
   function menuPoliticaYGestionUEP() {
     offcanvasBody.innerHTML = "";
-    armarItem(menuPoliticaYGestion, "PROGRAMAS", () => {}, false);
+    armarItem(menuPoliticaYGestion, "PROGRAMAS", false, false);
     armarItem(false, "ORGANISMOS", false, false);
     armarItem(false, "ENLACES", false, false);
   }
