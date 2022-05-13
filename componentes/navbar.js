@@ -201,7 +201,7 @@ function adaptarNavbar() {
     armarItem(false, "GESTIÓN CATASTRO", menuPoliticaYGestionGestionCatastro, false);
     armarItem(false, "DIRECCION GENERAL DE RENTAS", () => {}, false);
     armarItem(false, "CONSEJO PROVINCIAL DE RESPONSABILIDAD FISCAL", false, false);
-    armarItem(false, "TESORERÍA", false, "TESORERIA GENERAL");
+    armarItem(false, "TESORERIA GENERAL", false, "TESORERIA GENERAL");
     armarItem(false, "SEGURO", false, false);
   }
   function menuPoloticaYGestionCoordinacionFinanciera() {
