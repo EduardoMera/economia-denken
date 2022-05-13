@@ -181,6 +181,11 @@ function adaptarNavbar() {
     offcanvasBody.innerHTML = "";
     armarItem(false, "INSTITUCIONAL", menuInstitucional, false);
     armarItem(false, "POLITICA Y GESTION", menuPoliticaYGestion, "POLITICA Y GESTION");
+    armarItem(false, "HERRAMIENTAS Y TRAMITES", false, false);
+    armarItem(false, "TESORERIA GENERAL DE LA PROVINCIA", false, false);
+    armarItem(false, "DIRECCION GENERAL DE CATASTRO (DGC)", false, false);
+    armarItem(false, "PAGO PROVEEDORES", false, false);
+    armarItem(false, "SERVICIOS", false, false);
     armarItem(false, "CONTACTO", false, "CONTACTO");
   }
   function menuInstitucional() {
