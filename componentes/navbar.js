@@ -18,22 +18,33 @@ function ajustar() {
       barra.innerHTML = barraarriba.innerHTML;
       barraarriba.remove();
     }
-
-    document.getElementById("contenedor-navbar").classList.remove("container-fluid");
-
     let buscador = document.querySelector("#buscador");
     document.getElementById("buscador").remove();
     document.getElementById("buscador-mobile").appendChild(buscador);
-
+    try {
+      if (document.getElementById("contenedor-navbar").classList.contains("container-fluid")) {
+        document.getElementById("contenedor-navbar").classList.remove("container-fluid");
+      }
+    } catch (error) {}
+    try {
+      if (!document.querySelector(".background-img").classList.contains("d-none")) {
+        document.querySelector(".background-img").classList.add("d-none");
+      }
+    } catch (error) {}
     adaptarNavbar();
-
-    if (document.querySelector(".background-img")) {
-      document.querySelector(".background-img").style.display = "none";
-    }
   } else {
-    // agrear el html del state general del nav y probarlo
     document.getElementById("nav").innerHTML = stateNavbarDesktop.nav;
     document.getElementById("buscador-mobile").innerHTML = "";
+    try {
+      if (document.querySelector(".background-img")?.classList.contains("d-none")) {
+        document.querySelector(".background-img").classList.remove("d-none");
+      }
+    } catch (error) {}
+    try {
+      if (!document.getElementById("contenedor-navbar").classList.contains("container-fluid")) {
+        document.getElementById("contenedor-navbar").classList.add("container-fluid");
+      }
+    } catch (error) {}
   }
 }
 
