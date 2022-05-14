@@ -1,135 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./contacto.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./secciones.css">
+    <script src="./navbar.js"></script>
+    <script src="./contacto.js"></script>
+    <title>Contacto</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
-  <script src="../lib/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./contacto.css">
-  <title>Contacto</title>
-</head>
+  <body>
+    <nav class="fondo-nav navbar navbar-expand-md navbar-light">
+      <div id="contenedor-navbar" class="container-fluid grid-container">
+        <button
+          class="navbar-toggler item1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <section class="contacto">
-    <div class="row">
-      <div class="col-md-3 columna-contacto">
-        <div class="linea-contacto-mobile"></div>
-        <div class="texto-contacto">CONTACTO</div>
+        <a class="navbar-brand item2 ms-5" href="../index.html"><div class="logo-nav"></div> </a>
+
+        <div id="barra-arriba-mobile" class="barra-arriba item3"></div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div id="offcanvas-header" class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              <div>
+                <img class="d-block" src="../img/logochubutblanco.png" alt="" width="120px" height="50px" />
+                <h5 id="titulo-offcanvas" class="mt-3">Ministerio de Economía y Crédito Público</h5>
+              </div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div id="offcanvas-body" class="offcanvas-body m-0 justify-content-end" id="navbarSupportedContent">
+            <nav class="nab">
+              <ul class="ul">
+                <li class="li">
+                  <a class="btn-institucional" href="#">INSTITUCIONAL</a>
+                  <ul class="ul">
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >Organismos <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo">
+                          <a href="./autoridades.html" class="subitem-texto"
+                            >Autoridades <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#" class="subitem-texto">Misiones y funciones</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="li">
+                  <a class="btn-politica" href="./politica-y-gestion.html">POLITICA Y GESTION</a>
+                  <ul class="ul">
+                    <li class="li fondo">
+                      <a href="./coordinacion-financiera.html" class="subitem-texto"
+                        >Coordinacion financiera
+                        <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Financiamiento</a></li>
+                        <li class="li fondo"><a href="#">Estadistica y censo</a></li>
+                        <li class="li fondo"><a href="#">Titulos de deuda</a></li>
+                        <li class="li fondo"><a href="#">Letras del tesoro</a></li>
+                        <li class="li fondo"><a href="#">Clasificacion de riesgo</a></li>
+                        <li class="li fondo"><a href="#">Requisitos aut. endeudamiento municipios</a></li>
+                        <li class="li fondo"><a href="#">Libre de deuda fondo fiduciario desarrollo</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >VEP <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo">
+                          <a href="#" class="subitem-texto"
+                            >Programas <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#">?</a></li>
+                            <li class="li fondo"><a href="#">?</a></li>
+                            <li class="li fondo"><a href="#">?</a></li>
+                          </ul>
+                        </li>
+                        <li class="li fondo"><a href="#">Organismos</a></li>
+                        <li class="li fondo"><a href="#">Enlaces</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >Gestion catastro <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Responsabilidad fiscal</a></li>
+                        <li class="li fondo"><a href="./tesoreria-general.html">Tesoreria general</a></li>
+                        <li class="li fondo"><a href="#">Seguros</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="./gestion-presupuestaria.html" class="subitem-texto"
+                        >Gestion presupuestaria
+                        <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Presupuesto y finanzas</a></li>
+                        <li class="li fondo"><a href="#">Computos</a></li>
+                        <li class="li fondo"><a href="#">Control y gestion adm.</a></li>
+                        <li class="li fondo">
+                          <a href="#" class="subitem-texto"
+                            >Sist. presupuestario
+                            <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#">Instructivo</a></li>
+                            <li class="li fondo"><a href="#">Formularios</a></li>
+                            <li class="li fondo"><a href="#">Clasificadores</a></li>
+                          </ul>
+                        </li>
+                        <li class="li fondo"><a href="#">Presupuesto</a></li>
+                        <li class="li fondo"><a href="#">Ejecucion presup.</a></li>
+                        <li class="li fondo"><a href="#">Proyeccion plurianual</a></li>
+                        <li class="li fondo"><a href="#">Sostenibilidad de la deuda</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="li"><a class="btn-contacto" href="./contacto.html">CONTACTO</a></li>
+              </ul>
+            </nav>
+            <form id="buscador" class="d-flex buscador">
+              <input class="buscador-nav form-control py-0 mb-2" type="search" placeholder="Buscador" aria-label="Search" />
+              <button class="boton-lupa btn mb-2 position-relative" type="submit">
+                <svg id="lupa" xmlns="http://www.w3.org/2000/svg" width="12" height="15" fill="#dadad9" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="col-md-9">
-        <form>
-          <input class="input-form" type="text" placeholder="Nombre y Apellido">
-          <input class="input-form" type="number" placeholder="DNI">
-          <input class="input-form" type="email" placeholder="E-mail">
-          <input class="input-form" type="number" placeholder="Tel. de contacto">
-          <div class="row select-asunto">
-            <div class="asunto-field col-2 posicion-asunto">
-              Asunto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+    </nav>
+    <div id="buscador-mobile"></div>
+    <section class="contacto">
+      <div class="row">
+        <div class="col-md-3 columna-contacto">
+          <div class="linea-contacto-mobile"></div>
+          <div class="texto-contacto">CONTACTO</div>
+        </div>
+        <div class="col-md-9">
+          <form>
+            <input class="input-form" type="text" placeholder="Nombre y Apellido" />
+            <input class="input-form" type="number" placeholder="DNI" />
+            <input class="input-form" type="email" placeholder="E-mail" />
+            <input class="input-form" type="number" placeholder="Tel. de contacto" />
+            <div class="row select-asunto">
+              <div class="asunto-field col-4 col-md-2 posicion-asunto borde-izquierdo">
+                Asunto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+              </div>
+              <select class="asunto-field col-8 col-md-10 borde-derecho">
+                <option value=">" selected hidden></option>
+                <option value="Informacion solicitada">Informacion solicitada</option>
+                <option value="Seguimiento de expediente">Seguimiento de expediente</option>
+                <option value="Envio de nota">Envío de nota</option>
+                <option value="Consulta sobre estado de tramite">Consulta sobre estado de trámite</option>
+                <option value="Otras">Otras</option>
+              </select>
             </div>
-            <select class="asunto-field col-10">
-              <option value=">" selected hidden></option>
-              <option value="Informacion solicitada">Informacion solicitada</option>
-              <option value="Seguimiento de expediente">Seguimiento de expediente</option>
-              <option value="Envio de nota">Envío de nota</option>
-              <option value="Consulta sobre estado de tramite">Consulta sobre estado de trámite</option>
-              <option value="Otras">Otras</option>
-            </select>
-          </div>
-          <textarea class="textarea-form" placeholder="Explique brevemente su consulta" cols="30" rows="10"></textarea>
-          <input class="boton-form" type="submit" value="Enviar" placeholder="nombre y apellido">
-        </form>
-        <div class="container-mobile">
-          <!-- Accordion -->
-          <div class="accordion" id="accordionFlushExample">
-            <div class="row">
-              <div class="accordion-item col-md-4">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Min. de Economia
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="nombre">Lic. Oscar Abel Antonena</div>
-                    <div>JEFE DE ÁREA CONTROL DE GESTIÓN OPERATIVA.</div>
-                    <div class="nombre">Sra. Veronica Campazzo</div>
-                    <div>mail:provadaministeriodeeconomia@gmail.com</div>
-                    <div>Tel: 4482611 int. 484/483/417</div>
+            <textarea class="textarea-form" placeholder="Explique brevemente su consulta" cols="30" rows="10"></textarea>
+            <input class="boton-form" type="submit" value="Enviar" placeholder="nombre y apellido" />
+          </form>
+          <div class="container-mobile">
+            <!-- Accordion -->
+            <div class="accordion" id="accordionFlushExample">
+              <div class="row">
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse1"
+                    >
+                      Min. de Economia
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading1"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Lic. Oscar Abel Antonena</div>
+                      <div>JEFE DE ÁREA CONTROL DE GESTIÓN OPERATIVA.</div>
+                      <div class="nombre">Sra. Veronica Campazzo</div>
+                      <div>mail:provadaministeriodeeconomia@gmail.com</div>
+                      <div>Tel: 4482611 int. 484/483/417</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-3">
+                  <h2 class="accordion-header" id="flush-heading2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse2"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse2"
+                    >
+                      Subsecretaría de Coordinación financiera
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading2"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Lic. Nurchi</div>
+                      <div>Tel.: (0280) 4484528 – Int. 412/419</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading3">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse3"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse3"
+                    >
+                      Subsecretaria de gestión presupuestaria
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading3"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Cr. Rita Mabel Cardenas</div>
+                      <div>Tel.: 4482263/ 4482264</div>
+                      <div>Int: 303/346/472</div>
+                      <div>mail.dgpresupuestoyfinanzas@gmail.com</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item col-md-3">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Tesoreria
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="nombre">Cdora. Adriana, Fernandez</div>
-                    <div>Tel.: (0280) 4483500</div>
+              <div class="row">
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading4">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse4"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse4"
+                    >
+                      UEP (Unidad Ejecutora Provincial)
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading4"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div>Coordinadora Ejecutiva</div>
+                      <div class="nombre">Dra. Florencia Góngora</div>
+                      <div>(0280) 4485 – 448/522</div>
+                      <div>Avenida 25 de Mayo N° 550</div>
+                      <div>uep@uepchubut.gob.ar</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-3">
+                  <h2 class="accordion-header" id="flush-heading5">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse5"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse5"
+                    >
+                      Tesorería
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading5"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Cdora. Adriana, Fernandez</div>
+                      <div>Tel.: (0280) 4483500</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading6">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse6"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse6"
+                    >
+                      Dirección General de Catastro
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse6"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading6"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Dr. Fernando Peralta</div>
+                      <div>Tel.: 0280) 4481141 / 4481450 / 4483509</div>
+                      <div>catastro@chubut.gov.ar</div>
+                      <div>Dirección: Alejandro Maíz 169</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item col-md-4">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Direccion General de Cómputos
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="nombre">Lic. Walter Crusse</div>
-                    <div>25 de Mayo Nº 550 ( CP: 9103 - Rawson)</div>
+              <div class="row">
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading7">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse7"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse7"
+                    >
+                      Dirección General de Coordinación y Financiamiento
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse7"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading7"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Cdra. Carolina Tartera</div>
+                      <div>Tel: 0280-4483500 int: 312</div>
+                      <div>25 de Mayo Nº 550 ( CP: 9103 - Rawson)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-3">
+                  <h2 class="accordion-header" id="flush-heading8">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse8"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse8"
+                    >
+                      Dirección General de Presupuesto y Finanzas
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse8"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading8"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Cdra: BADARACCO, Elsa Gabriela</div>
+                      <div>Tel de contacto: 0280-4483500</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading9">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse9"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse9"
+                    >
+                      Dirección General de Rentas
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse9"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading9"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Cdor. Gerardo Minnaard</div>
+                      <div>Tel: 0280-4481360/865</div>
+                      <div>Alejandro Maíz y Pasaje Ezcurra ( CP: 9103 - Rawson)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading10">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse10"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse10"
+                    >
+                      Dirección General de Cómputos
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse10"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading10"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Lic. Walter Crusse</div>
+                      <div>25 de Mayo Nº 550 ( CP: 9103 - Rawson)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-3">
+                  <h2 class="accordion-header" id="flush-heading11">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse11"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse11"
+                    >
+                      Dirección General de Asesoría Legal
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse11"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading11"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Dr. Pedro Dominguez</div>
+                      <div>Tel. 0280-4483500</div>
+                      <div>25 de Mayo Nº 550 (CP: 9103 - Rawson)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading12">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse12"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse12"
+                    >
+                      Área de Obligaciones del Tesoro y Servicio de la Deuda
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse12"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading12"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Lic.Claudia Soccino</div>
+                      <div>Tel. 0280-4483500</div>
+                      <div>25 de Mayo Nº 550 (CP: 9103 - Rawson)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="accordion-item col-md-4">
+                  <h2 class="accordion-header" id="flush-heading13">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse13"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse13"
+                    >
+                      Dir. Provincial de Seguros
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse13"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading13"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="nombre">Lic. Gustavo Souto</div>
+                      <div>Freman Mariana</div>
+                      <div>Tel. 0280-4483500</div>
+                      <div>25 de Mayo Nº 550 (CP: 9103 - Rawson)</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="accordion-item col-md-3">
-                <h2 class="accordion-header" id="flush-heading4">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-                    Secretaria (Esta en el PDF pero no en mobile)
-                  </button>
-                </h2>
-                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><a href="https://youtu.be/h6t--U1fi4A?t=475">Temazo</a></div>
-                </div>
+            <!-- iFrame -->
+            <div class="linea-contacto"></div>
+            <div class="row contenedor-ubicacion">
+              <div class="col-md-5">
+                <iframe
+                  class="iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.6327901260033!2d-65.10765594868079!3d-43.30101117501712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0157208a1a330d%3A0x48c3eb01fdfe6978!2sGdor.%20Luis%20Jorge%20Fontana%2050%2C%20Rawson%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1651091950633!5m2!1ses-419!2sar"
+                  width="405"
+                  height="236"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
-            </div>
-            <div class="row">...</div>
-            <div class="row">...</div>
-            <div class="row">...</div>
-          </div>
-          <!-- iFrame -->
-          <div class="linea-contacto"></div>
-          <div class="row contenedor-ubicacion">
-            <div class="col-md-5">
-              <iframe class="iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.6327901260033!2d-65.10765594868079!3d-43.30101117501712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0157208a1a330d%3A0x48c3eb01fdfe6978!2sGdor.%20Luis%20Jorge%20Fontana%2050%2C%20Rawson%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1651091950633!5m2!1ses-419!2sar"
-                width="405" height="236" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-md-7 contacto-direccion">
-              <div class="location-icon">Fontana 50 - Rawson Chubut</div>
-              <div class="tel-icon">(0280) 4480200</div><br>
-              <div class="mail">contacto@chubut.gov.ar</div>
+              <div class="col-md-7 contacto-direccion">
+                <div class="location-icon">Fontana 50 - Rawson Chubut</div>
+                <div class="tel-icon">(0280) 4480200</div>
+                <br />
+                <div class="mail">contacto@chubut.gov.ar</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>

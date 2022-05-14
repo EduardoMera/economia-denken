@@ -1,121 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./tesoreria-general.css" />
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./navbar.css" />
+    <script src="./navbar.js"></script>
+    <title>Tesoreria General</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./tesoreria-general.css" />
-  <script src="../lib/js/bootstrap.min.js"></script>
-  <title>Document</title>
-</head>
+  <body>
+    <img class="background-img" src="../img/logochubut.png" alt="">
+    <nav class="fondo-nav navbar navbar-expand-md navbar-light">
+      <div id="contenedor-navbar" class="container-fluid grid-container">
+        <button
+          class="navbar-toggler item1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <div id="buscador-mobile"></div>
-  <section class="seccion-general">
-    <div class="row">
-      <div class="col-md-4 columna-izquierda">
-        <div class="linea-izquierda-mobile-tesoreria-general linea-izquierda-mobile"></div>
-        <div class="posicion-tesoreria-general subrayado">
-          <div class="texto-izquierda-tesoreria-general texto-izquierda">
-            TESORERÍA GENERAL
+        <a class="navbar-brand item2 ms-5" href="../index.html"><div class="logo-nav"></div> </a>
+
+        <div id="barra-arriba-mobile" class="barra-arriba item3"></div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div id="offcanvas-header" class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              <div>
+                <img class="d-block" src="../img/logochubutblanco.png" alt="" width="120px" height="50px" />
+                <h5 id="titulo-offcanvas" class="mt-3">Ministerio de Economía y Crédito Público</h5>
+              </div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div id="offcanvas-body" class="offcanvas-body m-0 justify-content-end" id="navbarSupportedContent">
+            <nav class="nab">
+              <ul class="ul">
+                <li class="li">
+                  <a class="btn-institucional" href="#">INSTITUCIONAL</a>
+                  <ul class="ul">
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >Organismos <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo">
+                          <a href="./autoridades.html" class="subitem-texto"
+                            >Autoridades <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#" class="subitem-texto">Misiones y funciones</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="li">
+                  <a class="btn-politica" href="./politica-y-gestion.html">POLITICA Y GESTION</a>
+                  <ul class="ul">
+                    <li class="li fondo">
+                      <a href="./coordinacion-financiera.html" class="subitem-texto"
+                        >Coordinacion financiera
+                        <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Financiamiento</a></li>
+                        <li class="li fondo"><a href="#">Estadistica y censo</a></li>
+                        <li class="li fondo"><a href="#">Titulos de deuda</a></li>
+                        <li class="li fondo"><a href="#">Letras del tesoro</a></li>
+                        <li class="li fondo"><a href="#">Clasificacion de riesgo</a></li>
+                        <li class="li fondo"><a href="#">Requisitos aut. endeudamiento municipios</a></li>
+                        <li class="li fondo"><a href="#">Libre de deuda fondo fiduciario desarrollo</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >VEP <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo">
+                          <a href="#" class="subitem-texto"
+                            >Programas <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#">?</a></li>
+                            <li class="li fondo"><a href="#">?</a></li>
+                            <li class="li fondo"><a href="#">?</a></li>
+                          </ul>
+                        </li>
+                        <li class="li fondo"><a href="#">Organismos</a></li>
+                        <li class="li fondo"><a href="#">Enlaces</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >Gestion catastro <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Responsabilidad fiscal</a></li>
+                        <li class="li fondo"><a href="./tesoreria-general.html">Tesoreria general</a></li>
+                        <li class="li fondo"><a href="#">Seguros</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="./gestion-presupuestaria.html" class="subitem-texto"
+                        >Gestion presupuestaria
+                        <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Presupuesto y finanzas</a></li>
+                        <li class="li fondo"><a href="#">Computos</a></li>
+                        <li class="li fondo"><a href="#">Control y gestion adm.</a></li>
+                        <li class="li fondo">
+                          <a href="#" class="subitem-texto"
+                            >Sist. presupuestario
+                            <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#">Instructivo</a></li>
+                            <li class="li fondo"><a href="#">Formularios</a></li>
+                            <li class="li fondo"><a href="#">Clasificadores</a></li>
+                          </ul>
+                        </li>
+                        <li class="li fondo"><a href="#">Presupuesto</a></li>
+                        <li class="li fondo"><a href="#">Ejecucion presup.</a></li>
+                        <li class="li fondo"><a href="#">Proyeccion plurianual</a></li>
+                        <li class="li fondo"><a href="#">Sostenibilidad de la deuda</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="li"><a class="btn-contacto" href="./contacto.html">CONTACTO</a></li>
+              </ul>
+            </nav>
+            <form id="buscador" class="d-flex buscador">
+              <input class="buscador-nav form-control py-0 mb-2" type="search" placeholder="Buscador" aria-label="Search" />
+              <button class="boton-lupa btn mb-2 position-relative" type="submit">
+                <svg id="lupa" xmlns="http://www.w3.org/2000/svg" width="12" height="15" fill="#dadad9" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
-      <div class="col-md-8 columna-derecha">
-        <div class="subtitulo">MARCO NORMATIVO</div>
-        <div class="texto-seccion">
-          La ley Nacional N 24156 “Administración financiera y de los sistemas de control del sector público nacional”
-          regula y establece como sistema de la administración pública a la Tesorería General.
-        </div>
-        <div class="texto-seccion">
-          En la provincia del Chubut y a través de la LEY II – N 76 (Antes LEY 5447) se establece el marco regulatorio
-          para la Tesorería general de la Provincia del Chubut y se considera uno de los sistemas del sistema financiero
-          provincial.
-        </div>
-        <div class="row row-botones">
-          <button class="boton mt-3 me-md-5">TESORERÍA GENERAL DE LA PROVINCIA</button>
-          <button class="boton mt-3 me-md-5">PUBLICACIONES DEL TGP</button>
-        </div>
-        <div class="mt-5">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Ley de administración financiera nacional</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Ley de administración financiera provincial</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Ley de coparticipación nacional</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto"> Ley 17.319 y modificatorias Ley 26.197 y Ley 27.007- Ley de Hidrocarburos Nacional y modificatorias.</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Ley XVII Nº 102 – Dto. Nº 2017/12 - Establécese Marco Regulatorio de la Actividad Hidrocarburífera de la Provincia del Chubut 
-            (B.O: 7.1.2013).</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Decreto Nº 91 -Año 2013- Apruébase la Reglamentación de la Ley XVII Nº 102 «Ley Provincial de Hidrocarburos» (B.O: 13.2.13).</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Resolución Nº23/2016 Ministerio de Economía y Crédito Público: Tasa de interés para el cálculo de accesorios, prevista en el 
-            artículo 38 del Código Fiscal vigente.</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Convenios donde intervenga la Tesorería General</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Leyes provinciales y decretos relacionados a los pagos a proveedores de la provincial</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Recálculo de Retenciones Impositivas y de los Regímenes de la Seguridad Social</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Leyes impositivas</div>
-        </div>
-        <div>
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Resoluciones relacionadas a las cuentas oficiales</div>
-        </div>
-        <div class="mb-5">
-          <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
-          <div class="item-texto">Resoluciones relacionadas con los fondos rotatorios y sus modificaciones, ampliación y cierre de fondo</div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-3">
-            <img class="img-tesoreria" src="../img/tesoreria/antonenaweb.jpg" alt="" width="170" height="170">
-            <div class="subtitulo-img">Ministro</div>
-            <div class="nombre-tesoreria">Oscar Abel </div><span class="subtitulo-img">Antoneta</span>
+    </nav>
+    <div id="buscador-mobile"></div>
+    <section class="seccion-general">
+      <div class="row">
+        <div class="col-md-4 columna-izquierda">
+          <div class="linea-izquierda-mobile-tesoreria-general linea-izquierda-mobile"></div>
+          <div class="posicion-tesoreria-general subrayado">
+            <div class="texto-izquierda-tesoreria-general texto-izquierda">TESORERÍA GENERAL</div>
           </div>
-          <div class="col-3">
-            <img class="img-tesoreria" src="../img/tesoreria/cardenas_web.jpg" alt="" width="170" height="170">
-            <div class="subtitulo-img">Subsecretaria de Gestión Presupuestaria</div>
-            <div class="nombre-tesoreria">Cdra. Rita Mabel </div><span class="subtitulo-img">Cárdenas</span>
+        </div>
+        <div class="col-md-8 columna-derecha">
+          <div class="subtitulo">MARCO NORMATIVO</div>
+          <div class="texto-seccion">
+            La ley Nacional N 24156 “Administración financiera y de los sistemas de control del sector público nacional” regula y establece como
+            sistema de la administración pública a la Tesorería General.
           </div>
-          <div class="col-3">
-            <img class="img-tesoreria" src="../img/tesoreria/nurchi.jpg" alt="" width="170" height="170">
-            <div class="subtitulo-img">Subsecretario de Coordinación Financiera</div>
-            <div class="nombre-tesoreria">Lic. Angel </div><span class="subtitulo-img">Nurchi</span>
+          <div class="texto-seccion">
+            En la provincia del Chubut y a través de la LEY II – N 76 (Antes LEY 5447) se establece el marco regulatorio para la Tesorería general de
+            la Provincia del Chubut y se considera uno de los sistemas del sistema financiero provincial.
           </div>
-          <div class="col-3">
-            <img class="img-tesoreria" src="../img/tesoreria/fernandez.jpg" alt="" width="170" height="170">
-            <div class="subtitulo-img">Tesorera</div>
-            <div class="nombre-tesoreria">Adriana </div><span class="subtitulo-img">Fernandez</span>
+          <div class="row row-botones">
+            <button class="boton mt-3 me-md-5">TESORERÍA GENERAL DE LA PROVINCIA</button>
+            <button class="boton mt-3 me-md-5">PUBLICACIONES DEL TGP</button>
+          </div>
+          <div class="mt-5">
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Ley de administración financiera nacional</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Ley de administración financiera provincial</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Ley de coparticipación nacional</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Ley 17.319 y modificatorias Ley 26.197 y Ley 27.007- Ley de Hidrocarburos Nacional y modificatorias.</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">
+              Ley XVII Nº 102 – Dto. Nº 2017/12 - Establécese Marco Regulatorio de la Actividad Hidrocarburífera de la Provincia del Chubut (B.O:
+              7.1.2013).
+            </div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">
+              Decreto Nº 91 -Año 2013- Apruébase la Reglamentación de la Ley XVII Nº 102 «Ley Provincial de Hidrocarburos» (B.O: 13.2.13).
+            </div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">
+              Resolución Nº23/2016 Ministerio de Economía y Crédito Público: Tasa de interés para el cálculo de accesorios, prevista en el artículo 38
+              del Código Fiscal vigente.
+            </div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Convenios donde intervenga la Tesorería General</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Leyes provinciales y decretos relacionados a los pagos a proveedores de la provincial</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Recálculo de Retenciones Impositivas y de los Regímenes de la Seguridad Social</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Leyes impositivas</div>
+          </div>
+          <div>
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Resoluciones relacionadas a las cuentas oficiales</div>
+          </div>
+          <div class="mb-5">
+            <img src="../img/iconos/flechaazul.png" alt="" width="10" height="10" />
+            <div class="item-texto">Resoluciones relacionadas con los fondos rotatorios y sus modificaciones, ampliación y cierre de fondo</div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-6 col-md-3">
+              <img class="img-tesoreria" src="../img/tesoreria/antonenaweb.jpg" alt="" width="170" height="170" />
+              <div class="subtitulo-img">Ministro</div>
+              <div class="nombre-tesoreria">Oscar Abel</div>
+              <span class="subtitulo-img">Antoneta</span>
+            </div>
+            <div class="col-6 col-md-3">
+              <img class="img-tesoreria" src="../img/tesoreria/cardenas_web.jpg" alt="" width="170" height="170" />
+              <div class="subtitulo-img">Subsecretaria de Gestión Presupuestaria</div>
+              <div class="nombre-tesoreria">Cdra. Rita Mabel</div>
+              <span class="subtitulo-img">Cárdenas</span>
+            </div>
+            <div class="col-6 col-md-3">
+              <img class="img-tesoreria" src="../img/tesoreria/nurchi.jpg" alt="" width="170" height="170" />
+              <div class="subtitulo-img">Subsecretario de Coordinación Financiera</div>
+              <div class="nombre-tesoreria">Lic. Angel</div>
+              <span class="subtitulo-img">Nurchi</span>
+            </div>
+            <div class="col-6 col-md-3">
+              <img class="img-tesoreria" src="../img/tesoreria/fernandez.jpg" alt="" width="170" height="170" />
+              <div class="subtitulo-img">Tesorera</div>
+              <div class="nombre-tesoreria">Adriana</div>
+              <span class="subtitulo-img">Fernandez</span>
+            </div>
           </div>
         </div>
       </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>

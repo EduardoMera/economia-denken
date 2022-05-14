@@ -8,15 +8,26 @@
   --blanco: #ffffff;
   --celeste-boton: #006097;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  height: 100vh;
+  font-family: 'HelveticaNeue', sans-serif;
+}
+.background-img {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.09;
+}
 .nombre-tesoreria{
   display: inline;
-  font-family: 'HelveticaNeue', sans-serif;
   color: var(--violeta);
   font-weight: lighter;
   font-size: 12px;
 }
 .subtitulo-img{
-    font-family: 'HelveticaNeue', sans-serif;
     color: var(--violeta);
     font-weight: 600;
     font-size: 12px;
@@ -28,7 +39,6 @@
   object-fit: cover;
 }
 .item-texto {
-  font-family: 'HelveticaNeue', sans-serif;
   display: inline;
   font-size: 17.3px;
   color: var(--violeta);
@@ -64,7 +74,6 @@
   position: absolute;
   width: 300%;
   top: 550px;
-  font-family: 'HelveticaNeue', sans-serif;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
@@ -73,7 +82,6 @@
   padding-right: 0px;
 }
 .boton {
-  font-family: 'HelveticaNeue', sans-serif;
   font-size: 9pt;
   color: var(--blanco);
   font-weight: bolder;
@@ -84,7 +92,6 @@
   background-color: var(--celeste-boton);
 }
 .subtitulo {
-  font-family: 'Montserrat', sans-serif;
   color: var(--violeta);
   font-weight: 600;
   font-size: 12px;
@@ -92,11 +99,10 @@
   margin-top: 10px;
 }
 @media screen and (max-width: 700px) {
-  .texto-izquierda {
-    color: var(--celeste1);
+  body{
+    font-family: 'Montserrat', sans-serif;
   }
   .boton {
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: var(--blanco);
     font-weight: 900;
@@ -112,30 +118,37 @@
   .columna-izquierda {
     transform: rotate(0deg);
   }
-  .subrayado {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--celeste1);
-    font-weight: bolder;
-    font-size: 17px;
-    width: 100%;
-    top: 10%;
-    position: static;
-    border-bottom: none;
-  }
   .linea-izquierda-mobile-tesoreria-general {
     width: 50%;
   }
-  .linea-izquierda-mobile {
-    position: relative;
-    top: 18px;
-    height: 13px;
-    background-color: var(--celeste1);
-  }
   .texto-seccion {
-    font-family: 'Montserrat', sans-serif;
     color: var(--violeta);
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
+  }
+  .subrayado {
+    position: static;
+    width: auto;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+  .texto-izquierda {
+    color: var(--celeste1);
+    z-index: 2;
+    background-color: #fff;
+    padding-right: 10px;
+  }
+  .texto-izquierda-tesoreria-general{
+    width: auto;
+    padding-left: 10px;
+  }
+  .linea-izquierda-mobile {
+    z-index: -1;
+    position: relative;
+    top: 18px;
+    height: 13px;
+    background-color: var(--celeste1);
   }
 }
