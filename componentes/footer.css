@@ -7,7 +7,6 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
-
 .link-blanco {
   text-decoration: none;
   color: var(--blanco);
@@ -18,7 +17,7 @@
 
   font-size: 8pt;
 
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 
   line-height: 2pt;
@@ -34,7 +33,7 @@
 
   font-size: 8pt;
 
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 
   line-height: 13.2px;
@@ -58,6 +57,7 @@
 }
 
 .fondo-footer {
+  margin-top: 50px;
   background-color: var(--celeste1);
   height: 313.4px;
   padding: 0px;
@@ -90,7 +90,6 @@
   width: 326px;
   margin-bottom: 3.2px;
   margin-top: 16.4px;
-  margin-left: ;
 }
 
 .texto-footer-img {
@@ -98,7 +97,7 @@
   color: var(--blanco);
 
   font-style: italic;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   width: 328px;
 
@@ -121,43 +120,70 @@
 }
 
 .izquierda {
-  display:flex;
+  display: flex;
 }
 
 @media screen and (max-width: 743px) {
+  .linea-blanca,
+  .texto-footer-img,
+  .texto-footer,
+  .img-footer,
+  .redes,
+  .izquierda,
+  .conjuntoizq {
+    display: none;
+    border: 0px;
+  }
+  .fondo-footer {
+    margin-top: 10px;
+    background-color: var(--blanco);
+    height: 0px;
+    padding: 0px;
+  }
+  .link-blanco,
+  .link-amarillo,
+  .link-blanco:hover {
+    color: black;
+    display: inline;
+  }
+  .links {
+    width: 100% !important;
+    display: inline !important;
+    padding: 0 !important;
+  }
+  .fila {
+    display: inline-block;
+  }
+  .links {
+    height: auto;
+    margin-top: 0px;
+    display: inline;
+  }
+  .fila .col-1 {
+    display: inline;
+    margin-left: 10px;
+    padding-right: 0px;
+  }
+  .fila .col-10 {
+    display: inline;
+    padding-right: 5px;
+    padding-left: 0px;
+    margin: 0px;
+  }
+  .centro {
+    width: 100% !important;
+  }
+  .flechita {
+    filter: invert(1);
+  }
+  .bi-arrow-down-right {
+    padding: 0px;
+    margin: 0px;
+  }
+  body > footer > div.derecha.col-3.row {
+    display: none;
+  }
+  /*links uno atras de otro*/
 
-	.linea-blanca, .texto-footer-img, .texto-footer, .img-footer, .redes, .izquierda, .conjuntoizq {
-		display: none;
-		border:0px;
-	}
-	.fondo-footer{
-		background-color: var(--blanco);
-	}
-	.link-blanco, .link-amarillo, .link-blanco:hover{
-		color:black;
-		display: inline;
-	}
-	.links{
-		width: 100%!important;
-		display: inline!important;
-		padding:0!important;
-	
-	
-	}
-	.derecha{
-		display:none;
-	}
-
-	.centro{
-		width:100%!important;
-	}
-	.flechita{
-		filter:  invert(1);
-	}
-	
-
-	/*links uno atras de otro*/
-	
   /*VER FORMA MOBILE*/
 }
-
