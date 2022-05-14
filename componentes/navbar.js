@@ -1,7 +1,17 @@
-window.addEventListener("DOMContentLoaded", (e) => {
-  let ancho = window.screen.width;
+const stateNavbarDesktop = {};
 
-  if (ancho <= 576) {
+window.addEventListener("resize", ajustar);
+window.addEventListener("DOMContentLoaded", () => {
+  stateNavbarDesktop.nav = document.getElementById("nav").innerHTML;
+  console.log(stateNavbarDesktop);
+  ajustar();
+});
+
+function ajustar() {
+  let ancho = document.body.clientWidth;
+
+  if (ancho <= 1200) {
+    console.log("mobile");
     let barraarriba = document.getElementById("barra-arriba");
     const barra = document.getElementById("barra-arriba-mobile");
     if (barraarriba) {
@@ -16,11 +26,17 @@ window.addEventListener("DOMContentLoaded", (e) => {
     document.getElementById("buscador-mobile").appendChild(buscador);
 
     adaptarNavbar();
-    try {
+
+    if (document.querySelector(".background-img")) {
       document.querySelector(".background-img").style.display = "none";
-    } catch (e) {}
+    }
+  } else {
+    // agrear el html del state general del nav y probarlo
+    document.getElementById("nav").innerHTML = stateNavbarDesktop.nav;
+    document.getElementById("buscador-mobile").innerHTML = "";
   }
-});
+}
+
 /**
  * Arma la flecha izquierda en el item de offcanvas mobile
  * @param id Indica el nombre del menu al cual va a dirigirse luego
