@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- LIBRERIAS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
     <script src="./lib/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <!-- CSS CUSTOM -->
     <link rel="stylesheet" href="./componentes/navbar.css" />
     <link rel="stylesheet" href="./componentes/slide-imagenes.css" />
     <link rel="stylesheet" href="./componentes/twitter.css" />
-    <link rel="stylesheet" href="./componentes/footer.css">
+    <link rel="stylesheet" href="./componentes/footer.css" />
+    <link rel="stylesheet" href="./componentes/slide-botones.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./componentes/slide-botones.css"
     <!-- JS CUSTOM -->
     <script src="./componentes/navbar.js"></script>
     <script src="./componentes/twitter.js"></script>
@@ -42,8 +52,8 @@
           <div id="offcanvas-header" class="offcanvas-header">
             <div class="offcanvas-title" id="offcanvasExampleLabel">
               <div>
-                <img class="d-block" src="./img/logochubutblanco.png" alt="" width="120" height="50">
-                <h5 id="titulo-offcanvas" class="mt-3" >Ministerio de Economía y Crédito Público </h5>
+                <img class="d-block" src="./img/logochubutblanco.png" alt="" width="120" height="50" />
+                <h5 id="titulo-offcanvas" class="mt-3">Ministerio de Economía y Crédito Público</h5>
               </div>
             </div>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -55,10 +65,14 @@
                   <a class="btn-institucional" href="#">INSTITUCIONAL</a>
                   <ul class="ul">
                     <li class="li fondo">
-                      <a href="#" class="subitem-texto">Organismos <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                      <a href="#" class="subitem-texto"
+                        >Organismos <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                      /></a>
                       <ul class="ul">
                         <li class="li fondo">
-                          <a href="./componentes/autoridades.html" class="subitem-texto">Autoridades <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                          <a href="./componentes/autoridades.html" class="subitem-texto"
+                            >Autoridades <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                          /></a>
                           <ul class="ul">
                             <li class="li fondo"><a href="#" class="subitem-texto">Misiones y funciones</a></li>
                           </ul>
@@ -71,13 +85,18 @@
                   <a class="btn-politica" href="./componentes/politica-y-gestion.html">POLITICA Y GESTION</a>
                   <ul class="ul">
                     <li class="li fondo">
-                      <a href="./componentes/gestion-presupuestaria.html" class="subitem-texto">Gestion presupuestaria <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                      <a href="./componentes/gestion-presupuestaria.html" class="subitem-texto"
+                        >Gestion presupuestaria <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                      /></a>
                       <ul class="ul">
                         <li class="li fondo"><a href="#">Presupuesto y finanzas</a></li>
                         <li class="li fondo"><a href="#">Computos</a></li>
                         <li class="li fondo"><a href="#">Control y gestion adm.</a></li>
                         <li class="li fondo">
-                          <a href="#" class="subitem-texto">Sist. presupuestario <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                          <a href="#" class="subitem-texto"
+                            >Sist. presupuestario
+                            <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                          /></a>
                           <ul class="ul">
                             <li class="li fondo"><a href="#">Instructivo</a></li>
                             <li class="li fondo"><a href="#">Formularios</a></li>
@@ -85,7 +104,9 @@
                           </ul>
                         </li>
                         <li class="li fondo">
-                          <a href="#" class="subitem-texto">Presupuesto <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                          <a href="#" class="subitem-texto"
+                            >Presupuesto <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                          /></a>
                           <ul class="ul">
                             <li class="li fondo"><a href="#">Leyes y proyecto del presupuesto</a></li>
                             <li class="li fondo"><a href="#">Programa plurianual</a></li>
@@ -93,7 +114,10 @@
                           </ul>
                         </li>
                         <li class="li fondo">
-                          <a href="#" class="subitem-texto">Ejecución presupuestaria <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                          <a href="#" class="subitem-texto"
+                            >Ejecución presupuestaria
+                            <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                          /></a>
                           <ul class="ul">
                             <li class="li fondo"><a href="#">Informe de gasto y ejecucion</a></li>
                             <li class="li fondo"><a href="#">Programacion plurianual</a></li>
@@ -102,7 +126,9 @@
                         </li>
                         <li class="li fondo"><a href="#">Proyeccion plurianual</a></li>
                         <li class="li fondo">
-                          <a href="#" class="subitem-texto">Recursos <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                          <a href="#" class="subitem-texto"
+                            >Recursos <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                          /></a>
                           <ul class="ul">
                             <li class="li fondo"><a href="#">Recaudacion provincial</a></li>
                             <li class="li fondo"><a href="#">Deuda publica</a></li>
@@ -112,7 +138,10 @@
                       </ul>
                     </li>
                     <li class="li fondo">
-                      <a href="./componentes/coordinacion-financiera.html" class="subitem-texto">Coordinacion financiera <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                      <a href="./componentes/coordinacion-financiera.html" class="subitem-texto"
+                        >Coordinacion financiera
+                        <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                      /></a>
                       <ul class="ul">
                         <li class="li fondo"><a href="#">Financiamiento</a></li>
                         <li class="li fondo"><a href="#">Estadistica y censo</a></li>
@@ -125,7 +154,9 @@
                       </ul>
                     </li>
                     <li class="li fondo">
-                      <a href="#" class="subitem-texto">UEP <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                      <a href="#" class="subitem-texto"
+                        >UEP <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                      /></a>
                       <ul class="ul">
                         <li class="li fondo">
                           <a href="#" class="subitem-texto">Programas </a>
@@ -138,7 +169,9 @@
                       <a href="#" class="subitem-texto">Tributos provinciales </a>
                     </li>
                     <li class="li fondo">
-                      <a href="#" class="subitem-texto">Gestion catastro <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""></a>
+                      <a href="#" class="subitem-texto"
+                        >Gestion catastro <img class="float-end subitem-flecha" width="10" height="10" src="./img/iconos/flechaazul.png" alt=""
+                      /></a>
                       <ul class="ul">
                         <li class="li fondo"><a href="#">Normas catastrales</a></li>
                         <li class="li fondo"><a href="#">Guias de notas</a></li>
@@ -179,105 +212,111 @@
     </nav>
     <div id="buscador-mobile"></div>
     <section id="slide">
-			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators" class="active slide-buttom"
-						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" class="slide-buttom"
-						data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" class="slide-buttom"
-						data-bs-slide-to="2" aria-label="Slide 3"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="false">
-						<a href="#1">
-							<img id="slide-1" src="./img/slide/slide1.jpg" class="d-block w-100 img-carousel" alt="." />
-							<div class="col-lg-12">
-								<div class="carousel-caption">
-									<h2>CHUBUT ANUNCIÓ QUE REPERFILÓ SU DEUDA PÚBLICA</h2>
-									<h5>ALCANZA LOS US$650 MILLONES</h5>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            class="active slide-buttom"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" class="slide-buttom" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" class="slide-buttom" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="false">
+            <a href="#1">
+              <img id="slide-1" src="./img/slide/slide1.jpg" class="d-block w-100 img-carousel" alt="." />
+              <div class="col-lg-12">
+                <div class="carousel-caption">
+                  <h2>CHUBUT ANUNCIÓ QUE REPERFILÓ SU DEUDA PÚBLICA</h2>
+                  <h5>ALCANZA LOS US$650 MILLONES</h5>
 
-									<p class="me-4 mt-4 block-with-text">
-										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, reiciendis
-										numquam iure at provident eaque. Beatae excepturi quae, nulla cupiditate
-										consequuntur reiciendis enim doloremque alias et quidem debitis ipsum nihil?
-										Praesentium nobis labore dolor
-									</p>
-									<div class="
-										btn
-										bg-light
-										position-relative
-										rounded-pill
-										px-3
-										py-1
-										ver-mas
-									">
-                  ver más
-              </div>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="carousel-item">
-						<a href="#2">
-							<img src="./img/slide/slide2.jpg" class="d-block w-100 img-carousel" alt="." />
-							<div class="carousel-caption d-md-block">
-								<h2>CHUBUT ANUNCIÓ QUE REPERFILÓ SU DEUDA PÚBLICA</h2>
-									<h5>ALCANZA LOS US$650 MILLONES</h5>
-
-								<p class="me-4 mt-4 block-with-text">
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, reiciendis numquam
-									iure at provident eaque. Beatae excepturi quae, nulla cupiditate consequuntur
-									reiciendis enim doloremque alias et quidem debitis ipsum nihil? Praesentium nobis
-									labore dolor
-								</p>
-								<div class="
-										btn
-										bg-light
-										position-relative
-										rounded-pill
-										px-3
-										py-1
-										ver-mas
-									">
-									ver más
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="carousel-item">
-						<a href="#3">
-							<img src="./img/slide/slide3.jpg" class="d-block w-100 img-carousel" alt="." />
-							<div class="carousel-caption d-md-block">
-								<h2>CHUBUT ANUNCIÓ QUE REPERFILÓ SU DEUDA PÚBLICA</h2>
-									<h5>ALCANZA LOS US$650 MILLONES</h5>
-								<p class="me-4 mt-4 block-with-text">
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, reiciendis numquam
-									iure at provident eaque. Beatae excepturi quae, nulla cupiditate consequuntur
-									reiciendis enim doloremque alias et quidem debitis ipsum nihil? Praesentium nobis
-									labore dolor
-								</p>
-								<div class="
-										btn
-										bg-light
-										position-relative
-										rounded-pill
-										px-3
-										py-1
-										ver-mas
-									">
-									ver más
+                  <p class="me-4 mt-4 block-with-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, reiciendis numquam iure at provident eaque. Beatae excepturi quae,
+                    nulla cupiditate consequuntur reiciendis enim doloremque alias et quidem debitis ipsum nihil? Praesentium nobis labore dolor
+                  </p>
+                  <div class="btn bg-light position-relative rounded-pill px-3 py-1 ver-mas">ver más</div>
                 </div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-    <section id="slide-botones">
-      <h1 class="text-center">Slide de botones en construcción</h1>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#2">
+              <img src="./img/slide/slide2.jpg" class="d-block w-100 img-carousel" alt="." />
+              <div class="carousel-caption d-md-block">
+                <h2>CHUBUT ANUNCIÓ QUE REPERFILÓ SU DEUDA PÚBLICA</h2>
+                <h5>ALCANZA LOS US$650 MILLONES</h5>
+
+                <p class="me-4 mt-4 block-with-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, reiciendis numquam iure at provident eaque. Beatae excepturi quae,
+                  nulla cupiditate consequuntur reiciendis enim doloremque alias et quidem debitis ipsum nihil? Praesentium nobis labore dolor
+                </p>
+                <div class="btn bg-light position-relative rounded-pill px-3 py-1 ver-mas">ver más</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#3">
+              <img src="./img/slide/slide3.jpg" class="d-block w-100 img-carousel" alt="." />
+              <div class="carousel-caption d-md-block">
+                <h2>CHUBUT ANUNCIÓ QUE REPERFILÓ SU DEUDA PÚBLICA</h2>
+                <h5>ALCANZA LOS US$650 MILLONES</h5>
+                <p class="me-4 mt-4 block-with-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, reiciendis numquam iure at provident eaque. Beatae excepturi quae,
+                  nulla cupiditate consequuntur reiciendis enim doloremque alias et quidem debitis ipsum nihil? Praesentium nobis labore dolor
+                </p>
+                <div class="btn bg-light position-relative rounded-pill px-3 py-1 ver-mas">ver más</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-5">
+      <div id="iconos-carrousel" class="container mb-5">
+        <div class="row">
+          <div class="slider-nav icon-div">
+            <div class="div-icon">
+              <img src="./img/icons/icon-tramites.svg" alt="icon" />
+              <p>
+                Herramientas 
+                y tramites
+              </p>
+            </div>
+            <div class="div-icon">
+              <img src="./img/icons/icon-tesoreria.svg" alt="icon" />
+              <p>
+                Tesorería general 
+                de la provincia
+              </p>
+            </div>
+            <div class="div-icon">
+              <img src="./img/icons/icon-catastro.svg" alt="icon" />
+              <p>
+                Dirección General de 
+                Catastro (DGC)
+              </p>
+            </div>
+            <div class="div-icon">
+              <img src="./img/icons/icon-proveedores.svg" alt="icon" />
+              <p>Pago proveedores</p>
+            </div>
+            <div class="div-icon">
+              <img src="./img/icons/icon-servicios.svg" alt="icon" />
+              <p>Servicios</p>
+            </div>
+            <div class="div-icon">
+              <img src="./img/icons/icon-estadisticas.svg" alt="icon" />
+              <p>Estadisticas</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="twitter">
       <div class="row p-0 m-0">
@@ -294,14 +333,21 @@
                 <div class="info-text p-3">
                   <div class="row posicion">
                     <div class="col-sm-10">
-                      Anuncian la pronta culminación del parque científico
-                      tecnológico agroforestal con una inversión de 180 millones
-                      de pesos
+                      Anuncian la pronta culminación del parque científico tecnológico agroforestal con una inversión de 180 millones de pesos
                     </div>
                     <div class="col-sm-2 pe-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: rgb(46, 151, 180);"
-                        fill="currentColor" class="bi bi-plus-circle-fill float-end" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        style="color: rgb(46, 151, 180)"
+                        fill="currentColor"
+                        class="bi bi-plus-circle-fill float-end"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -313,13 +359,20 @@
               <div>
                 <div class="info-text p-3">
                   <div class="row posicion">
-                    <div class="col-sm-10">
-                      Se acordó una ‘Canasta Navideña’ con los supermercados
-                    </div>
+                    <div class="col-sm-10">Se acordó una ‘Canasta Navideña’ con los supermercados</div>
                     <div class="col-sm-2 pe-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: rgb(46, 151, 180);"
-                        fill="currentColor" class="bi bi-plus-circle-fill float-end" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        style="color: rgb(46, 151, 180)"
+                        fill="currentColor"
+                        class="bi bi-plus-circle-fill float-end"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -331,13 +384,20 @@
               <div>
                 <div class="info-text p-3">
                   <div class="row posicion">
-                    <div class="col-sm-10">
-                      Se acordó una ‘Canasta Navideña’ con los supermercados
-                    </div>
+                    <div class="col-sm-10">Se acordó una ‘Canasta Navideña’ con los supermercados</div>
                     <div class="col-sm-2 pe-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: rgb(46, 151, 180);"
-                        fill="currentColor" class="bi bi-plus-circle-fill float-end" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        style="color: rgb(46, 151, 180)"
+                        fill="currentColor"
+                        class="bi bi-plus-circle-fill float-end"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -351,13 +411,20 @@
               <div>
                 <div class="info-text p-3">
                   <div class="row posicion">
-                    <div class="col-sm-10">
-                      Se acordó una ‘Canasta Navideña’ con los supermercados
-                    </div>
+                    <div class="col-sm-10">Se acordó una ‘Canasta Navideña’ con los supermercados</div>
                     <div class="col-sm-2 pe-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: rgb(46, 151, 180);"
-                        fill="currentColor" class="bi bi-plus-circle-fill float-end" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        style="color: rgb(46, 151, 180)"
+                        fill="currentColor"
+                        class="bi bi-plus-circle-fill float-end"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -369,13 +436,20 @@
               <div>
                 <div class="info-text p-3">
                   <div class="row posicion">
-                    <div class="col-sm-10">
-                      Se acordó una ‘Canasta Navideña’ con los supermercados
-                    </div>
+                    <div class="col-sm-10">Se acordó una ‘Canasta Navideña’ con los supermercados</div>
                     <div class="col-sm-2 pe-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: rgb(46, 151, 180);"
-                        fill="currentColor" class="bi bi-plus-circle-fill float-end" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        style="color: rgb(46, 151, 180)"
+                        fill="currentColor"
+                        class="bi bi-plus-circle-fill float-end"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -388,16 +462,22 @@
                 <div class="info-text p-3">
                   <div class="row posicion">
                     <div class="col-sm-10">
-                      Anuncian la pronta culminación del parque científico
-                      tecnológico agroforestal con una inversión de 180 millones
-                      de pesos
+                      Anuncian la pronta culminación del parque científico tecnológico agroforestal con una inversión de 180 millones de pesos
                     </div>
                     <div class="col-sm-2 pe-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: rgb(46, 151, 180);"
-                        fill="currentColor" class="bi bi-plus-circle-fill float-end" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        style="color: rgb(46, 151, 180)"
+                        fill="currentColor"
+                        class="bi bi-plus-circle-fill float-end"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                        />
                       </svg>
-
                     </div>
                   </div>
                 </div>
@@ -408,7 +488,6 @@
       </div>
     </section>
     <footer class="fondo-footer row p-0">
-
       <div class="col-5 izquierda justify-content-center">
         <div class="conjuntoizq">
           <div class="linea-blanca d-block"></div>
@@ -629,5 +708,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>  
+    <script src="./componentes/slide-botones.js"></script>
   </body>
 </html>

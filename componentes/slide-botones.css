@@ -1,0 +1,53 @@
+.slick-next:before { 
+    content: url('../img/icons/flechaDerecha.svg');
+    color: #222d5b;
+}
+
+.slick-prev:before { 
+    content: url('../img/icons/flechaIzquierda.svg');
+    color: #222d5b;
+}
+
+.iconDiv {
+    width: 1024px;
+    height: 180,8px;
+}
+
+.div-icon img {
+    width: 82.5px;
+    margin-inline: auto;
+}
+.div-icon p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.div-icon {
+    display: grid;
+    place-items: center;
+}
+
+.slick-list{
+    height: 200px;
+}
+
+@media screen and (max-width: 575px) {
+    .slider-nav {
+        width: 95%;
+        margin: 10px;
+    }
+    
+    .slick-prev {
+        left: -3px;
+    }
+
+    .slick-next {
+        right: 0px;
+    }
+
+    .div-icon img {
+        width: 90px;
+    }
+
+}
+
