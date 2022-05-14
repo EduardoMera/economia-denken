@@ -137,7 +137,7 @@
   .fondo-footer {
     margin-top: 10px;
     background-color: var(--blanco);
-    height: 0px;
+    height: 150px;
     padding: 0px;
   }
   .link-blanco,
