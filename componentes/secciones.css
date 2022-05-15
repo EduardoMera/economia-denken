@@ -70,7 +70,7 @@ body {
 .posicion-coordinacion-financiera {
   left: -130%;
 }
-.subrayado-coordinacion-financiera{
+.subrayado-coordinacion-financiera {
   display: flex;
   justify-content: end;
   position: relative;
@@ -87,7 +87,7 @@ body {
 .posicion-gestion-presupuestaria {
   left: -650px;
 }
-.subrayado-gestion-presupuestaria{
+.subrayado-gestion-presupuestaria {
   display: flex;
   justify-content: end;
   position: relative;
@@ -147,11 +147,17 @@ body {
 .hidden {
   visibility: hidden;
 }
-footer{
+footer {
   position: relative;
   top: 350px;
 }
 @media screen and (max-width: 700px) {
+  .background-img{
+    display: none;
+  }
+  .fondo-footer {
+    display: none;
+  }
   body {
     font-family: "Montserrat", sans-serif;
   }

@@ -96,6 +96,12 @@ body {
   margin-top: 10px;
 }
 @media screen and (max-width: 700px) {
+  .background-img{
+    display: none;
+  } 
+  .fondo-footer {
+    display: none;
+  }
   body{
     font-family: 'Montserrat', sans-serif;
   }
