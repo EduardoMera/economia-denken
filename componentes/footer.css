@@ -122,7 +122,6 @@
 .izquierda {
   display: flex;
 }
-
 @media screen and (max-width: 743px) {
   .linea-blanca,
   .texto-footer-img,

@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 function ajustar() {
   let ancho = document.body.clientWidth;
 
-  if (ancho <= 1200) {
+  if (ancho <= 1183) {
     console.log("mobile");
     let barraarriba = document.getElementById("barra-arriba");
     const barra = document.getElementById("barra-arriba-mobile");

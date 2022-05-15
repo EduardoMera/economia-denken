@@ -58,9 +58,6 @@ body {
   text-align: right;
   color: var(--celeste2);
 }
-.row {
-  width: 100%;
-}
 .row-botones{ /* class custom tesoreria general */
   margin-left: 0px;
   margin-top: 20px;

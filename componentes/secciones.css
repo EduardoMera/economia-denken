@@ -5,7 +5,7 @@ body {
 body {
   position: relative;
   height: 100vh;
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
 }
 .background-img {
   position: absolute;
@@ -40,7 +40,7 @@ body {
   width: 95%;
 }
 .posicion-autoridades {
-  left: -100%;
+  left: -500px;
 }
 /* Politica y Gestion */
 .posicion-politica-gestion {
@@ -65,17 +65,37 @@ body {
 }
 /* Coordinacion financiera */
 .texto-izquierdo-coordinacion-financiera {
-  width: 67%;
+  width: 100%;
 }
 .posicion-coordinacion-financiera {
-  left: -70%;
+  left: -130%;
+}
+.subrayado-coordinacion-financiera{
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 205%;
+  top: 30%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
 }
 /* gestion presupuestaria */
 .texto-izquierdo-gestion-presupuestaria {
-  width: 90%;
+  width: 70%;
 }
 .posicion-gestion-presupuestaria {
-  left: -10%;
+  left: -650px;
+}
+.subrayado-gestion-presupuestaria{
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 1400px;
+  top: 600px;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
 }
 /* Ingresos Egresos */
 .texto-izquierda-ingresos-egresos {
@@ -93,7 +113,7 @@ body {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 150%;
+  width: 700px;
   top: 30%;
   font-weight: bolder;
   font-size: 62px;
@@ -106,9 +126,6 @@ body {
 }
 .columna-derecha {
   padding-right: 0px;
-}
-.row {
-  width: 100%;
 }
 .subtitulo {
   color: var(--violeta);
@@ -130,9 +147,13 @@ body {
 .hidden {
   visibility: hidden;
 }
+footer{
+  position: relative;
+  top: 350px;
+}
 @media screen and (max-width: 700px) {
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .seccion-general {
     margin: 10px;
@@ -208,7 +229,7 @@ body {
   .texto-izquierdo-conformacion-consejo,
   .texto-izquierdo-coordinacion-financiera,
   .texto-izquierdo-gestion-presupuestaria,
-  .texto-izquierda-ingresos-egresos{
+  .texto-izquierda-ingresos-egresos {
     width: auto;
     padding-left: 10px;
   }
