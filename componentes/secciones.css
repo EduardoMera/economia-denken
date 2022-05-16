@@ -82,7 +82,7 @@ body {
 }
 /* gestion presupuestaria */
 .texto-izquierdo-gestion-presupuestaria {
-  width: 70%;
+  width: 600px;
 }
 .posicion-gestion-presupuestaria {
   left: -650px;
@@ -92,7 +92,7 @@ body {
   justify-content: end;
   position: relative;
   width: 1400px;
-  top: 600px;
+  top: 500px;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
@@ -151,7 +151,7 @@ footer {
   position: relative;
   top: 350px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .background-img{
     display: none;
   }
@@ -168,12 +168,12 @@ footer {
   .linea-izquierda-mobile-autoridades {
     width: 100%;
   }
-  /* Politica y Gestion */
-  .linea-izquierda-mobile-politica-gestion {
-    width: 51%;
-  }
   .cuerpo-autoridades {
     margin: 0px 40px;
+  }
+  /* Politica y Gestion */
+  .linea-izquierda-mobile-politica-y-gestion {
+    width: 51%;
   }
   /* Comision ejecutiva */
   .linea-izquierda-mobile-comision-ejecutiva {
@@ -185,7 +185,14 @@ footer {
   }
   /* Coordinacion financiera */
   .linea-izquierda-mobile-coordinacion-financiera {
-    width: 33%;
+    width: 50%;
+  }
+  .subrayado-coordinacion-financiera, .subrayado-gestion-presupuestaria{
+    position: static;
+    width: auto;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
   }
   /* Gestion presupuestaria */
   .linea-izquierda-mobile-gestion-presupuestaria {
