@@ -3,21 +3,24 @@ const stateNavbarDesktop = {};
 window.addEventListener("resize", ajustar);
 window.addEventListener("DOMContentLoaded", () => {
   stateNavbarDesktop.nav = document.getElementById("nav").innerHTML;
+  stateNavbarDesktop.barraDesktop = document.getElementById("barra-arriba").textContent;
   console.log(stateNavbarDesktop);
   ajustar();
+  ocultarBarraAzulO();
 });
+
+function ocultarBarraAzulO() {}
 
 function ajustar() {
   let ancho = document.body.clientWidth;
 
   if (ancho <= 1183) {
     console.log("mobile");
-    let barraarriba = document.getElementById("barra-arriba");
-    const barra = document.getElementById("barra-arriba-mobile");
-    if (barraarriba) {
-      barra.innerHTML = barraarriba.innerHTML;
-      barraarriba.remove();
-    }
+    const barraDesktop = document.getElementById("barra-arriba");
+    const barraMobile = document.getElementById("barra-arriba-mobile");
+
+    barraMobile.textContent = stateNavbarDesktop.barraDesktop;
+    barraDesktop.textContent = "";
 
     document.getElementById("contenedor-navbar").classList.remove("container-fluid");
 
@@ -33,7 +36,9 @@ function ajustar() {
   } else {
     // agrear el html del state general del nav y probarlo
     document.getElementById("nav").innerHTML = stateNavbarDesktop.nav;
+    document.getElementById("barra-arriba").innerHTML = stateNavbarDesktop.barraDesktop;
     document.getElementById("buscador-mobile").innerHTML = "";
+    barra.innerHTML = "";
   }
 }
 
