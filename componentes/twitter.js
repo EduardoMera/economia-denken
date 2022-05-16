@@ -1,18 +1,16 @@
-window.addEventListener('DOMContentLoaded', () => {
-  
-  let ancho = window.screen.width;
+let ancho = window.screen.width;
 
-  if (ancho <= 576) {
-    const twits = document.querySelectorAll('.info-text');
-    let seccion = document.getElementById('twitter');
-    seccion.innerHTML = `
+if (ancho <= 576) {
+  const twits = document.querySelectorAll(".info-text");
+  let seccion = document.getElementById("twitter");
+  seccion.innerHTML = `
       <section class="container-fluid mt-5">
         <img class="img-noticias-twitter mb-3" src="./img/noticias-twitter-linea-amarilla.png" alt="" />
         <div class="mobile-titulo-noticias-twitter">NOTICIAS DE TWITTER</div>
       </section>
       `;
-    twits.forEach(twit => {
-      seccion.innerHTML += `
+  twits.forEach((twit) => {
+    seccion.innerHTML += `
       <div class="twit-mobile">
         <div class="row">
         <div class="col-2 logo-twitter">
@@ -26,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       </div>
-      ` 
-    })
-  }
-});
+      `;
+  });
+}

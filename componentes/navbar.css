@@ -82,6 +82,9 @@ body{
   font-weight: 500;
   font-size: 14px;
 }
+#barra-arriba-mobile{
+  display: none;
+}
 
 /* inicio nav custom */
 .btn-institucional {
@@ -249,6 +252,12 @@ body {
 
     background-color: var(--celeste1);
     color: #fff;
+  }
+  #barra-arriba-mobile{
+    display: block;
+  }
+  #barra-arriba{
+    display: none;
   }
 
   .btn-institucional {

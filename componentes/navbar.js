@@ -1,27 +1,15 @@
-const stateNavbarDesktop = {};
+let navDesktop;
 
 window.addEventListener("resize", ajustar);
-window.addEventListener("DOMContentLoaded", () => {
-  stateNavbarDesktop.nav = document.getElementById("nav").innerHTML;
-  stateNavbarDesktop.barraDesktop = document.getElementById("barra-arriba").textContent;
-  console.log(stateNavbarDesktop);
-  ajustar();
-  ocultarBarraAzulO();
-});
-
-function ocultarBarraAzulO() {}
+navDesktop = document.getElementById("nav").innerHTML;
+ajustar();
 
 function ajustar() {
   let ancho = document.body.clientWidth;
 
   if (ancho <= 1183) {
     console.log("mobile");
-    const barraDesktop = document.getElementById("barra-arriba");
-    const barraMobile = document.getElementById("barra-arriba-mobile");
-
-    barraMobile.textContent = stateNavbarDesktop.barraDesktop;
-    barraDesktop.textContent = "";
-
+    //refactorizar
     document.getElementById("contenedor-navbar").classList.remove("container-fluid");
 
     let buscador = document.querySelector("#buscador");
@@ -34,11 +22,14 @@ function ajustar() {
       document.querySelector(".background-img").style.display = "none";
     }
   } else {
-    // agrear el html del state general del nav y probarlo
-    document.getElementById("nav").innerHTML = stateNavbarDesktop.nav;
-    document.getElementById("barra-arriba").innerHTML = stateNavbarDesktop.barraDesktop;
+    if(!document.getElementById("contenedor-navbar").classList.contains("container-fluid")){
+      document.getElementById("contenedor-navbar").classList.add("container-fluid");
+    }
+    if (document.querySelector(".background-img")) {
+      document.querySelector(".background-img").style.display = "block";
+    }
+    document.getElementById("nav").innerHTML = navDesktop;
     document.getElementById("buscador-mobile").innerHTML = "";
-    barra.innerHTML = "";
   }
 }
 
