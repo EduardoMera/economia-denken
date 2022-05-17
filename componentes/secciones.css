@@ -75,16 +75,16 @@ body {
 }
 /* Coordinacion financiera */
 .texto-izquierdo-coordinacion-financiera {
-  width: 100%;
+  width: 500px;
 }
 .posicion-coordinacion-financiera {
-  left: -130%;
+  left: -400px;
 }
 .subrayado-coordinacion-financiera {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 205%;
+  width: 800px;
   top: 30%;
   font-weight: bolder;
   font-size: 62px;
