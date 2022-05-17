@@ -33,7 +33,6 @@ select:focus{
 }
 .contacto {
   padding-left: 10px;
-  padding-right: 25px;
 }
 .columna-izquierda {
   transform: rotate(270deg);
@@ -137,6 +136,9 @@ select:focus{
   color: var(--violeta);
 }
 @media screen and (max-width: 900px) {
+  .contacto {
+    padding-right: 25px;
+  }
   .subrayado-contacto {
     position: static;
     width: auto;
