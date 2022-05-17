@@ -32,9 +32,10 @@ select:focus{
   padding: 5px 0px 5px 20px;
 }
 .contacto {
-  margin-top: 44px;
+  padding-left: 10px;
+  padding-right: 25px;
 }
-.columna-contacto {
+.columna-izquierda {
   transform: rotate(270deg);
 }
 .texto-contacto {
@@ -101,12 +102,6 @@ select:focus{
   position: relative;
   top: 1px;
 }
-.linea-contacto {
-  margin-top: 40px;
-  width: 100%;
-  height: 5px;
-  background-color: #212d5b;
-}
 .contacto-direccion {
   font-style: italic;
   color: #212d5b;
@@ -115,7 +110,61 @@ select:focus{
 .accordion-item, .accordion-button {
   background-color: rgba(255, 255, 255, 0);
 }
-@media screen and (max-width: 700px) {
+.posicion-contacto {
+  left: -600px;
+}
+.linea-contacto {
+  margin-top: 40px;
+  width: 100%;
+  height: 5px;
+  background-color: #212d5b;
+}
+.subrayado-contacto {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 1200px;
+  top: 47%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--violeta);
+}
+.texto-izquierdo-contacto{
+  width: 95%;
+}
+.texto-izquierda {
+  text-align: right;
+  color: var(--violeta);
+}
+@media screen and (max-width: 900px) {
+  .subrayado-contacto {
+    position: static;
+    width: auto;
+    font-weight: bolder;
+    font-size: 17px;
+    border-bottom: none;
+  }
+  .texto-izquierda {
+    color: var(--celeste1);
+    z-index: 2;
+    background-color: #fff;
+    padding-right: 10px;
+  }
+  .texto-izquierdo-contacto{
+    width: auto;
+    padding-left: 10px;
+  }
+  .linea-izquierda-mobile {
+    z-index: -1;
+    position: relative;
+    top: 18px;
+    height: 13px;
+    background-color: var(--celeste1);
+  }
+  .linea-izquierda-mobile-contacto {
+    width: 80%;
+    margin-left: 10px;
+  }
   body {
     font-family: 'Montserrat', sans-serif;
   }
@@ -206,9 +255,8 @@ select:focus{
   .textarea-form::placeholder {
     color: var(--celeste1);
   }
-  .columna-contacto {
+  .columna-izquierda {
     transform: rotate(0deg);
-    margin: 20px;
   }
   .container-mobile {
     display: flex;
@@ -229,21 +277,10 @@ select:focus{
   }
 
   .iframe {
-    width: 100%;
+    width: 90%;
     border: 1px solid var(--celeste1);
     border-radius: 8px;
     margin-inline: 25px;
-  }
-  .linea-contacto {
-    display: none;
-  }
-  .linea-contacto-mobile {
-    position: relative;
-    top: 19px;
-    left: -10px;
-    width: 71%;
-    height: 13px;
-    background-color: var(--celeste2);
   }
   .texto-contacto {
     display: flex;
