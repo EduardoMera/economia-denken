@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: end;
   position: relative;
-  width:1000px;
+  width: 1000px;
   top: 40%;
   font-weight: bolder;
   font-size: 62px;
@@ -112,7 +112,17 @@ body {
   width: 97%;
 }
 .posicion-ingresos-egresos {
-  left: -110%;
+  left: -700px;
+}
+.subrayado-ingresos-egresos {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 900px;
+  top: 30%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
 }
 /*  */
 .texto-izquierda {
@@ -162,7 +172,7 @@ footer {
   top: 350px;
 }
 @media screen and (max-width: 900px) {
-  .background-img{
+  .background-img {
     display: none;
   }
   .fondo-footer {
@@ -197,7 +207,10 @@ footer {
   .linea-izquierda-mobile-coordinacion-financiera {
     width: 50%;
   }
-  .subrayado-coordinacion-financiera, .subrayado-gestion-presupuestaria, .subrayado-conformacion-consejo{
+  .subrayado-coordinacion-financiera,
+  .subrayado-gestion-presupuestaria,
+  .subrayado-conformacion-consejo,
+  .subrayado-ingresos-egresos {
     position: static;
     width: auto;
     font-weight: bolder;
@@ -210,7 +223,7 @@ footer {
   }
   /* ingresos egresos */
   .linea-izquierda-mobile-ingresos-egresos {
-    width: 24%;
+    width: 50%;
   }
   /*  */
   .columna-izquierda {
