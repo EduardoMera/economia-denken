@@ -122,6 +122,12 @@
 .izquierda {
   display: flex;
 }
+.otros-tramites {
+  display: none;
+}
+.linea-derecha {
+  display: none;
+}
 @media screen and (max-width: 743px) {
   .linea-blanca,
   .texto-footer-img,
@@ -182,7 +188,24 @@
   body > footer > div.derecha.col-3.row {
     display: none;
   }
-  /*links uno atras de otro*/
-
-  /*VER FORMA MOBILE*/
+  .otros-tramites {
+    display: inline;
+    margin-left: 20px;
+    padding-right: 10px;
+    z-index: 2;
+    background-color: #fff;
+    color: var(--celeste1);
+    font-weight: 900;
+    font-size: 17px;
+  }
+  .linea-derecha {
+    display: block;
+    z-index: -1;
+    position: relative;
+    top: -23px;
+    left: 20px;
+    width: 90%;
+    height: 17px;
+    background-color: var(--celeste1);
+  }
 }
