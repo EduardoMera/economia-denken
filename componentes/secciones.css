@@ -58,10 +58,20 @@ body {
 }
 /* Conformacion consejo */
 .texto-izquierdo-conformacion-consejo {
-  width: 91%;
+  width: 600px;
 }
 .posicion-conformacion-consejo {
-  left: -70%;
+  left: -450px;
+}
+.subrayado-conformacion-consejo {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width:1000px;
+  top: 40%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
 }
 /* Coordinacion financiera */
 .texto-izquierdo-coordinacion-financiera {
@@ -181,13 +191,13 @@ footer {
   }
   /* Conformacion del consejo */
   .linea-izquierda-mobile-conformacion-consejo {
-    width: 27%;
+    width: 50%;
   }
   /* Coordinacion financiera */
   .linea-izquierda-mobile-coordinacion-financiera {
     width: 50%;
   }
-  .subrayado-coordinacion-financiera, .subrayado-gestion-presupuestaria{
+  .subrayado-coordinacion-financiera, .subrayado-gestion-presupuestaria, .subrayado-conformacion-consejo{
     position: static;
     width: auto;
     font-weight: bolder;
