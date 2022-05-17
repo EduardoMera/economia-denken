@@ -47,9 +47,11 @@ body {
 .seccion-general {
   margin-top: 67px;
   padding: 10px;
+  min-height: 100vh;
 }
 .columna-izquierda {
   transform: rotate(270deg);
+  z-index: -1;
 }
 .texto-izquierda-tesoreria-general {
   width: 97%;
@@ -94,6 +96,9 @@ body {
   font-size: 12px;
   line-height: 22px;
   margin-top: 10px;
+}
+.fondo-footer{
+  z-index: 2;
 }
 @media screen and (max-width: 900px) {
   .background-img{
