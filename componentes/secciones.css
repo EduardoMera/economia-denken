@@ -95,13 +95,13 @@ body {
   width: 600px;
 }
 .posicion-gestion-presupuestaria {
-  left: -650px;
+  left: -550px;
 }
 .subrayado-gestion-presupuestaria {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 1400px;
+  width: 1280px;
   top: 500px;
   font-weight: bolder;
   font-size: 62px;
