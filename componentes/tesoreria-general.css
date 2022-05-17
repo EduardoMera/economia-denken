@@ -63,14 +63,14 @@ body {
   margin-top: 20px;
 }
 .posicion-tesoreria-general {
-  left: -150%;
+  left: -650px;
 }
 .subrayado {
   display: flex;
   justify-content: end;
   position: absolute;
-  width: 300%;
-  top: 550px;
+  width: 1400px;
+  top: 45%;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
@@ -95,7 +95,7 @@ body {
   line-height: 22px;
   margin-top: 10px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .background-img{
     display: none;
   } 
