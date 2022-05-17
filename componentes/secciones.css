@@ -37,10 +37,10 @@ body {
 }
 /* Autoridades */
 .texto-izquierdo-autridades {
-  width: 95%;
+  width: 500px;
 }
 .posicion-autoridades {
-  left: -500px;
+  left: -400px;
 }
 /* Politica y Gestion */
 .posicion-politica-gestion {
