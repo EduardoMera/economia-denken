@@ -7,9 +7,6 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
-html, body {
-  overflow-x: hidden;
-}
 body{
   font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
