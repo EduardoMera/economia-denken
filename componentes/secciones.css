@@ -6,7 +6,6 @@ body {
   position: relative;
   height: 100vh;
   font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
-
 }
 .background-img {
   position: absolute;
@@ -24,7 +23,6 @@ body {
   --celeste-boton: #006097;
 }
 .seccion-general {
-  margin-top: 67px;
   padding: 10px;
 }
 .item-texto {
@@ -32,6 +30,12 @@ body {
   font-size: 17.3px;
   color: var(--violeta);
   line-height: 47px;
+}
+.texto-seccion {
+  color: var(--violeta);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
 }
 .columna-izquierda {
   transform: rotate(270deg);
@@ -125,6 +129,23 @@ body {
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
 }
+/* Direccion general de rentas */
+.texto-izquierdo-direccion-general-de-rentas {
+  width: 400px;
+}
+.posicion-direccion-general-de-rentas {
+  left: -500px;
+}
+.subrayado-direccion-general-de-rentas {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 900px;
+  top: 30%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
+}
 /*  */
 .texto-izquierda {
   text-align: right;
@@ -192,39 +213,26 @@ footer {
   .cuerpo-autoridades {
     margin: 0px 40px;
   }
-  /* Politica y Gestion */
-  .linea-izquierda-mobile-politica-y-gestion {
-    width: 51%;
-  }
-  /* Comision ejecutiva */
-  .linea-izquierda-mobile-comision-ejecutiva {
-    width: 48%;
-  }
-  /* Conformacion del consejo */
-  .linea-izquierda-mobile-conformacion-consejo {
-    width: 50%;
-  }
   /* Coordinacion financiera */
-  .linea-izquierda-mobile-coordinacion-financiera {
+  .linea-izquierda-mobile-coordinacion-financiera,
+  .linea-izquierda-mobile-direccion-general-de-rentas,
+  .linea-izquierda-mobile-conformacion-consejo,
+  .linea-izquierda-mobile-politica-y-gestion,
+  .linea-izquierda-mobile-comision-ejecutiva,
+  .linea-izquierda-mobile-gestion-presupuestaria,
+  .linea-izquierda-mobile-ingresos-egresos{
     width: 50%;
   }
   .subrayado-coordinacion-financiera,
   .subrayado-gestion-presupuestaria,
   .subrayado-conformacion-consejo,
-  .subrayado-ingresos-egresos {
+  .subrayado-ingresos-egresos,
+  .subrayado-direccion-general-de-rentas{
     position: static;
     width: auto;
     font-weight: bolder;
     font-size: 17px;
     border-bottom: none;
-  }
-  /* Gestion presupuestaria */
-  .linea-izquierda-mobile-gestion-presupuestaria {
-    width: 36%;
-  }
-  /* ingresos egresos */
-  .linea-izquierda-mobile-ingresos-egresos {
-    width: 50%;
   }
   /*  */
   .columna-izquierda {
