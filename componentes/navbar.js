@@ -216,7 +216,7 @@ function adaptarNavbar() {
     armarItem(false, "UNIDAD EJECUTORA PROVINCIAL (UEP)", menuPoliticaYGestionUEP, false);
     armarItem(false, "TRIBUTOS PROVINCIALES", false, false);
     armarItem(false, "GESTIÓN CATASTRO", menuPoliticaYGestionGestionCatastro, false);
-    armarItem(false, "DIRECCION GENERAL DE RENTAS", false, false);
+    armarItem(false, "DIRECCION GENERAL DE RENTAS", false, "DIRECCION GENERAL DE RENTAS");
     armarItem(false, "CONSEJO PROVINCIAL DE RESPONSABILIDAD FISCAL", false, false);
     armarItem(false, "TESORERIA GENERAL", false, "TESORERIA GENERAL");
     armarItem(false, "SEGURO", false, false);
