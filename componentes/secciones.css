@@ -146,6 +146,20 @@ body {
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
 }
+/* misiones y funciones */
+.posicion-misiones-y-funciones{
+  left: -700px;
+}
+.subrayado-misiones-y-funciones {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 1600px;
+  top: 40%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
+}
 /*  */
 .texto-izquierda {
   text-align: right;
@@ -227,7 +241,8 @@ footer {
   .subrayado-gestion-presupuestaria,
   .subrayado-conformacion-consejo,
   .subrayado-ingresos-egresos,
-  .subrayado-direccion-general-de-rentas{
+  .subrayado-direccion-general-de-rentas,
+  .subrayado-misiones-y-funciones{
     position: static;
     width: auto;
     font-weight: bolder;
@@ -249,7 +264,7 @@ footer {
     font-size: 14px;
     color: var(--blanco);
     font-weight: 900;
-    width: 102%;
+    width: 96%;
     height: 36px;
     border-radius: 8px;
     border: none;

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./secciones.css" />
+    <link rel="stylesheet" href="./direccion-general-de-rentas.css" />
+    <script src="./gestion-presupuestaria.js" defer></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <script src="./navbar.js" defer></script>
+    <title>Gestion Presupuestaria</title>
+  </head>
+
+  <body>
+    <img class="background-img" src="../img/logochubut.png" alt="" />
+    <nav id="nav" class="fondo-nav navbar navbar-expand-xl navbar-light">
+      <div id="contenedor-navbar" class="container-fluid grid-container">
+        <button
+          class="navbar-toggler item1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand item2 ms-5" href="../index.html"><div class="logo-nav"></div> </a>
+
+        <div id="barra-arriba-mobile" class="barra-arriba item3">Ministerio de Economía y Crédito Público</div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div id="offcanvas-header" class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              <div>
+                <img class="d-block" src="../img/logochubutblanco.png" alt="" width="120" height="50" />
+                <h5 id="titulo-offcanvas" class="mt-3">Ministerio de Economía y Crédito Público</h5>
+              </div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div id="offcanvas-body" class="offcanvas-body m-0 justify-content-end" id="navbarSupportedContent">
+            <nav class="nab">
+              <ul class="ul">
+                <li class="li">
+                  <a class="btn-institucional" href="#">INSTITUCIONAL</a>
+                  <ul class="ul">
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >Organismos <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo">
+                          <a href="./autoridades.html" class="subitem-texto"
+                            >Autoridades <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#" class="subitem-texto">Misiones y funciones</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="li">
+                  <a class="btn-politica" href="./politica-y-gestion.html">POLITICA Y GESTION</a>
+                  <ul class="ul">
+                    <li class="li fondo">
+                      <a href="./coordinacion-financiera.html" class="subitem-texto"
+                        >Coordinacion financiera
+                        <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Financiamiento</a></li>
+                        <li class="li fondo"><a href="#">Estadistica y censo</a></li>
+                        <li class="li fondo"><a href="#">Titulos de deuda</a></li>
+                        <li class="li fondo"><a href="#">Letras del tesoro</a></li>
+                        <li class="li fondo"><a href="#">Clasificacion de riesgo</a></li>
+                        <li class="li fondo"><a href="#">Requisitos aut. endeudamiento municipios</a></li>
+                        <li class="li fondo"><a href="#">Libre de deuda fondo fiduciario desarrollo</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >VEP <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo">
+                          <a href="#" class="subitem-texto"
+                            >Programas <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#">?</a></li>
+                            <li class="li fondo"><a href="#">?</a></li>
+                            <li class="li fondo"><a href="#">?</a></li>
+                          </ul>
+                        </li>
+                        <li class="li fondo"><a href="#">Organismos</a></li>
+                        <li class="li fondo"><a href="#">Enlaces</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="#" class="subitem-texto"
+                        >Gestion catastro <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Responsabilidad fiscal</a></li>
+                        <li class="li fondo"><a href="./tesoreria-general.html">Tesoreria general</a></li>
+                        <li class="li fondo"><a href="#">Seguros</a></li>
+                      </ul>
+                    </li>
+                    <li class="li fondo">
+                      <a href="./gestion-presupuestaria.html" class="subitem-texto"
+                        >Gestion presupuestaria
+                        <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                      /></a>
+                      <ul class="ul">
+                        <li class="li fondo"><a href="#">Presupuesto y finanzas</a></li>
+                        <li class="li fondo"><a href="#">Computos</a></li>
+                        <li class="li fondo"><a href="#">Control y gestion adm.</a></li>
+                        <li class="li fondo">
+                          <a href="#" class="subitem-texto"
+                            >Sist. presupuestario
+                            <img class="float-end subitem-flecha" width="10" height="10" src="../img/iconos/flechaazul.png" alt=""
+                          /></a>
+                          <ul class="ul">
+                            <li class="li fondo"><a href="#">Instructivo</a></li>
+                            <li class="li fondo"><a href="#">Formularios</a></li>
+                            <li class="li fondo"><a href="#">Clasificadores</a></li>
+                          </ul>
+                        </li>
+                        <li class="li fondo"><a href="#">Presupuesto</a></li>
+                        <li class="li fondo"><a href="#">Ejecucion presup.</a></li>
+                        <li class="li fondo"><a href="#">Proyeccion plurianual</a></li>
+                        <li class="li fondo"><a href="#">Sostenibilidad de la deuda</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="li"><a class="btn-contacto" href="./contacto.html">CONTACTO</a></li>
+              </ul>
+            </nav>
+            <form id="buscador" class="d-flex buscador">
+              <input class="buscador-nav form-control py-0 mb-2" type="search" placeholder="Buscador" aria-label="Search" />
+              <button class="boton-lupa btn mb-2 position-relative" type="submit">
+                <svg id="lupa" xmlns="http://www.w3.org/2000/svg" width="12" height="15" fill="#dadad9" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="buscador-mobile"></div>
+    <section class="seccion-general">
+      <div class="row">
+        <div class="col-md-4 columna-izquierda">
+          <div class="linea-izquierda-mobile-gestion-presupuestaria linea-izquierda-mobile"></div>
+          <div class="posicion-misiones-y-funciones subrayado-misiones-y-funciones">
+            <div class="texto-izquierdo-gestion-presupuestaria texto-izquierda">MISIONES Y FUNCIONES</div>
+          </div>
+        </div>
+        <div class="col-md-8 columna-derecha">
+          <div class="texto-seccion pe-3">
+            El Ministerio de Economía y Crédito Público tiene como misión asistir al señor Gobernador de la Provincia en todos los asuntos relativos
+            al régimen financiero, crediticio, impositivo, presupuestario, patrimonial y contable del Estado Provincial, y en particular, entender en:
+          </div>
+          <button class="boton ver-mas mt-4 mb-3">VER MÁS</button>
+          <div id="texto-ver-mas" class="hidden">
+            <div class="row">
+              <div class="col-md-10 conjunto-globos-1">
+                <div class="box1 pata">Políticas relativas al régimen financiero y a las inversiones del Estado Provincial.</div>
+                <div class="box1 pata">
+                  La elaboración y supervisión de Planes y Programas referidos a las materias de su competencia para su integración al Plan General de
+                  Gobierno.
+                </div>
+                <div class="box1 pata">
+                  La coordinación y compatibilización de los Planes Provinciales con los Nacionales y Regionales en lo que respecta a sus
+                  competencias.
+                </div>
+                <div class="box1 pata">
+                  La formulación y supervisión de la Política Tributaria Provincial y en su coordinación con las Municipalidades.
+                </div>
+                <div class="box1 pata">
+                  La formulación y supervisión de la Política Tributaria Provincial y en su coordinación con las Municipalidades.
+                </div>
+                <div class="box1 pata">Todo lo referido al Catastro e Información Territorial.</div>
+                <div class="box1 pata">
+                  Las relaciones fiscales con el Estado Nacional, en el régimen de coparticipación federal de impuestos y en la participación de la
+                  Provincia en la distribución de fondos nacionales.
+                </div>
+                <div class="box1 pata">Las relaciones fiscales con las Municipalidades y en la coparticipación de impuestos y regalías.</div>
+                <div class="box1 pata">
+                  La recaudación y distribución de las rentas Provinciales del Régimen Tributario, la coparticipación de impuestos, las regalías de
+                  diverso origen, los cánones por concesiones y demás recursos financieros del Estado Provincial, que no hayan sido delegados por
+                  leyes especiales en otros organismos o entes.
+                </div>
+                <div class="box1 pata">
+                  La administración del crédito público provincial, en las operaciones de empréstitos nacionales e internacionales y en el registro de
+                  la deuda pública.
+                </div>
+                <div class="box1 pata">
+                  La administración de los títulos, acciones y otros valores mobiliarios que posea la Provincia, sus rentas y demás operaciones con
+                  los mismos, en coordinación con el Ministerio de Infraestructura, Energía y Planificación, en cuanto a la fijación de Políticas
+                  energéticas para el Estado Provincial.
+                </div>
+                <div class="box1 pata">La registración y custodia del patrimonio de la Provincia y el aseguramiento de los bienes.</div>
+                <div class="box1 pata">
+                  La formulación de la Política Presupuestaria Provincial, en la elaboración de la Ley Anual de Presupuesto y sus modificaciones y en
+                  la emisión de las órdenes de disponibilidad.
+                </div>
+                <div class="box1 pata">
+                  La registración contable de las operaciones presupuestarias y su control interno previo y en la formulación de la Cuenta General del
+                  Ejercicio.
+                </div>
+                <div class="box1 pata">Las relaciones institucionales con el Banco del Chubut S.A.</div>
+                <div class="box1 pata">El otorgamiento de préstamos y garantías a través del presupuesto Provincial.</div>
+                <div class="box1 pata">La ejecución de la política de pagos y en la publicación periódica de los estados del Tesoro.</div>
+                <div class="box1 pata">La orientación de la política de crédito y servicios del Banco del Chubut S.A.</div>
+                <div class="box1 pata">La consolidación y la utilización de Sistemas de Información Geográficos para las estadísticas y censos.</div>
+                <div class="box1 pata">
+                  La difusión y las estadísticas públicas de la Provincia. Proporcionar estadísticas de base, indicadores y análisis económicos,
+                  sociales y demográficosa los usuarios públicos y privados.
+                </div>
+                <div class="box1 pata">
+                  Materia salarial del personal de los diversos organismos y entes del Estado Provincial conjuntamente con el Ministerio de Gobierno y
+                  Justicia.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="fondo-footer row p-0 me-0" style="position: relative; top: 0px">
+      <div class="col-5 izquierda justify-content-center">
+        <div class="conjuntoizq">
+          <div class="linea-blanca d-block"></div>
+          <img class="img-footer" src="../img/img-footer.png" alt="" />
+          <div class="row texto-footer-img">
+            <div class="col-1 p-0 flecha-footer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="7"
+                height="7"
+                fill="currentColor"
+                class="d-inline bi bi-arrow-down-right flechita"
+                viewBox="5 5 11 11"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-11 p-0 texto-footer">
+              <p>
+                Oscar Antonena tiene 58 anios, fue subsecretario de Coordinacion Financiera provincial, asesor financiero y secretario de gobierno de
+                la Municipalidad de Camarones. Hoy dedica mayor parte de su dia a presidir el Ministerio de Economia de Chubut, un puesto de
+                importancia en el gabinete provincial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 centro d-flex justify-content-center">
+        <div class="links ps-5">
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">GESTION PRESUPUESTARIA</a>
+            </div>
+          </div>
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">COORDINACION FINANCIERA</a>
+            </div>
+          </div>
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">INGRESOS Y EGRESOS PUBLICOS</a>
+            </div>
+          </div>
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">UEP</a>
+            </div>
+          </div>
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">RENTAS</a>
+            </div>
+          </div>
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">GESTION DE CATASTRO</a>
+            </div>
+          </div>
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">CONSEJO PROVINCIAL DE RESPONSABILIDAD FISCAL</a>
+            </div>
+          </div>
+          <div class="row fila">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down-right flechita"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                />
+              </svg>
+            </div>
+            <div class="col-10">
+              <a href="#gestion-presupuestaria" class="link-blanco">ESTADISTICA Y CENSOS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="derecha col-3 row">
+        <div class="col-6 redes pe-2">
+          <div class="row fila">
+            <div class="col-1">
+              <img class="icon-footer" src="../img/question-icon.png" alt="" />
+            </div>
+            <div class="col-lg-9 col-10 d-flex align-items-start w-25">
+              <a href="#preguntas-frecuentes" class="link-amarillo">PREGUNTAS FRECUENTES</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 redes ps-5">
+          <div class="row">
+            <a href="#facebook" class="col-2 justify-content-end">
+              <img class="icon-footer" src="../img/facebook-icon.png" alt="" />
+            </a>
+            <a href="#twitter" class="col-2 justify-content-center">
+              <img class="icon-footer" src="../img/twitter-icon.png" alt="" />
+            </a>
+            <a href="#youtube" class="col-2 justify-content-start">
+              <img class="icon-footer" src="../img/youtube-icon.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
