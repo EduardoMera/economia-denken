@@ -24,6 +24,7 @@ body {
 }
 .seccion-general {
   padding: 10px;
+  min-height: 30vh;
 }
 .item-texto {
   display: inline;
@@ -56,10 +57,10 @@ body {
 }
 /* Comision ejecutiva */
 .texto-izquierdo-comision-ejecutiva {
-  width: 97%;
+  width: 400px;
 }
 .posicion-comision-ejecutiva {
-  left: -110%;
+  left: -500px;
 }
 /* Conformacion consejo */
 .texto-izquierdo-conformacion-consejo {

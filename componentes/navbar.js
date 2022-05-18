@@ -259,8 +259,9 @@ function adaptarNavbar() {
   }
   function menuConsejoResponsabilidadFiscal() {
     offcanvasBody.innerHTML = "";
-    armarItem(menuPoliticaYGestionGestionPresupuestaria, "COMISIÓN EJECUTIVA", false, "COMISIÓN EJECUTIVA");
-    armarItem(false, "CONFORMACIÓN DEL CONSEJO", false, "CONFORMACIÓN DEL CONSEJO");
+    armarItem(menuPoliticaYGestionGestionPresupuestaria, "COMISION EJECUTIVA", false, "COMISION EJECUTIVA");
+    armarItem(false, "CONFORMACION DEL CONSEJO", false, "CONFORMACION DEL CONSEJO");
+    armarItem(false, "INGRESOS Y EGRESOS", false, "INGRESOS Y EGRESOS");
   }
   function menuRecursos() {
     offcanvasBody.innerHTML = "";
