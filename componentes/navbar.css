@@ -7,8 +7,11 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
+html, body {
+  overflow-x: hidden;
+}
 body{
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .buscador-nav {

@@ -5,7 +5,8 @@ body {
 body {
   position: relative;
   height: 100vh;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 }
 .background-img {
   position: absolute;

@@ -13,7 +13,7 @@ body {
 }
 body {
   position: relative;
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .select-asunto{
   position: relative;
