@@ -228,7 +228,7 @@ function adaptarNavbar() {
     armarItem(false, "TÍTULOS DE DEUDA", false, false);
     armarItem(false, "LETRAS DEL TESORO", false, false);
     armarItem(false, "CLASIFICACIÓN DE RIESGO", false, false);
-    armarItem(false, "REQUICITOS SOLICITUD AUT, ENDEUDAMIENTO MUNICIPIOS", false, false);
+    armarItem(false, "REQUISITOS SOLICITUD AUT, ENDEUDAMIENTO MUNICIPIOS", false, false);
     armarItem(false, "LIBRE DE DEUDA FONDO FIDUCIARIO DESARROLLO", false, false);
     armarItem(false, "SOSTENIBILIDAD DE LA DEUDA", false, false);
   }
