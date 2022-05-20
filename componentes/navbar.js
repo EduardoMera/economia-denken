@@ -8,7 +8,6 @@ function ajustar() {
   let ancho = document.body.clientWidth;
 
   if (ancho <= 1183) {
-    console.log("mobile");
     //refactorizar
     document.getElementById("contenedor-navbar").classList.remove("container-fluid");
 
