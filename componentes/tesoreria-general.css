@@ -77,8 +77,8 @@ body {
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
 }
-.columna-derecha{
-  padding-right: 0px;
+.columna-derecha {
+  padding-right: 300px !important;
 }
 .boton {
   font-size: 9pt;

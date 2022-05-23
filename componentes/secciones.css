@@ -183,7 +183,7 @@ body {
   margin-top: 20px;
 }
 .columna-derecha {
-  padding-right: 0px;
+  padding-right: 300px !important;
 }
 .subtitulo {
   color: var(--violeta);
