@@ -7,8 +7,8 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
-body{
-  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+body {
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .buscador-nav {
@@ -82,7 +82,7 @@ body{
   font-weight: 500;
   font-size: 14px;
 }
-#barra-arriba-mobile{
+#barra-arriba-mobile {
   display: none;
 }
 
@@ -93,7 +93,6 @@ body{
   border-bottom: 1.4px solid var(--violeta);
   width: 220px;
 }
-
 
 .btn-politica {
   color: var(--violeta);
@@ -112,15 +111,19 @@ body{
 .fondo {
   background-color: var(--gris1);
 }
+.fondo a {
+  position: relative;
+  top: 10px;
+}
 .ul .li {
   width: 200px;
   height: 50px;
 }
-.li:hover{
+.li:hover {
   background-color: var(--celeste1);
   border: none;
 }
-.nab{
+.nab {
   position: relative;
   top: 10px;
 }
@@ -138,7 +141,7 @@ body{
   text-decoration: none;
   color: var(--violeta);
   display: block;
-  padding: 0 10px;
+  padding: 0 0 0 20px;
 }
 .nab .ul .ul {
   width: 200px;
@@ -163,23 +166,24 @@ body{
   position: relative;
   top: -50px;
 }
-.subitem-flecha{
+.subitem-flecha {
   position: relative;
   top: 8px;
   transform: rotate(315deg);
 }
-.subitem-texto{
+.subitem-texto {
   position: relative;
   top: 10px;
   line-height: 17px;
+  padding-left: 100px;
 }
 /* fin nav custom */
 body {
   overflow-x: hidden;
 }
 @media screen and (max-width: 1200px) {
-  body{
-    font-family: 'Montserrat', sans-serif;
+  body {
+    font-family: "Montserrat", sans-serif;
   }
   /* inicio ofcanvas */
   #titulo-offcanvas {
@@ -194,7 +198,7 @@ body {
   #offcanvas-body {
     background-color: #4196b4;
   }
-  .item-offcanvas{
+  .item-offcanvas {
     color: var(--blanco);
     border-top: 1px solid var(--gris1);
     border-bottom: 1px solid var(--gris1);
@@ -255,10 +259,10 @@ body {
     background-color: var(--celeste1);
     color: #fff;
   }
-  #barra-arriba-mobile{
+  #barra-arriba-mobile {
     display: block;
   }
-  #barra-arriba{
+  #barra-arriba {
     display: none;
   }
 
