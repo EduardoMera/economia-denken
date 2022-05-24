@@ -20,11 +20,13 @@
 .div-icon p {
     margin-top: 10px;
     text-align: center;
+    color: black;
 }
 
 .div-icon {
     display: grid;
     place-items: center;
+    cursor: pointer;
 }
 
 .slick-list{
