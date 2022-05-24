@@ -19,8 +19,7 @@ body {
   height: 27.5px;
   border-color: var(--gris1);
   color: var(--gris2);
-  font-weight: lighter;
-  font-size: 8.5px;
+  font-size: 9pt;
   margin-left: 30px;
 }
 
@@ -37,7 +36,7 @@ body {
 .buscador-nav::placeholder {
   color: var(--gris2);
   font-weight: lighter;
-  font-size: 8.5px;
+  font-size: 9pt;
 }
 
 .buscador-nav:focus + .boton-lupa {
@@ -109,23 +108,23 @@ body {
 }
 
 .fondo {
-  background-color: var(--gris1);
+  background-color: rgba(217, 217, 216, 0.85);
 }
 .fondo a {
   position: relative;
-  top: 10px;
+  top: 13px;
 }
 .ul .li {
   width: 200px;
   height: 50px;
 }
 .li:hover {
-  background-color: var(--celeste1);
+  background-color: rgba(65, 149, 180, 0.95);
   border: none;
 }
 .nab {
   position: relative;
-  top: 10px;
+  top: 15px;
 }
 .nab .ul {
   list-style: none;
@@ -146,12 +145,15 @@ body {
 .nab .ul .ul {
   width: 200px;
   height: 50px;
-  top: 50px;
+  top: 25px;
   position: absolute;
   display: none;
 }
 .nab .ul .li:hover > .ul {
   display: inline-block;
+}
+.nab .ul .li.principal:hover > a {
+  color: var(--violeta);
 }
 .nab .ul .li:hover > a {
   color: #fff;
@@ -164,11 +166,12 @@ body {
 .nab .ul .ul .ul .li {
   left: 200px;
   position: relative;
-  top: -50px;
+  top: -25px;
 }
 .subitem-flecha {
   position: relative;
   top: 8px;
+  left: -10px;
   transform: rotate(315deg);
 }
 .subitem-texto {
@@ -176,6 +179,13 @@ body {
   top: 10px;
   line-height: 17px;
   padding-left: 100px;
+}
+.nab .ul .li.principal{
+  color: var(--violeta);
+}
+.nab .ul .li.principal:hover{
+  background-color: rgba(255, 0, 0, 0);
+  color: var(--violeta);
 }
 /* fin nav custom */
 body {
