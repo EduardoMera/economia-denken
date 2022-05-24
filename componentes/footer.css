@@ -93,7 +93,8 @@
 }
 
 .texto-footer-img {
-  font-size: 7px;
+  margin-top: 10px;
+  font-size: 12px;
   color: var(--blanco);
 
   font-style: italic;
@@ -101,7 +102,7 @@
   font-weight: 300;
   width: 328px;
 
-  line-height: 8.4px;
+  line-height: 12px;
   margin-left: 0px;
 }
 .flecha-footer {
@@ -109,7 +110,6 @@
 }
 .texto-footer {
   width: 318px;
-  /*word-wrap: break-word;*/
   word-wrap: break-word;
 }
 
@@ -127,6 +127,11 @@
 }
 .linea-derecha {
   display: none;
+}
+footer .col-3,
+footer .col-4,
+footer .col-5{
+  background-color: var(--celeste1);
 }
 @media screen and (max-width: 743px) {
   .linea-blanca,
@@ -171,12 +176,7 @@
   }
   .fila .col-10 {
     display: inline;
-    padding-right: 5px;
-    padding-left: 0px;
     margin: 0px;
-  }
-  .centro {
-    width: 100% !important;
   }
   .flechita {
     filter: invert(1);
