@@ -7,10 +7,23 @@ body {
   height: 100vh;
   font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-.background-img {
+.img-fondo-completa{
   position: absolute;
+  transform: rotate(-30deg);
   z-index: -1;
-  opacity: 0.09;
+  top: 180px;
+  left: 250px;
+  width: 300px;
+  height: 400px;
+}
+.img-fondo-cuarto{
+  position: absolute;
+  transform: rotate(270deg);
+  z-index: -1;
+  top: 100vh;
+  left: 0px;
+  width: 300px;
+  height: 400px;
 }
 :root {
   --celeste1: #4196b4;
@@ -108,8 +121,8 @@ body {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 1000px;
-  top: 40%;
+  width: 700px;
+  top: 10%;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
@@ -150,14 +163,14 @@ body {
 }
 /* misiones y funciones */
 .posicion-misiones-y-funciones{
-  left: -700px;
+  left: -300px;
 }
 .subrayado-misiones-y-funciones {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 1600px;
-  top: 40%;
+  width: 600px;
+  top: 10%;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);

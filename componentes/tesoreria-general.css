@@ -16,10 +16,23 @@ body {
   height: 100vh;
   font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-.background-img {
+.img-fondo-completa{
   position: absolute;
+  transform: rotate(-30deg);
+  z-index: -2;
+  top: 180px;
+  left: 250px;
+  width: 300px;
+  height: 400px;
+}
+.img-fondo-cuarto{
+  position: absolute;
+  transform: rotate(270deg);
   z-index: -1;
-  opacity: 0.09;
+  top: 100vh;
+  left: 0px;
+  width: 300px;
+  height: 400px;
 }
 .nombre-tesoreria{
   display: inline;
@@ -65,13 +78,13 @@ body {
   margin-top: 20px;
 }
 .posicion-tesoreria-general {
-  left: -650px;
+  left: -1050px;
 }
 .subrayado {
   display: flex;
   justify-content: end;
   position: absolute;
-  width: 1400px;
+  width: 2000px;
   top: 45%;
   font-weight: bolder;
   font-size: 62px;
