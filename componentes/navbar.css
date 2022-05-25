@@ -10,7 +10,17 @@
 body {
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
+.img-fondo-noticias-twitter{
+  position: absolute;
+  transform: rotate(30deg);
+  top: 1000px;
+  z-index: -1;
+}
+.img-fondo-carousel{
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
 .buscador-nav {
   position: relative;
   top: -8px;
