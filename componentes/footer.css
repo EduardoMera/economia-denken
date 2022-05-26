@@ -204,4 +204,9 @@ footer .col-5{
     height: 17px;
     background-color: var(--celeste1);
   }
+  footer .col-3,
+  footer .col-4,
+  footer .col-5{
+    background-color: var(--blanco);
+  }
 }
