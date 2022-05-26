@@ -43,12 +43,12 @@ body {
   display: inline;
   font-size: 17.3px;
   color: var(--violeta);
-  line-height: 47px;
+  line-height: 30px;
 }
 .texto-seccion {
   color: var(--violeta);
   font-weight: 400;
-  font-size: 12px;
+  font-size: 17.3px;
   line-height: 22px;
 }
 .columna-izquierda {
