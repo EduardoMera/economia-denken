@@ -84,7 +84,7 @@ a {
 	z-index: 2;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 	body{
 		font-family: "HelveticaNeue", sans-serif;
 	}
