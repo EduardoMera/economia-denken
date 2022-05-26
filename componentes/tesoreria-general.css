@@ -59,6 +59,7 @@ body {
 }
 .seccion-general {
   min-height: 200vh;
+  margin: 12px;
 }
 .columna-izquierda {
   transform: rotate(270deg);
@@ -116,6 +117,9 @@ body {
   z-index: 2;
 }
 @media screen and (max-width: 900px) {
+  .columna-derecha {
+    padding-right: 12px !important;
+  }
   .background-img{
     display: none;
   } 
@@ -137,6 +141,7 @@ body {
   }
   .columna-izquierda {
     transform: rotate(0deg);
+    margin-top: 0px;
   }
   .linea-izquierda-mobile-tesoreria-general {
     width: 50%;
@@ -159,6 +164,7 @@ body {
     z-index: 2;
     background-color: #fff;
     padding-right: 10px;
+    line-height: normal;
   }
   .texto-izquierda-tesoreria-general{
     width: auto;
