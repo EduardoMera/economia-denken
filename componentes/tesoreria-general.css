@@ -70,6 +70,7 @@ body {
 .texto-izquierda {
   text-align: right;
   color: var(--celeste2);
+  line-height: 60px;
 }
 .row-botones{ /* class custom tesoreria general */
   margin-left: 0px;

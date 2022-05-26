@@ -189,6 +189,7 @@ body {
 .texto-izquierda {
   text-align: right;
   color: var(--celeste2);
+  line-height: 65px;
 }
 .gris{
   color: var(--gris1);
