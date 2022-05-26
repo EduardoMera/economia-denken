@@ -15,6 +15,13 @@ body {
   position: relative;
   font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+.img-fondo-contacto{
+  position: absolute;
+  transform: rotate(-35deg);
+  top: 500px;
+  left: -200px;
+  z-index: -1;
+}
 .select-asunto{
   position: relative;
   left: 12px;
