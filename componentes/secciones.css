@@ -74,14 +74,24 @@ body {
   width: 400px;
 }
 .posicion-comision-ejecutiva {
-  left: -500px;
+  left: -300px;
 }
 /* Conformacion consejo */
 .texto-izquierdo-conformacion-consejo {
   width: 600px;
 }
 .posicion-conformacion-consejo {
-  left: -150px;
+  left: -250px;
+}
+.subrayado-comision-ejecutiva {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 1000px;
+  top: 40%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--celeste2);
 }
 .subrayado-conformacion-consejo {
   display: flex;
@@ -115,13 +125,13 @@ body {
   width: 600px;
 }
 .posicion-gestion-presupuestaria {
-  left: -400px;
+  left: -600px;
 }
 .subrayado-gestion-presupuestaria {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 700px;
+  width: 900px;
   top: 10%;
   font-weight: bolder;
   font-size: 62px;
@@ -129,17 +139,17 @@ body {
 }
 /* Ingresos Egresos */
 .texto-izquierda-ingresos-egresos {
-  width: 97%;
+  width: 50%;
 }
 .posicion-ingresos-egresos {
-  left: -700px;
+  left: -400px;
 }
 .subrayado-ingresos-egresos {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 900px;
-  top: 30%;
+  width: 800px;
+  top: 10%;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);
@@ -163,13 +173,13 @@ body {
 }
 /* misiones y funciones */
 .posicion-misiones-y-funciones{
-  left: -300px;
+  left: -400px;
 }
 .subrayado-misiones-y-funciones {
   display: flex;
   justify-content: end;
   position: relative;
-  width: 600px;
+  width: 800px;
   top: 10%;
   font-weight: bolder;
   font-size: 62px;
@@ -220,7 +230,7 @@ body {
 }
 footer {
   position: relative;
-  top: 350px;
+  top: 60%;
 }
 @media screen and (max-width: 900px) {
   .background-img {
