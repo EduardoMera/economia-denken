@@ -237,6 +237,9 @@ footer {
   top: 60%;
 }
 @media screen and (max-width: 900px) {
+  .columna-derecha {
+    padding-right: 12px !important;
+  }
   .background-img {
     display: none;
   }
@@ -281,6 +284,7 @@ footer {
   /*  */
   .columna-izquierda {
     transform: rotate(0deg);
+    margin-top: 0px;
   }
   .item-texto {
     margin-top: 0px;
@@ -311,6 +315,7 @@ footer {
     z-index: 2;
     background-color: #fff;
     padding-right: 10px;
+    line-height: normal;
   }
   .texto-izquierdo-autridades,
   .texto-izquierdo-politica-gestion,
