@@ -74,7 +74,17 @@ body {
   width: 400px;
 }
 .posicion-comision-ejecutiva {
-  left: -300px;
+  left: -400px;
+}
+.subrayado-comision-ejecutiva {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 800px;
+  top: 40%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--gris1);
 }
 /* Conformacion consejo */
 .texto-izquierdo-conformacion-consejo {
@@ -82,16 +92,6 @@ body {
 }
 .posicion-conformacion-consejo {
   left: -250px;
-}
-.subrayado-comision-ejecutiva {
-  display: flex;
-  justify-content: end;
-  position: relative;
-  width: 1000px;
-  top: 40%;
-  font-weight: bolder;
-  font-size: 62px;
-  border-bottom: 3px solid var(--celeste2);
 }
 .subrayado-conformacion-consejo {
   display: flex;
@@ -101,7 +101,7 @@ body {
   top: 40%;
   font-weight: bolder;
   font-size: 62px;
-  border-bottom: 3px solid var(--celeste2);
+  border-bottom: 3px solid var(--gris1);
 }
 /* Coordinacion financiera */
 .texto-izquierdo-coordinacion-financiera {
@@ -118,7 +118,7 @@ body {
   top: 30%;
   font-weight: bolder;
   font-size: 62px;
-  border-bottom: 3px solid var(--celeste2);
+  border-bottom: 3px solid var(--gris1);
 }
 /* gestion presupuestaria */
 .texto-izquierdo-gestion-presupuestaria {
@@ -135,7 +135,7 @@ body {
   top: 10%;
   font-weight: bolder;
   font-size: 62px;
-  border-bottom: 3px solid var(--celeste2);
+  border-bottom: 3px solid var(--gris1);
 }
 /* Ingresos Egresos */
 .texto-izquierda-ingresos-egresos {
@@ -152,7 +152,7 @@ body {
   top: 10%;
   font-weight: bolder;
   font-size: 62px;
-  border-bottom: 3px solid var(--celeste2);
+  border-bottom: 3px solid var(--gris1);
 }
 /* Direccion general de rentas */
 .texto-izquierdo-direccion-general-de-rentas {
@@ -169,7 +169,7 @@ body {
   top: 10%;
   font-weight: bolder;
   font-size: 62px;
-  border-bottom: 3px solid var(--celeste2);
+  border-bottom: 3px solid var(--gris1);
 }
 /* misiones y funciones */
 .posicion-misiones-y-funciones{
@@ -189,6 +189,9 @@ body {
 .texto-izquierda {
   text-align: right;
   color: var(--celeste2);
+}
+.gris{
+  color: var(--gris1);
 }
 .subrayado {
   display: flex;

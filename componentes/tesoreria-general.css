@@ -78,6 +78,9 @@ body {
 .posicion-tesoreria-general {
   left: -900px;
 }
+.gris{
+  color: var(--gris1);
+}
 .subrayado {
   display: flex;
   justify-content: end;
@@ -86,7 +89,7 @@ body {
   top: 45%;
   font-weight: bolder;
   font-size: 62px;
-  border-bottom: 3px solid var(--celeste2);
+  border-bottom: 3px solid var(--gris1);
 }
 .columna-derecha {
   padding-right: 300px !important;
