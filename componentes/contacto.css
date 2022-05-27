@@ -99,14 +99,10 @@ select:focus {
   font-weight: bolder;
 }
 .accordion-button::after {
-  background-image: url(../img/iconos/plus-lg.svg);
-  margin-left: 10px;
+  background-image: none;
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url(../img/iconos/dash-lg.svg);
-  margin-left: 10px;
-  position: relative;
-  top: 1px;
+  background-image: none;
 }
 .contacto-direccion {
   font-style: italic;
