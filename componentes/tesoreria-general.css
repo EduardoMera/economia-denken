@@ -8,15 +8,16 @@
   --blanco: #ffffff;
   --celeste-boton: #006097;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 body {
   position: relative;
   height: 100vh;
-  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-.img-fondo-completa{
+.img-fondo-completa {
   position: absolute;
   transform: rotate(-30deg);
   z-index: -2;
@@ -25,7 +26,7 @@ body {
   width: 300px;
   height: 400px;
 }
-.img-fondo-cuarto{
+.img-fondo-cuarto {
   position: absolute;
   transform: rotate(270deg);
   z-index: -1;
@@ -34,28 +35,28 @@ body {
   width: 300px;
   height: 400px;
 }
-.nombre-tesoreria{
+.nombre-tesoreria {
   display: inline;
   color: var(--violeta);
   font-weight: lighter;
   font-size: 12px;
 }
-.subtitulo-img{
-    color: var(--violeta);
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    margin-top: 10px;
-    margin-bottom: -5px;
+.subtitulo-img {
+  color: var(--violeta);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+  margin-bottom: -5px;
 }
-.img-tesoreria{
+.img-tesoreria {
   object-fit: cover;
 }
 .item-texto {
   display: inline;
   font-size: 17.3px;
   color: var(--violeta);
-  line-height: 47px;
+  line-height: 30px;
 }
 .seccion-general {
   min-height: 200vh;
@@ -73,14 +74,15 @@ body {
   color: var(--celeste2);
   line-height: 60px;
 }
-.row-botones{ /* class custom tesoreria general */
+.row-botones {
+  /* class custom tesoreria general */
   margin-left: 0px;
   margin-top: 20px;
 }
 .posicion-tesoreria-general {
   left: -900px;
 }
-.gris{
+.gris {
   color: var(--gris1);
 }
 .subrayado {
@@ -113,24 +115,30 @@ body {
   line-height: 22px;
   margin-top: 10px;
 }
-.fondo-footer{
+.fondo-footer {
   z-index: 2;
 }
+.texto-seccion {
+  display: inline;
+  font-size: 17.3px;
+  line-height: 22px;
+}
 @media screen and (max-width: 900px) {
-  .img-fondo-cuarto, .img-fondo-completa{
+  .img-fondo-cuarto,
+  .img-fondo-completa {
     display: none;
   }
   .columna-derecha {
     padding-right: 12px !important;
   }
-  .background-img{
+  .background-img {
     display: none;
-  } 
+  }
   .fondo-footer {
     display: none;
   }
-  body{
-    font-family: 'Montserrat', sans-serif;
+  body {
+    font-family: "Montserrat", sans-serif;
   }
   .boton {
     font-size: 14px;
@@ -159,7 +167,7 @@ body {
     position: static;
     width: auto;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 17.3px;
     border-bottom: none;
   }
   .texto-izquierda {
@@ -169,7 +177,7 @@ body {
     padding-right: 10px;
     line-height: normal;
   }
-  .texto-izquierda-tesoreria-general{
+  .texto-izquierda-tesoreria-general {
     width: auto;
     padding-left: 10px;
   }
