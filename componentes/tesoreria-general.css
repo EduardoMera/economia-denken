@@ -80,7 +80,7 @@ body {
   margin-top: 20px;
 }
 .posicion-tesoreria-general {
-  left: -900px;
+  left: -830px;
 }
 .gris {
   color: var(--gris1);
@@ -89,8 +89,8 @@ body {
   display: flex;
   justify-content: end;
   position: absolute;
-  width: 1800px;
-  top: 45%;
+  width: 1600px;
+  top: 53%;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--gris1);
