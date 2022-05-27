@@ -69,6 +69,16 @@ body {
 .texto-izquierdo-politica-gestion {
   width: 500px;
 }
+.subrayado-politica-gestion {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 700px;
+  top: 30%;
+  font-weight: bolder;
+  font-size: 62px;
+  border-bottom: 3px solid var(--gris1);
+}
 /* Comision ejecutiva */
 .texto-izquierdo-comision-ejecutiva {
   width: 400px;
@@ -237,6 +247,9 @@ footer {
   top: 60%;
 }
 @media screen and (max-width: 900px) {
+  .img-fondo-cuarto, .img-fondo-completa{
+    display: none;
+  }
   .columna-derecha {
     padding-right: 12px !important;
   }
@@ -274,7 +287,8 @@ footer {
   .subrayado-conformacion-consejo,
   .subrayado-ingresos-egresos,
   .subrayado-direccion-general-de-rentas,
-  .subrayado-misiones-y-funciones{
+  .subrayado-misiones-y-funciones,
+  .subrayado-politica-gestion {
     position: static;
     width: auto;
     font-weight: bolder;

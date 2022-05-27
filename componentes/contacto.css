@@ -13,20 +13,20 @@ body {
 }
 body {
   position: relative;
-  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-.img-fondo-contacto{
+.img-fondo-contacto {
   position: absolute;
   transform: rotate(-35deg);
   top: 500px;
   left: -200px;
   z-index: -1;
 }
-.select-asunto{
+.select-asunto {
   position: relative;
   left: 12px;
 }
-select:focus{
+select:focus {
   background-color: var(--amarillo);
 }
 .asunto-field {
@@ -113,7 +113,8 @@ select:focus{
   color: #212d5b;
   font-size: 18.6px;
 }
-.accordion-item, .accordion-button {
+.accordion-item,
+.accordion-button {
   background-color: rgba(255, 255, 255, 0);
 }
 .posicion-contacto {
@@ -135,7 +136,7 @@ select:focus{
   font-size: 62px;
   border-bottom: 3px solid var(--violeta);
 }
-.texto-izquierdo-contacto{
+.texto-izquierdo-contacto {
   width: 95%;
 }
 .texto-izquierda {
@@ -143,6 +144,9 @@ select:focus{
   color: var(--violeta);
 }
 @media screen and (max-width: 900px) {
+  .img-fondo-contacto {
+    display: none;
+  }
   .contacto {
     padding-right: 25px;
   }
@@ -159,7 +163,7 @@ select:focus{
     background-color: #fff;
     padding-right: 10px;
   }
-  .texto-izquierdo-contacto{
+  .texto-izquierdo-contacto {
     width: auto;
     padding-left: 10px;
   }
@@ -175,25 +179,25 @@ select:focus{
     margin-left: 10px;
   }
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .select-asunto {
     width: 100%;
     left: 23px;
   }
-  .borde-izquierdo{
+  .borde-izquierdo {
     border-top: 1px solid var(--celeste1);
     border-left: 1px solid var(--celeste1);
     border-bottom: 1px solid var(--celeste1);
     border-radius: 8px 0px 0px 8px;
   }
-  .borde-derecho{
+  .borde-derecho {
     border-top: 1px solid var(--celeste1);
     border-right: 1px solid var(--celeste1);
     border-bottom: 1px solid var(--celeste1);
     border-radius: 0px 8px 8px 0px;
   }
-  .asunto-field{
+  .asunto-field {
     background-color: var(--blanco);
     color: var(--celeste1);
   }
@@ -315,7 +319,7 @@ select:focus{
     margin: 0px 20px 23px 20px;
     padding: 10px 20px;
     width: 100%;
-    background-color: rgb(0, 0, 0, 0) ;
+    background-color: rgb(0, 0, 0, 0);
   }
   .accordion-button::after {
     background-image: url(../img/iconos/plus-lg-yellow.svg);

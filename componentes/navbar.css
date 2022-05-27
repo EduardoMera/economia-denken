@@ -202,6 +202,10 @@ body {
   overflow-x: hidden;
 }
 @media screen and (max-width: 1200px) {
+  .img-fondo-carousel, 
+  .img-fondo-noticias-twitter{
+    display: none;
+  }
   body {
     font-family: "Montserrat", sans-serif;
   }
