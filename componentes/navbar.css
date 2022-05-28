@@ -201,7 +201,23 @@ body {
 body {
   overflow-x: hidden;
 }
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.padding-final{
+  padding-right: 65px;
+}
+.margin-final{
+  margin-right: 50px;
+}
 @media screen and (max-width: 1200px) {
+  .margin-final{
+    margin-right: 0px;
+  }
+  .padding-final{
+    padding-right: 0px;
+  }
   .img-fondo-carousel, 
   .img-fondo-noticias-twitter{
     display: none;
