@@ -298,7 +298,8 @@ footer {
   .subrayado-ingresos-egresos,
   .subrayado-direccion-general-de-rentas,
   .subrayado-misiones-y-funciones,
-  .subrayado-politica-gestion {
+  .subrayado-politica-gestion,
+  .subrayado-autoridades{
     position: static;
     width: auto;
     font-weight: bolder;
