@@ -44,6 +44,11 @@
 .links {
   height: 100px;
   margin-top: 17.4px;
+  z-index: 2;
+}
+
+body > footer > div.derecha.col-4.row{
+  background-color: var(--celeste1);
 }
 
 .link-blanco:hover {
@@ -129,7 +134,19 @@ footer .col-md-4,
 footer .col-5{
   background-color: var(--celeste1);
 }
+.contenedor-logo-footer{
+  position: relative;
+}
+.logo-blanco-footer{
+  position: absolute;
+  top: 50px;
+  left: 150px; 
+  opacity: 0.2;
+}
 @media screen and (max-width: 743px) {
+  body > footer > div.derecha.col-4.row{
+    background-color: var(--blanco);
+  }
   .linea-blanca,
   .texto-footer-img,
   .texto-footer,
@@ -180,6 +197,8 @@ footer .col-5{
   .bi-arrow-down-right {
     padding: 0px;
     margin: 0px;
+    margin-left: 15px;
+    margin-right: -10px;
   }
   body > footer > div.derecha.col-3.row {
     display: none;
