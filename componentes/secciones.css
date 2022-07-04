@@ -67,7 +67,7 @@ body {
   justify-content: end;
   position: relative;
   width: 700px;
-  top: 100%;
+  top: 50%;
   font-weight: bolder;
   font-size: 62px;
   border-bottom: 3px solid var(--celeste2);

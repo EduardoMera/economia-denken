@@ -41,14 +41,7 @@ body {
   font-weight: lighter;
   font-size: 12px;
 }
-.subtitulo-img {
-  color: var(--violeta);
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
-  margin-top: 10px;
-  margin-bottom: -5px;
-}
+
 .img-tesoreria {
   object-fit: cover;
 }
