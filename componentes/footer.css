@@ -7,6 +7,9 @@
   --amarillo: #ffd03e;
   --blanco: #ffffff;
 }
+body{
+  overflow-x: hidden;
+}
 .link-blanco {
   text-decoration: none;
   color: var(--blanco);
@@ -143,7 +146,18 @@ footer .col-5{
   left: 150px; 
   opacity: 0.2;
 }
+.items-footer{
+  position: relative;
+  top: 3px;
+  font-size: 9pt;
+}
 @media screen and (max-width: 743px) {
+  .logo-blanco-footer{
+    display: none;
+  }
+  .items-footer{
+    padding-left: 8px;
+  }
   body > footer > div.derecha.col-4.row{
     background-color: var(--blanco);
   }
